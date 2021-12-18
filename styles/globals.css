@@ -1,5 +1,4 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 html,
@@ -8,13 +7,39 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  transition: color 0.25s linear, background-color 0.25s linear;
+}
+
+body {
+  font-family: "Open Sans Regular";
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
