@@ -1,8 +1,15 @@
 import React from "react";
 import styles from "@styles/Header.module.scss";
 import ColorSwitch from "./ColorSwitch";
+// import { useWindowScroll } from "react-use";
 
-function Header() {
+interface HeaderInterface {
+  showContactBtn?: boolean;
+}
+
+function Header({ showContactBtn = false }: HeaderInterface) {
+  // const { x, y } = useWindowScroll();
+  //console.log(y);
   return (
     <header className={`${styles.header}`}>
       <div className={`container`}>
@@ -18,7 +25,12 @@ function Header() {
           <nav>
             <ColorSwitch />
           </nav>
-          <a href="#footer" className="contact-us">
+          <a
+            href="#footer"
+            className={`contact-us ${
+              showContactBtn ? "" : "hidden"
+            } animate-popup`}
+          >
             {" "}
             Contact us{" "}
           </a>

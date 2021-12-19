@@ -1,11 +1,28 @@
+import * as React from "react";
 import ColorSwitch from "@components/ColorSwitch";
 import Header from "@components/Header";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { useIntersection } from "react-use";
 // import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
+  const heroContactBtn = React.useRef<HTMLAnchorElement>(null);
+  const contctBtnIntersect = useIntersection(heroContactBtn, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+  });
+  const [showHeaderBtn, setShowHeaderBtn] = React.useState(false);
+
+  React.useEffect(() => {
+    if (contctBtnIntersect) {
+      if (contctBtnIntersect.intersectionRatio < 1) setShowHeaderBtn(true);
+      else setShowHeaderBtn(false);
+    }
+  }, [contctBtnIntersect?.intersectionRatio]);
+
   return (
     <div className={"bg-lightOrange h-screen"}>
       <Head>
@@ -14,7 +31,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header showContactBtn={showHeaderBtn} />
 
       <main>
         <section className="hero border border-red-500">
@@ -36,7 +53,7 @@ const Home: NextPage = () => {
                   By keeping you involved all along the process. A process that
                   is designed to bring your ideas to life smoothly and quickly.
                 </p>
-                <a href="#footer" className="contact-us">
+                <a href="#footer" className="contact-us" ref={heroContactBtn}>
                   {" "}
                   Contact us{" "}
                 </a>

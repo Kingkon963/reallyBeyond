@@ -3,6 +3,7 @@
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
+  important: true,
   theme: {
     extend: {
       colors: {
@@ -15,6 +16,15 @@ module.exports = {
       },
       screens: {
         "3xl": "1600px",
+      },
+      keyframes: {
+        popup: {
+          "0%": { transform: "scale(0.9)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        popup: "popup 300ms ease-out",
       },
     },
   },
