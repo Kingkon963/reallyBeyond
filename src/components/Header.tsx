@@ -12,9 +12,11 @@ function Header() {
   }
   ///handleColorModeShift("bw");
   return (
-    <header className={`${styles.header} px-4 3xl:px-64 `}>
-      <div className={`${styles.container}`}>
-        <div className={`${styles.nav} h-[4.2rem] lg:h-32`}>
+    <header className={`${styles.header} `}>
+      <div className={`container`}>
+        <div
+          className={`${styles.nav} h-[4.2rem] lg:h-32 border-b dark:border-b dark:border-gray-300`}
+        >
           <div className={`${styles.logoWrapper} lg:text-[25px] `}>
             <a href="/">
               <span className="text-green dark:text-black">REALLY</span>
@@ -22,25 +24,26 @@ function Header() {
             </a>
           </div>
           <nav>
-            <ul className="hidden lg:flex">
+            <ul className="hidden lg:flex gap-[17px] ">
               <li
-                className={`text-orange border-b border-orange dark:text-gray-400 dark:border-none`}
+                className={`relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full
+                 text-orange after:bg-orange dark:text-gray-400 dark:after:bg-gray-400 
+                 after:h-[1px] after:opacity-1 dark:after:opacity-0 dark:hover:after:opacity-100`}
                 onClick={() => changeColorMode("color")}
               >
                 COLOR
               </li>
               <li
-                className="text-lightBlack hover:border-b dark:border-b border-lightBlack"
+                className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full
+                 text-black after:bg-black  
+                 after:h-[1px] after:opacity-0 dark:after:opacity-100"
                 onClick={() => changeColorMode("bw")}
               >
                 B&W
               </li>
             </ul>
           </nav>
-          <a
-            href="#footer"
-            className="btn-primary text-[14px] lg:text-[16px]  px-[1.75rem] py-[.68rem] lg:px-10 lg:py-4 dark:bg-black"
-          >
+          <a href="#footer" className="contact-us">
             {" "}
             Contact us{" "}
           </a>

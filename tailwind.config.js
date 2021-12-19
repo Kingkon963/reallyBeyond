@@ -1,4 +1,4 @@
-const plugin = require("tailwindcss/plugin");
+// const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -22,25 +22,7 @@ module.exports = {
     extend: {
       textColor: ["hover"],
       opacity: ["after"],
-      margin: ["last"],
     },
   },
-  plugins: [
-    plugin(function ({ addComponents, addVariant }) {
-      addComponents({
-        ".btn-primary": {
-          //fontSize: "16px",
-          lineHeight: "21px",
-          fontFamily: "Poppins Semibold",
-          padding: "18px 42px",
-          backgroundColor: "#094367",
-          color: "#fff",
-          display: "inline-block",
-          "&:hover": {
-            backgroundColor: " #ff6d42",
-          },
-        },
-      });
-    }),
-  ],
+  plugins: [],
 };
