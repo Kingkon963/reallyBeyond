@@ -69,7 +69,7 @@ const Home: NextPage = () => {
                       <path
                         d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                         stroke="#B4D7CE"
-                        stroke-width="1.25"
+                        strokeWidth="1.25"
                       />
                     </svg>
                   </span>
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
                       <path
                         d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                         stroke="#B4D7CE"
-                        stroke-width="1.25"
+                        strokeWidth="1.25"
                       />
                     </svg>
                   </span>
@@ -105,7 +105,7 @@ const Home: NextPage = () => {
                       <path
                         d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                         stroke="#B4D7CE"
-                        stroke-width="1.25"
+                        strokeWidth="1.25"
                       />
                     </svg>
                   </span>
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                       <path
                         d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                         stroke="#B4D7CE"
-                        stroke-width="1.25"
+                        strokeWidth="1.25"
                       />
                     </svg>
                   </span>
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -234,7 +234,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -263,7 +263,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -300,7 +300,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -336,7 +336,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -362,7 +362,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -380,7 +380,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -398,7 +398,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -416,7 +416,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -441,7 +441,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -459,7 +459,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -477,7 +477,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -495,7 +495,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -515,7 +515,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -533,7 +533,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -551,7 +551,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>
@@ -569,7 +569,7 @@ const Home: NextPage = () => {
                     <path
                       d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
                       stroke="#B4D7CE"
-                      stroke-width="1.25"
+                      strokeWidth="1.25"
                     />
                   </svg>
                 </span>

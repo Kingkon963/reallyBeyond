@@ -3,7 +3,6 @@ import styles from "@styles/Header.module.scss";
 import ColorSwitch from "./ColorSwitch";
 
 function Header() {
-  ///handleColorModeShift("bw");
   return (
     <header className={`${styles.header}`}>
       <div className={`container`}>

@@ -10,7 +10,8 @@
   "dependencies": {
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-use": "^17.3.1"
   },
   "devDependencies": {
     "@tsconfig/next": "^1.0.1",
