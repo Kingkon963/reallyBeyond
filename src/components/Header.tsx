@@ -22,7 +22,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
               <span className="text-lightGreen dark:text-gray-400">BEYOND</span>
             </a>
           </div>
-          <nav>
+          <nav className="ml-10 mr-auto">
             <ColorSwitch />
           </nav>
           <a
