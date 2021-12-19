@@ -1,3 +1,4 @@
+import ColorSwitch from "@components/ColorSwitch";
 import Header from "@components/Header";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -16,8 +17,11 @@ const Home: NextPage = () => {
       <Header />
 
       <main>
-        <section className="hero">
+        <section className="hero border border-red-500">
           <div className="container">
+            {/* <div>
+              <ColorSwitch />
+            </div> */}
             <div className="flex-group">
               <div className="hero__text">
                 <h5>Working remotely globally</h5>
