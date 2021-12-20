@@ -27,9 +27,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
           </nav>
           <a
             href="#footer"
-            className={`contact-us ${
-              showContactBtn ? "" : "hidden"
-            } animate-popup`}
+            className={`contact-us ${showContactBtn ? "" : "hidden"}`}
           >
             {" "}
             Contact us{" "}
