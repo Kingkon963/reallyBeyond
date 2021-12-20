@@ -5,6 +5,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useIntersection } from "react-use";
+import OfferPopup from "@components/OfferPopup";
 // import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
@@ -36,9 +37,6 @@ const Home: NextPage = () => {
       <main>
         <section className="hero border border-red-500">
           <div className="container">
-            {/* <div>
-              <ColorSwitch />
-            </div> */}
             <div className="flex-group">
               <div className="hero__text">
                 <h5>Working remotely globally</h5>
@@ -74,78 +72,21 @@ const Home: NextPage = () => {
             <div className="hero__offer">
               <h4>What we offer:</h4>
               <ul className="special">
-                <li>
-                  <span>
-                    <svg
-                      width="106"
-                      height="24"
-                      viewBox="0 0 106 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                        stroke="#B4D7CE"
-                        strokeWidth="1.25"
-                      />
-                    </svg>
-                  </span>
-                  Brand Identity
-                </li>
-                <li>
-                  <span>
-                    <svg
-                      width="106"
-                      height="24"
-                      viewBox="0 0 106 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                        stroke="#B4D7CE"
-                        strokeWidth="1.25"
-                      />
-                    </svg>
-                  </span>
-                  UX/UI & Graphic Design
-                </li>
-                <li>
-                  <span>
-                    <svg
-                      width="65"
-                      height="25"
-                      viewBox="0 0 65 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                        stroke="#B4D7CE"
-                        strokeWidth="1.25"
-                      />
-                    </svg>
-                  </span>
-                  Web and Mobile Apps Development
-                </li>
-                <li>
-                  <span>
-                    <svg
-                      width="65"
-                      height="25"
-                      viewBox="0 0 65 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                        stroke="#B4D7CE"
-                        strokeWidth="1.25"
-                      />
-                    </svg>
-                  </span>
-                  Consultancy
-                </li>
+                <OfferPopup title="Brand Identity">
+                  <h1>Hi 🙂</h1>
+                </OfferPopup>
+                <OfferPopup title="UX/UI & Graphic Design">
+                  <h1>Hi 🙂</h1>
+                </OfferPopup>
+                <OfferPopup
+                  title="Web and Mobile Apps Development"
+                  shortCurlySVG={true}
+                >
+                  <h1>Hi 🙂</h1>
+                </OfferPopup>
+                <OfferPopup title="Consultancy" shortCurlySVG={true}>
+                  <h1>Hi 🙂</h1>
+                </OfferPopup>
               </ul>
             </div>
             <h2 className="font-bold">What our customers say:</h2>

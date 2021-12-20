@@ -11,7 +11,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
   // const { x, y } = useWindowScroll();
   //console.log(y);
   return (
-    <header className={`${styles.header}`}>
+    <header className={`${styles.header} z-[100]`}>
       <div className={`container`}>
         <div
           className={`${styles.nav} h-[4.2rem] lg:h-32 border-b dark:border-b dark:border-gray-300`}
