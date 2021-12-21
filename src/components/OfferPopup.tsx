@@ -1,4 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useMeasure } from "react-use";
 import Popup from "./Popup";
 
 interface OfferPopup {
@@ -10,9 +11,14 @@ interface OfferPopup {
 function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
   const [open, setOpen] = useState(false);
   const titleRef = useRef(null);
+  const [ref, { x, y, width, height, top, right, bottom, left }] = useMeasure();
+
+  useEffect(() => {
+    console.log(titleRef);
+  }, []);
 
   return (
-    <div className="relative">
+    <>
       <li
         ref={titleRef}
         className={`flex items-center ${
@@ -84,7 +90,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
       <Popup open={open} close={() => setOpen(false)} callerRef={titleRef}>
         {children}
       </Popup>
-    </div>
+    </>
   );
 }
 
