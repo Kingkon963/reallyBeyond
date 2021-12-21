@@ -40,7 +40,7 @@ const Home: NextPage = () => {
             <div className="flex-group">
               <div className="hero__text">
                 <h5>Working remotely globally</h5>
-                <h1>
+                <h1 className="font-poppinsSemibold">
                   We go really beyond your
                   <br />
                   expectations to make
@@ -73,7 +73,42 @@ const Home: NextPage = () => {
               <h4>What we offer:</h4>
               <ul className="special">
                 <OfferPopup title="Brand Identity">
-                  <h1>Hi 🙂</h1>
+                  <div>
+                    <span className="text-2xl text-orange">
+                      Realization of your ideas and birth of your brand.
+                    </span>
+                    <p className="mt-0 text-lg leading-snug">
+                      Colors, Marks, Fonts, Shapes - All is created during the
+                      brand identity development and a personality of your brand
+                      comes to life -It is a true sense of accomplishment to see
+                      how it looks what you have been imagining from days or
+                      months. We make sure to create the assets that you love to
+                      see.
+                    </p>
+                    <span className="text-2xl text-orange">Process:</span>
+                    <ul className="text-lg  relative list-inside list-disc">
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Color Palette Selection</span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Fonts Selection</span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Sketches</span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Logo Draft</span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Revisions</span>
+                      </li>
+                      <li className="before:hidden  relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">
+                          Polishing and Final Touches
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </OfferPopup>
                 <OfferPopup title="UX/UI & Graphic Design">
                   <h1>Hi 🙂</h1>

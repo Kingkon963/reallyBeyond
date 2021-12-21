@@ -17,6 +17,15 @@ module.exports = {
       screens: {
         "3xl": "1600px",
       },
+      fontFamily: {
+        montserratBold: "Montserrat Bold",
+        pathwayGothicOne: "Pathway Gothic One",
+        openSansRegular: "Open Sans Regular",
+        poppinsSemibold: "Poppins Semibold",
+        poppinsRegular: "Poppins Regular",
+        poppinsLight: "Poppins Light",
+        openSansBold: "Open Sans Bold",
+      },
       keyframes: {
         popup: {
           "0%": { transform: "scale(0.9)" },
