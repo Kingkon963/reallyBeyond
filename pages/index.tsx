@@ -111,13 +111,104 @@ const Home: NextPage = () => {
                   </div>
                 </OfferPopup>
                 <OfferPopup title="UX/UI & Graphic Design">
-                  <h1>Hi 🙂</h1>
+                  <div>
+                    <span className="text-2xl text-orange">
+                      Websites and Mobile Apps tailor-made specially for you
+                    </span>
+                    <p className="mt-0 text-lg leading-snug">
+                      Your customers should enjoy using your website or app.
+                      Keeping that in mind, we prioritize an excellent user
+                      experience over everything else. Complexity of the
+                      requirements doesn’t scare us.
+                    </p>
+                    <span className="text-2xl text-orange">We can design:</span>
+                    <ul className="text-lg  relative list-inside list-disc">
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">
+                          Corporate websites, Blogs, Landing Pages
+                        </span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">
+                          Data-rich dashboards and Admin Panels
+                        </span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">
+                          Online stores and services
+                        </span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">
+                          Multidimensional and multi-users Mobile and Web Apps
+                        </span>
+                      </li>
+                    </ul>
+                    <span className="text-2xl text-orange">Process:</span>
+                    <ul className="text-lg  relative list-inside list-disc">
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Wireframes</span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">Prototype</span>
+                      </li>
+                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="left-4">User interface</span>
+                      </li>
+                    </ul>
+                  </div>
                 </OfferPopup>
                 <OfferPopup
                   title="Web and Mobile Apps Development"
                   shortCurlySVG={true}
                 >
-                  <h1>Hi 🙂</h1>
+                  <div>
+                    <span className="text-2xl text-orange">
+                      Fast, Secure and Optimized Websites, Mobile Apps and
+                      solutions of all complexities
+                    </span>
+                    <p className="mt-0 text-lg leading-snug">
+                      Skilled developers and Software Engineers will take care
+                      of your needs and make everything like a breeze for you.
+                      We make sure you just sit back and relax while we develop
+                      your dream app or website. A very small one page website
+                      to an enterprise level solution - We can do it.
+                    </p>
+                    <span className="text-2xl text-orange">Process:</span>
+                    <ul className="text-lg mt-4 ml-5 list-outside list-disc">
+                      <li className="before:hidden m-0 p-0 h-fit translate-x-5 lg:translate-x-0">
+                        <span className="static whitespace-normal">
+                          UX/UI Design: An imagery representation and wireframes
+                          of your complete system with all the colors, icons,
+                          fonts...
+                        </span>
+                      </li>
+                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="static whitespace-normal ">
+                          Front-End Development: An interactive working
+                          prototype
+                        </span>
+                      </li>
+                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="static whitespace-normal">
+                          Backend-Development: Implement of the main logic of
+                          the system and integration with Front-End
+                        </span>
+                      </li>
+                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="static whitespace-normal">
+                          Testing: Each and every inch of your product will be
+                          tested by Pros.
+                        </span>
+                      </li>
+                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                        <span className="static whitespace-normal">
+                          Deployment and Maintenance: No headache for you, we
+                          will deploy and maintain
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </OfferPopup>
                 <OfferPopup title="Consultancy" shortCurlySVG={true}>
                   <h1>Hi 🙂</h1>

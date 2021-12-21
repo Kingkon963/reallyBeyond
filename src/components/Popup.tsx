@@ -30,7 +30,7 @@ function Popup({ open, close, children, callerRef }: PopupProps) {
         </>
       </Portal>
       <div
-        className="absolute mt-2 bg-white  lg:w-[40rem] px-7 pb-10 shadow z-[1000]"
+        className="absolute mt-2 bg-white  lg:w-[44rem] px-7 pb-10 shadow z-[1000]"
         ref={contentRef}
       >
         <div className="flex justify-end">
