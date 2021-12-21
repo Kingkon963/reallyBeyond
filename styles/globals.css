@@ -14,30 +14,37 @@ body {
 @font-face {
   font-family: "Montserrat Bold";
   src: url("/fonts/Montserrat/Montserrat-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Pathway Gothic One";
   src: url("/fonts/PathwayGothicOne/PathwayGothicOne-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans Regular";
   src: url("/fonts/OpenSans/OpenSans-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans Bold";
   src: url("/fonts/OpenSans/OpenSans-Bold.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Poppins Light";
   src: url("/fonts/Poppins/Poppins-Light.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Poppins Regular";
   src: url("/fonts/Poppins/Poppins-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Poppins Semibold";
   src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-display: swap;
 }
 
 * {
