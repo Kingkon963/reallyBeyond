@@ -11,7 +11,7 @@ function Layout({ children, showHeaderContactBtn }: LayoutInterface) {
   return (
     <div>
       <Header showContactBtn={showHeaderContactBtn} />
-      {children}
+      <main>{children}</main>
       <Footer />
     </div>
   );

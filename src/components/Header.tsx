@@ -76,13 +76,13 @@ function Header({ showContactBtn = false }: HeaderInterface) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   return (
     <header
-      className={`${styles.header} z-[100] transition-none ${
+      className={`${styles.header} sticky top-0 z-[100] transition-none ${
         menuOpen ? "h-screen bg-blue" : ""
       }`}
     >
       <div className={`container`}>
         <div
-          className={`${styles.nav} h-[4.2rem] lg:h-32 border-b dark:border-b ${
+          className={`${styles.nav} h-[4.2rem] lg:h-32  dark:border-b ${
             menuOpen ? "border-b-0" : ""
           } dark:border-gray-300`}
         >
