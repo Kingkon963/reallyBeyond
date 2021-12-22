@@ -76,7 +76,9 @@ function Header({ showContactBtn = false }: HeaderInterface) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   return (
     <header
-      className={`${styles.header} sticky top-0 z-[100] transition-none ${
+      className={`${
+        styles.header
+      } sticky top-0 z-[100] shadow-md transition-none ${
         menuOpen ? "h-screen bg-blue" : ""
       }`}
     >
