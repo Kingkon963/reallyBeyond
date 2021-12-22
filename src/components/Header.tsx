@@ -108,7 +108,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             </a>
             <a
               href="#"
-              className={` bg-green text-white font-poppinsRegular flex justify-center items-center px-12 py-5 q`}
+              className={` bg-green text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
             >
               I have an Idea!
             </a>

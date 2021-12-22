@@ -6,6 +6,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useIntersection } from "react-use";
 import OfferPopup from "@components/OfferPopup";
+import Layout from "@components/Layout";
 // import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
@@ -34,672 +35,644 @@ const Home: NextPage = () => {
 
       <Header showContactBtn={showHeaderBtn} />
 
-      <main>
-        <section className="hero border border-red-500">
-          <div className="container">
-            <div className="flex-group">
-              <div className="hero__text">
-                <h5>Working remotely globally</h5>
-                <h1 className="font-poppinsSemibold">
-                  We go really beyond your
-                  <br />
-                  expectations to make
-                  <br />
-                  you happy.
-                </h1>
-                <p>
-                  By keeping you involved all along the process. A process that
-                  is designed to bring your ideas to life smoothly and quickly.
-                </p>
-                <a href="#footer" className="contact-us" ref={heroContactBtn}>
-                  {" "}
-                  Contact us{" "}
-                </a>
-              </div>
-              <div className="hero__vectors">
-                <div className="circles">
-                  <div className="circles__first"></div>
-                  <div className="circles__second"></div>
-                  <div className="circles__third"></div>
+      <Layout>
+        <main>
+          <section className="hero border border-red-500">
+            <div className="container">
+              <div className="flex-group">
+                <div className="hero__text">
+                  <h5>Working remotely globally</h5>
+                  <h1 className="font-poppinsSemibold">
+                    We go really beyond your
+                    <br />
+                    expectations to make
+                    <br />
+                    you happy.
+                  </h1>
+                  <p>
+                    By keeping you involved all along the process. A process
+                    that is designed to bring your ideas to life smoothly and
+                    quickly.
+                  </p>
+                  <a href="#footer" className="contact-us" ref={heroContactBtn}>
+                    {" "}
+                    Contact us{" "}
+                  </a>
                 </div>
-                <div className="blocks">
-                  <div className="blocks__first blocks__block"></div>
-                  <div className="blocks__second blocks__block"></div>
-                  <div className="blocks__third blocks__block"></div>
+                <div className="hero__vectors">
+                  <div className="circles">
+                    <div className="circles__first"></div>
+                    <div className="circles__second"></div>
+                    <div className="circles__third"></div>
+                  </div>
+                  <div className="blocks">
+                    <div className="blocks__first blocks__block"></div>
+                    <div className="blocks__second blocks__block"></div>
+                    <div className="blocks__third blocks__block"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="hero__offer">
+                <h4>What we offer:</h4>
+                <ul className="special">
+                  <OfferPopup title="Brand Identity">
+                    <div>
+                      <span className="text-2xl text-orange">
+                        Realization of your ideas and birth of your brand.
+                      </span>
+                      <p className="mt-0 text-lg leading-snug">
+                        Colors, Marks, Fonts, Shapes - All is created during the
+                        brand identity development and a personality of your
+                        brand comes to life -It is a true sense of
+                        accomplishment to see how it looks what you have been
+                        imagining from days or months. We make sure to create
+                        the assets that you love to see.
+                      </p>
+                      <span className="text-2xl text-orange">Process:</span>
+                      <ul className="text-lg  relative list-inside list-disc">
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Color Palette Selection
+                          </span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Fonts Selection</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Sketches</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Logo Draft</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Revisions</span>
+                        </li>
+                        <li className="before:hidden  relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Polishing and Final Touches
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </OfferPopup>
+                  <OfferPopup title="UX/UI & Graphic Design">
+                    <div>
+                      <span className="text-2xl text-orange">
+                        Websites and Mobile Apps tailor-made specially for you
+                      </span>
+                      <p className="mt-0 text-lg leading-snug">
+                        Your customers should enjoy using your website or app.
+                        Keeping that in mind, we prioritize an excellent user
+                        experience over everything else. Complexity of the
+                        requirements doesn’t scare us.
+                      </p>
+                      <span className="text-2xl text-orange">
+                        We can design:
+                      </span>
+                      <ul className="text-lg  relative list-inside list-disc">
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Corporate websites, Blogs, Landing Pages
+                          </span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Data-rich dashboards and Admin Panels
+                          </span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Online stores and services
+                          </span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Multidimensional and multi-users Mobile and Web Apps
+                          </span>
+                        </li>
+                      </ul>
+                      <span className="text-2xl text-orange">Process:</span>
+                      <ul className="text-lg  relative list-inside list-disc">
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Wireframes</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Prototype</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">User interface</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </OfferPopup>
+                  <OfferPopup
+                    title="Web and Mobile Apps Development"
+                    shortCurlySVG={true}
+                  >
+                    <div>
+                      <span className="text-2xl text-orange">
+                        Fast, Secure and Optimized Websites, Mobile Apps and
+                        solutions of all complexities
+                      </span>
+                      <p className="mt-0 text-lg leading-snug">
+                        Skilled developers and Software Engineers will take care
+                        of your needs and make everything like a breeze for you.
+                        We make sure you just sit back and relax while we
+                        develop your dream app or website. A very small one page
+                        website to an enterprise level solution - We can do it.
+                      </p>
+                      <span className="text-2xl text-orange">Process:</span>
+                      <ul className="text-lg mt-4 ml-5 list-outside list-disc">
+                        <li className="before:hidden m-0 p-0 h-fit translate-x-5 lg:translate-x-0">
+                          <span className="static whitespace-normal">
+                            UX/UI Design: An imagery representation and
+                            wireframes of your complete system with all the
+                            colors, icons, fonts...
+                          </span>
+                        </li>
+                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="static whitespace-normal ">
+                            Front-End Development: An interactive working
+                            prototype
+                          </span>
+                        </li>
+                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="static whitespace-normal">
+                            Backend-Development: Implement of the main logic of
+                            the system and integration with Front-End
+                          </span>
+                        </li>
+                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="static whitespace-normal">
+                            Testing: Each and every inch of your product will be
+                            tested by Pros.
+                          </span>
+                        </li>
+                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="static whitespace-normal">
+                            Deployment and Maintenance: No headache for you, we
+                            will deploy and maintain
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </OfferPopup>
+                  <OfferPopup title="Consultancy" shortCurlySVG={true}>
+                    <h1>Hi 🙂</h1>
+                  </OfferPopup>
+                </ul>
+              </div>
+              <h2 className="font-bold">What our customers say:</h2>
+              <div className="testimonials-grid">
+                <div className="testimonials-grid__item orange">
+                  <span className="gothic"> “ </span>
+                  <p className="testimonials-grid__item__text">
+                    Demonstrated incredible determination and technical
+                    expertise to get our complex website up and running in the
+                    shortest time possible. Quality of work is excellent. No
+                    concerns from our end as a client.
+                  </p>
+                  <div className="m-top-auto">
+                    <p className="testimonials-grid__item__author">
+                      Dr. John Wong
+                    </p>
+                    <p className="testimonials-grid__item__location">
+                      FluidBiotech - Canada
+                    </p>
+                  </div>
+                  <div className="circles">
+                    <div className="circles__circle circles__first"></div>
+                    <div className="circles__circle circles__second"></div>
+                    <div className="circles__circle circles__third"></div>
+                  </div>
+                  <span className="bolt">
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className="testimonials-grid__item">
+                  <span className="gothic"> “ </span>
+                  <p className="testimonials-grid__item__text">
+                    Shoaib and his company did a great job with helping us
+                    create, design and execute two web sites. His creative
+                    abilities combined with his technical skills made an awesome
+                    combination for the work requirements. He was professional
+                    to deal with in all aspects; the business discussions,
+                    reliability, delivery on time, meeting attendance, and he
+                    communicated with us consistently. A Plus-5 Star rating from
+                    me!
+                  </p>
+                  <div className="m-top-auto">
+                    <p className="testimonials-grid__item__author">
+                      Peter L. Carfagno
+                    </p>
+                    <p className="testimonials-grid__item__location">
+                      Premier Consulting - USA
+                    </p>
+                  </div>
+                  <span className="bolt">
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className="testimonials-grid__item greenish">
+                  <span className="gothic"> “ </span>
+                  <p className="testimonials-grid__item__text">
+                    Very prompt and attentive to details, Honest and Dependable.
+                  </p>
+                  <div className="m-top-auto">
+                    <p className="testimonials-grid__item__author">Luke Hong</p>
+                    <p className="testimonials-grid__item__location">
+                      iChild Company. Ltd- Singapore
+                    </p>
+                  </div>
+                  <div className="blocks-wrapper">
+                    <div className="blocks">
+                      <div className="blocks__first blocks__block"></div>
+                      <div className="blocks__second blocks__block"></div>
+                      <div className="blocks__third blocks__block"></div>
+                    </div>
+                  </div>
+                  <span className="bolt">
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className="testimonials-grid__item">
+                  <span className="gothic"> “ </span>
+                  <p className="testimonials-grid__item__text">
+                    Nailed absolutely every element of the work. Understood the
+                    brief and the quality of the work was fantastic. Would
+                    highly recommend!
+                  </p>
+                  <div className="m-top-auto">
+                    <p className="testimonials-grid__item__author">Adil Ali</p>
+                    <p className="testimonials-grid__item__location">
+                      Sincere Digital - UK
+                    </p>
+                  </div>
+                  <span className="bolt">
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className="testimonials-grid__item greenish">
+                  <span className="gothic"> “ </span>
+                  <p className="testimonials-grid__item__text">
+                    Great work. Built our entire site on React. Created custom
+                    graphics that are amazing. Communication was smooth and
+                    easy.
+                    <br />
+                    Highly recommended for quality work. 10/10.
+                  </p>
+                  <div className="m-top-auto">
+                    <p className="testimonials-grid__item__author">Josh M.</p>
+                    <p className="testimonials-grid__item__location">
+                      Lichen - Canada
+                    </p>
+                  </div>
+                  <div className="blocks-wrapper">
+                    <div className="blocks">
+                      <div className="blocks__first blocks__block"></div>
+                      <div className="blocks__second blocks__block"></div>
+                      <div className="blocks__third blocks__block"></div>
+                    </div>
+                  </div>
+                  <span className="bolt">
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className="testimonials-grid__item orange">
+                  <span className="gothic"> “ </span>
+                  <p className="testimonials-grid__item__text">
+                    Did a terrific job developing a website for our holiday let
+                    apartment. Very creative, responsive and a pleasure to deal
+                    with.
+                  </p>
+                  <div className="m-top-auto">
+                    <p className="testimonials-grid__item__author">
+                      Ellie Schwab
+                    </p>
+                    <p className="testimonials-grid__item__location">
+                      Mission-Beach House Apartment - Australia
+                    </p>
+                  </div>
+                  <div className="circles">
+                    <div className="circles__circle circles__first"></div>
+                    <div className="circles__circle circles__second"></div>
+                    <div className="circles__circle circles__third"></div>
+                  </div>
+                  <span className="bolt">
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
                 </div>
               </div>
             </div>
-            <div className="hero__offer">
-              <h4>What we offer:</h4>
+          </section>
+          <section className="two-cols">
+            <div className="left">
+              <h2 className="font-bold">
+                Our <span>Character:</span>
+              </h2>
               <ul className="special">
-                <OfferPopup title="Brand Identity">
-                  <div>
-                    <span className="text-2xl text-orange">
-                      Realization of your ideas and birth of your brand.
-                    </span>
-                    <p className="mt-0 text-lg leading-snug">
-                      Colors, Marks, Fonts, Shapes - All is created during the
-                      brand identity development and a personality of your brand
-                      comes to life -It is a true sense of accomplishment to see
-                      how it looks what you have been imagining from days or
-                      months. We make sure to create the assets that you love to
-                      see.
-                    </p>
-                    <span className="text-2xl text-orange">Process:</span>
-                    <ul className="text-lg  relative list-inside list-disc">
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Color Palette Selection</span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Fonts Selection</span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Sketches</span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Logo Draft</span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Revisions</span>
-                      </li>
-                      <li className="before:hidden  relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">
-                          Polishing and Final Touches
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </OfferPopup>
-                <OfferPopup title="UX/UI & Graphic Design">
-                  <div>
-                    <span className="text-2xl text-orange">
-                      Websites and Mobile Apps tailor-made specially for you
-                    </span>
-                    <p className="mt-0 text-lg leading-snug">
-                      Your customers should enjoy using your website or app.
-                      Keeping that in mind, we prioritize an excellent user
-                      experience over everything else. Complexity of the
-                      requirements doesn’t scare us.
-                    </p>
-                    <span className="text-2xl text-orange">We can design:</span>
-                    <ul className="text-lg  relative list-inside list-disc">
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">
-                          Corporate websites, Blogs, Landing Pages
-                        </span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">
-                          Data-rich dashboards and Admin Panels
-                        </span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">
-                          Online stores and services
-                        </span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">
-                          Multidimensional and multi-users Mobile and Web Apps
-                        </span>
-                      </li>
-                    </ul>
-                    <span className="text-2xl text-orange">Process:</span>
-                    <ul className="text-lg  relative list-inside list-disc">
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Wireframes</span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">Prototype</span>
-                      </li>
-                      <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="left-4">User interface</span>
-                      </li>
-                    </ul>
-                  </div>
-                </OfferPopup>
-                <OfferPopup
-                  title="Web and Mobile Apps Development"
-                  shortCurlySVG={true}
-                >
-                  <div>
-                    <span className="text-2xl text-orange">
-                      Fast, Secure and Optimized Websites, Mobile Apps and
-                      solutions of all complexities
-                    </span>
-                    <p className="mt-0 text-lg leading-snug">
-                      Skilled developers and Software Engineers will take care
-                      of your needs and make everything like a breeze for you.
-                      We make sure you just sit back and relax while we develop
-                      your dream app or website. A very small one page website
-                      to an enterprise level solution - We can do it.
-                    </p>
-                    <span className="text-2xl text-orange">Process:</span>
-                    <ul className="text-lg mt-4 ml-5 list-outside list-disc">
-                      <li className="before:hidden m-0 p-0 h-fit translate-x-5 lg:translate-x-0">
-                        <span className="static whitespace-normal">
-                          UX/UI Design: An imagery representation and wireframes
-                          of your complete system with all the colors, icons,
-                          fonts...
-                        </span>
-                      </li>
-                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="static whitespace-normal ">
-                          Front-End Development: An interactive working
-                          prototype
-                        </span>
-                      </li>
-                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="static whitespace-normal">
-                          Backend-Development: Implement of the main logic of
-                          the system and integration with Front-End
-                        </span>
-                      </li>
-                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="static whitespace-normal">
-                          Testing: Each and every inch of your product will be
-                          tested by Pros.
-                        </span>
-                      </li>
-                      <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                        <span className="static whitespace-normal">
-                          Deployment and Maintenance: No headache for you, we
-                          will deploy and maintain
-                        </span>
-                      </li>
-                    </ul>
-                  </div>
-                </OfferPopup>
-                <OfferPopup title="Consultancy" shortCurlySVG={true}>
-                  <h1>Hi 🙂</h1>
-                </OfferPopup>
+                <li>
+                  <span>
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Creative
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Technical
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Business Oriented
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Responsible
+                </li>
               </ul>
             </div>
-            <h2 className="font-bold">What our customers say:</h2>
-            <div className="testimonials-grid">
-              <div className="testimonials-grid__item orange">
-                <span className="gothic"> “ </span>
-                <p className="testimonials-grid__item__text">
-                  Demonstrated incredible determination and technical expertise
-                  to get our complex website up and running in the shortest time
-                  possible. Quality of work is excellent. No concerns from our
-                  end as a client.
-                </p>
-                <div className="m-top-auto">
-                  <p className="testimonials-grid__item__author">
-                    Dr. John Wong
-                  </p>
-                  <p className="testimonials-grid__item__location">
-                    FluidBiotech - Canada
-                  </p>
-                </div>
-                <div className="circles">
-                  <div className="circles__circle circles__first"></div>
-                  <div className="circles__circle circles__second"></div>
-                  <div className="circles__circle circles__third"></div>
-                </div>
-                <span className="bolt">
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className="testimonials-grid__item">
-                <span className="gothic"> “ </span>
-                <p className="testimonials-grid__item__text">
-                  Shoaib and his company did a great job with helping us create,
-                  design and execute two web sites. His creative abilities
-                  combined with his technical skills made an awesome combination
-                  for the work requirements. He was professional to deal with in
-                  all aspects; the business discussions, reliability, delivery
-                  on time, meeting attendance, and he communicated with us
-                  consistently. A Plus-5 Star rating from me!
-                </p>
-                <div className="m-top-auto">
-                  <p className="testimonials-grid__item__author">
-                    Peter L. Carfagno
-                  </p>
-                  <p className="testimonials-grid__item__location">
-                    Premier Consulting - USA
-                  </p>
-                </div>
-                <span className="bolt">
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className="testimonials-grid__item greenish">
-                <span className="gothic"> “ </span>
-                <p className="testimonials-grid__item__text">
-                  Very prompt and attentive to details, Honest and Dependable.
-                </p>
-                <div className="m-top-auto">
-                  <p className="testimonials-grid__item__author">Luke Hong</p>
-                  <p className="testimonials-grid__item__location">
-                    iChild Company. Ltd- Singapore
-                  </p>
-                </div>
-                <div className="blocks-wrapper">
-                  <div className="blocks">
-                    <div className="blocks__first blocks__block"></div>
-                    <div className="blocks__second blocks__block"></div>
-                    <div className="blocks__third blocks__block"></div>
-                  </div>
-                </div>
-                <span className="bolt">
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className="testimonials-grid__item">
-                <span className="gothic"> “ </span>
-                <p className="testimonials-grid__item__text">
-                  Nailed absolutely every element of the work. Understood the
-                  brief and the quality of the work was fantastic. Would highly
-                  recommend!
-                </p>
-                <div className="m-top-auto">
-                  <p className="testimonials-grid__item__author">Adil Ali</p>
-                  <p className="testimonials-grid__item__location">
-                    Sincere Digital - UK
-                  </p>
-                </div>
-                <span className="bolt">
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className="testimonials-grid__item greenish">
-                <span className="gothic"> “ </span>
-                <p className="testimonials-grid__item__text">
-                  Great work. Built our entire site on React. Created custom
-                  graphics that are amazing. Communication was smooth and easy.
-                  <br />
-                  Highly recommended for quality work. 10/10.
-                </p>
-                <div className="m-top-auto">
-                  <p className="testimonials-grid__item__author">Josh M.</p>
-                  <p className="testimonials-grid__item__location">
-                    Lichen - Canada
-                  </p>
-                </div>
-                <div className="blocks-wrapper">
-                  <div className="blocks">
-                    <div className="blocks__first blocks__block"></div>
-                    <div className="blocks__second blocks__block"></div>
-                    <div className="blocks__third blocks__block"></div>
-                  </div>
-                </div>
-                <span className="bolt">
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div className="testimonials-grid__item orange">
-                <span className="gothic"> “ </span>
-                <p className="testimonials-grid__item__text">
-                  Did a terrific job developing a website for our holiday let
-                  apartment. Very creative, responsive and a pleasure to deal
-                  with.
-                </p>
-                <div className="m-top-auto">
-                  <p className="testimonials-grid__item__author">
-                    Ellie Schwab
-                  </p>
-                  <p className="testimonials-grid__item__location">
-                    Mission-Beach House Apartment - Australia
-                  </p>
-                </div>
-                <div className="circles">
-                  <div className="circles__circle circles__first"></div>
-                  <div className="circles__circle circles__second"></div>
-                  <div className="circles__circle circles__third"></div>
-                </div>
-                <span className="bolt">
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-              </div>
+            <div className="right">
+              <h2 className="font-bold">
+                <span>No Compromise</span>on:
+              </h2>
+              <ul className="special blue">
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Excellent Customer Service
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Usefulness of the product
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  High Quality
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Caring mindset for your business
+                </li>
+              </ul>
+              <ul className="special blue-responsive">
+                <li>
+                  <span>
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Excellent Customer Service
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="106"
+                      height="24"
+                      viewBox="0 0 106 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Usefulness of the product
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  High Quality
+                </li>
+                <li>
+                  <span>
+                    <svg
+                      width="65"
+                      height="25"
+                      viewBox="0 0 65 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
+                        stroke="#B4D7CE"
+                        strokeWidth="1.25"
+                      />
+                    </svg>
+                  </span>
+                  Caring mindset for your business
+                </li>
+              </ul>
             </div>
-          </div>
-        </section>
-        <section className="two-cols">
-          <div className="left">
-            <h2 className="font-bold">
-              Our <span>Character:</span>
-            </h2>
-            <ul className="special">
-              <li>
-                <span>
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Creative
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Technical
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Business Oriented
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Responsible
-              </li>
-            </ul>
-          </div>
-          <div className="right">
-            <h2 className="font-bold">
-              <span>No Compromise</span>on:
-            </h2>
-            <ul className="special blue">
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Excellent Customer Service
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Usefulness of the product
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                High Quality
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Caring mindset for your business
-              </li>
-            </ul>
-            <ul className="special blue-responsive">
-              <li>
-                <span>
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Excellent Customer Service
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="106"
-                    height="24"
-                    viewBox="0 0 106 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 1.5L15.4201 22.75L28.8788 1.5L42.3376 22.75L54.3543 1.5L68.2937 22.75L79.3491 1.5L93.7692 22.75L104.825 1.5"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Usefulness of the product
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                High Quality
-              </li>
-              <li>
-                <span>
-                  <svg
-                    width="65"
-                    height="25"
-                    viewBox="0 0 65 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.33789 23.25L13.3546 2L27.294 23.25L38.3494 2L52.7695 23.25L63.8249 2"
-                      stroke="#B4D7CE"
-                      strokeWidth="1.25"
-                    />
-                  </svg>
-                </span>
-                Caring mindset for your business
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
-
-      <footer id="footer" className="homeFooter">
-        <div className="inner">
-          <div className="logo">
-            <span>REALLY</span>
-            <span>BEYOND </span>
-          </div>
-          <h2 className="font-bold">Get in Touch</h2>
-          <div className="circles-wrapper">
-            <div className="circles medium">
-              <div className="circles__circle circles__first"></div>
-              <div className="circles__circle circles__second"></div>
-              <div className="circles__circle circles__third"></div>
-            </div>
-          </div>
-          <div className="cards">
-            <div>
-              <h6>EMAIL</h6>
-              <p>
-                <a href="mailto:info@reallybeyond.com">info@reallybeyond.com</a>
-              </p>
-            </div>
-            <div>
-              <h6>Website</h6>
-              <p>
-                <a href="http://www.reallybeyond.com/">www.reallybeyond.com</a>
-              </p>
-            </div>
-            <div>
-              <h6>WhatsApp/Telegram</h6>
-              <p>
-                <a href="tel:+923484660336">+923484660336</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+          </section>
+        </main>
+      </Layout>
     </div>
   );
 };
