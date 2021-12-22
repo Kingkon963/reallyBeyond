@@ -33,9 +33,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header showContactBtn={showHeaderBtn} />
-
-      <Layout>
+      <Layout showHeaderContactBtn={showHeaderBtn}>
         <main>
           <section className="hero border border-red-500">
             <div className="container">
