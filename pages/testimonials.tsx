@@ -17,7 +17,7 @@ const Testimonials: NextPage = () => {
           <h1 className="text-green text-7xl font-poppinsSemibold pt-16 pb-5">
             Testimonials
           </h1>
-          <TestimonialGrid />
+          <TestimonialGrid variant="simple" />
         </div>
       </Layout>
     </>

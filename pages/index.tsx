@@ -218,7 +218,7 @@ const Home: NextPage = () => {
                 </ul>
               </div>
               <h2 className="font-bold">What our customers say:</h2>
-              <TestimonialGrid />
+              <TestimonialGrid variant="decorated" />
             </div>
           </section>
           <section className="two-cols">
