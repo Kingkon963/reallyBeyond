@@ -34,7 +34,7 @@ function ColorSwitch() {
   }, []);
 
   return (
-    <div ref={elRef}>
+    <div ref={elRef} className="z-[1000]">
       <ul className="flex gap-[17px] absolute right-0 bottom-[-20px] translate-y-full mr-4 lg:relative lg:bottom-auto lg:translate-y-0 lg:mr-6">
         <li
           className={`relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full

@@ -14,7 +14,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
       className={`${
         styles.header
       } sticky top-0 z-[100] shadow-md transition-none ${
-        menuOpen ? "h-screen bg-blue" : ""
+        menuOpen ? "h-screen bg-blue overflow-y-scroll lg:overflow-y-clip" : ""
       }`}
     >
       <div className={`container`}>
@@ -34,7 +34,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
               menuOpen ? "text-white" : ""
             }`}
           >
-            <ColorSwitch />
+            {!menuOpen && <ColorSwitch />}
           </nav>
           <div className={`hidden lg:flex gap-5 ${menuOpen ? "hidden" : ""}`}>
             {!menuOpen && (
