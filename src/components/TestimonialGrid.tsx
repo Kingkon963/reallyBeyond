@@ -12,6 +12,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
         variant={variant}
         author={{ name: "Dr. John Wong", info: "FluidBiotech - Canada" }}
         designElement="circles"
+        borderColor="orange"
       >
         Demonstrated incredible determination and technical expertise to get our
         complex website up and running in the shortest time possible. Quality of
@@ -32,11 +33,12 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
         variant={variant}
         author={{ name: "Luke Hong", info: "iChild Company. Ltd- Singapore" }}
         designElement="blocks"
+        borderColor="greenish"
       >
         Very prompt and attentive to details, Honest and Dependable.
       </Testimonial>
 
-      <hr className="col-span-full border mt-5 bg-gray-600 mx-5" />
+      <hr className="col-span-full border mt-10 bg-gray-600 mx-5" />
 
       <Testimonial
         variant={variant}
@@ -49,6 +51,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
         variant={variant}
         author={{ name: "Josh M.", info: "Lichen - Canada" }}
         designElement="blocks"
+        borderColor="greenish"
       >
         <>
           Great work. Built our entire site on React. Created custom graphics
@@ -64,6 +67,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
           info: "Mission-Beach House Apartment - Australia",
         }}
         designElement="circles"
+        borderColor="orange"
       >
         <>
           Did a terrific job developing a website for our holiday let apartment.

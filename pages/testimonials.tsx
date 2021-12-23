@@ -3,10 +3,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "@components/Layout";
 import TestimonialGrid from "@components/TestimonialGrid";
+import InfinityHeader from "@components/InfinityHeader";
 
 const Testimonials: NextPage = () => {
   return (
-    <>
+    <div className="overflow-x-clip">
       <Head>
         <title>Really Beyond | Testimonials</title>
         <meta name="description" content="Testimonials" />
@@ -14,13 +15,11 @@ const Testimonials: NextPage = () => {
       </Head>
       <Layout>
         <div className="container pb-24">
-          <h1 className="text-green text-7xl font-poppinsSemibold pt-16 pb-5">
-            Testimonials
-          </h1>
+          <InfinityHeader>Testimonials</InfinityHeader>
           <TestimonialGrid variant="simple" />
         </div>
       </Layout>
-    </>
+    </div>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 
 interface Testimonial {
   variant?: "simple" | "decorated";
+  borderColor?: "orange" | "greenish";
   children: String | JSX.Element;
   designElement?: "circles" | "blocks";
   author: {
@@ -12,6 +13,7 @@ interface Testimonial {
 
 function Testimonial({
   variant,
+  borderColor,
   author,
   designElement,
   children,
@@ -19,7 +21,9 @@ function Testimonial({
   const isSimple = variant === "simple";
   return (
     <div
-      className={`testimonials-grid__item orange ${isSimple ? "border-0" : ""}`}
+      className={`testimonials-grid__item ${borderColor ? borderColor : ""} ${
+        isSimple ? "border-0" : ""
+      }`}
     >
       <span className={`gothic ${isSimple ? "text-green" : ""}`}> “ </span>
       <p className="testimonials-grid__item__text">{children}</p>
