@@ -1,72 +1,7 @@
 import * as React from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import styles from "@styles/Header.module.scss";
 import ColorSwitch from "./ColorSwitch";
-
-function Menu() {
-  const [active, setActive] = React.useState("");
-  const router = useRouter();
-
-  const menuItems = [
-    {
-      title: "About Really Beyond",
-      url: "#",
-    },
-    {
-      title: "Services",
-      url: "#",
-    },
-    {
-      title: "Our Works",
-      url: "#",
-    },
-    {
-      title: "Monthly Pricing Plans",
-      url: "#",
-    },
-    {
-      title: "Testimonials",
-      url: "testimonials",
-    },
-    {
-      title: "Blog",
-      url: "#",
-    },
-  ];
-
-  const setActiveLink = () => {
-    menuItems.forEach((item) => {
-      if (item.url === router.pathname) setActive(item.title);
-    });
-  };
-
-  React.useEffect(() => setActiveLink(), []);
-
-  return (
-    <div className="bg-blue text-white h-full  flex justify-center pt-32">
-      <div className="container">
-        <div className="grid grid-cols-2 ">
-          <div className="flex flex-col gap-10 border-r">
-            {menuItems.map((item) => {
-              return (
-                <span
-                  className={`font-poppinsRegular text-4xl hover:text-orange transition-none ${
-                    active === item.title ? "text-orange" : ""
-                  }`}
-                  onClick={() => setActiveLink()}
-                >
-                  <Link href={item.url}>{item.title}</Link>
-                </span>
-              );
-            })}
-          </div>
-          <div>Right</div>
-        </div>
-      </div>
-    </div>
-  );
-}
+import Menu from "./Menu";
 
 interface HeaderInterface {
   showContactBtn?: boolean;
@@ -102,12 +37,14 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             <ColorSwitch />
           </nav>
           <div className={`hidden lg:flex gap-5 ${menuOpen ? "hidden" : ""}`}>
-            <a
-              href="#footer"
-              className={`contact-us ${showContactBtn ? "" : "hidden"}`}
-            >
-              Contact us
-            </a>
+            {!menuOpen && (
+              <a
+                href="#footer"
+                className={`contact-us ${showContactBtn ? "" : "hidden"}`}
+              >
+                Contact us
+              </a>
+            )}
             <a
               href="#"
               className={` bg-green text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
