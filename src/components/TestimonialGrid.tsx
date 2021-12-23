@@ -7,7 +7,7 @@ interface TestimonialGrid {
 
 function TestimonialGrid({ variant }: TestimonialGrid) {
   return (
-    <div className="testimonials-grid">
+    <div className="testimonials-grid grid-cols-1 lg:grid-cols-3">
       <Testimonial
         variant={variant}
         author={{ name: "Dr. John Wong", info: "FluidBiotech - Canada" }}
