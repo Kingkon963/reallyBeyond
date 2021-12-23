@@ -101,7 +101,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
           >
             <ColorSwitch />
           </nav>
-          <div className={`flex gap-5 ${menuOpen ? "hidden" : ""}`}>
+          <div className={`hidden lg:flex gap-5 ${menuOpen ? "hidden" : ""}`}>
             <a
               href="#footer"
               className={`contact-us ${showContactBtn ? "" : "hidden"}`}
