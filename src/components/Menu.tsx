@@ -54,9 +54,9 @@ function Menu() {
   React.useEffect(() => setActiveLink(), []);
 
   return (
-    <div className="bg-blue text-white h-full  flex justify-center pt-32">
+    <div className="bg-blue text-white h-full  flex justify-center pt-32 border overflow-y-scroll lg:overflow-y-clip">
       <div className="container">
-        <div className="grid lg:grid-cols-2 ">
+        <div className="grid lg:grid-cols-2">
           <div className="flex flex-col gap-10 lg:border-r">
             {menuItems.map((item) => {
               return (
@@ -71,8 +71,8 @@ function Menu() {
               );
             })}
           </div>
-          <div className="flex flex-col gap-10 justify-center items-center px-24">
-            <h1 className="font-poppinsLight text-orange text-7xl w-full">
+          <div className="flex flex-col gap-10 justify-center items-center pt-10 lg:pt-0 border-t mt-10 lg:mt-0 lg:border-t-0 lg:px-24">
+            <h1 className="font-poppinsLight text-orange text-5xl lg:text-7xl w-full">
               Get in Touch
             </h1>
             <div className="flex flex-col gap-10 w-full">
