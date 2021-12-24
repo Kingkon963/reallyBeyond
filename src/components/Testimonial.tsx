@@ -4,7 +4,7 @@ interface Testimonial {
   variant?: "simple" | "decorated";
   borderColor?: "orange" | "greenish";
   children: String | JSX.Element;
-  designElement?: "circles" | "blocks";
+  designElement?: "circles" | "blocks" | "blocksSmall";
   author: {
     name: String;
     info: String;
@@ -21,7 +21,7 @@ function Testimonial({
   const isSimple = variant === "simple";
   return (
     <div
-      className={`testimonials-grid__item ${borderColor ? borderColor : ""} ${
+      className={`testimonials-grid__item  ${borderColor ? borderColor : ""} ${
         isSimple
           ? "border-0 border-b lg:border-b-0 last:border-b-0 border-gray-300"
           : ""
@@ -53,6 +53,15 @@ function Testimonial({
                 <div className="blocks__first blocks__block"></div>
                 <div className="blocks__second blocks__block"></div>
                 <div className="blocks__third blocks__block"></div>
+              </div>
+            </div>
+          )}
+          {designElement && designElement === "blocksSmall" && (
+            <div className="blocks-wrapper">
+              <div className="blocks w-[45px] h-[45px] top-20">
+                <div className="blocks__first blocks__block"></div>
+                <div className="blocks__second blocks__block top-[13px] -left-[13px]"></div>
+                <div className="blocks__third blocks__block top-[26px] -left-[26px]"></div>
               </div>
             </div>
           )}

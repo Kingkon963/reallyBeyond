@@ -50,7 +50,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
       <Testimonial
         variant={variant}
         author={{ name: "Josh M.", info: "Lichen - Canada" }}
-        designElement="blocks"
+        designElement="blocksSmall"
         borderColor="greenish"
       >
         <>

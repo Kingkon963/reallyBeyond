@@ -440,6 +440,10 @@ section.hero {
       position: absolute;
       right: 153px;
       bottom: 190px;
+      // .small {
+      //   width: 45px !important;
+      //   height: 45px !important;
+      // }
       .blocks {
         width: 85px;
         height: 85px;
@@ -670,7 +674,7 @@ section.two-cols {
   }
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 800px) {
   section.hero {
     padding-top: -206px;
     padding-bottom: 119px;
@@ -798,7 +802,9 @@ section.two-cols {
   section.hero .testimonials-grid__item:nth-child(5) .blocks-wrapper .blocks {
     width: 35px;
     height: 35px;
+    background-color: red;
   }
+
   section.hero .testimonials-grid__item:nth-child(5) .blocks-wrapper {
     right: 167px;
     bottom: 123px;
