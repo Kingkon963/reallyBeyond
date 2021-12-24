@@ -2,6 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { behanceIcon, facebookIcon, linkedInIcon } from "src/svgIcons";
+import keyGen from "src/utils/genKey";
 
 function Info({ title, value }: { title: String; value: String }) {
   return (
@@ -65,6 +66,7 @@ function Menu() {
                     active === item.title ? "text-orange dark:text-white" : ""
                   }`}
                   onClick={() => setActiveLink()}
+                  key={keyGen()}
                 >
                   <Link href={item.url}>{item.title}</Link>
                 </span>
