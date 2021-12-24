@@ -72,7 +72,7 @@ const Home: NextPage = () => {
                 <ul className="special">
                   <OfferPopup title="Brand Identity">
                     <div>
-                      <span className="text-2xl text-orange">
+                      <span className="text-2xl text-orange dark:text-black">
                         Realization of your ideas and birth of your brand.
                       </span>
                       <p className="mt-0 text-lg leading-snug">
@@ -83,7 +83,9 @@ const Home: NextPage = () => {
                         imagining from days or months. We make sure to create
                         the assets that you love to see.
                       </p>
-                      <span className="text-2xl text-orange">Process:</span>
+                      <span className="text-2xl text-orange dark:text-black">
+                        Process:
+                      </span>
                       <ul className="text-lg  relative list-inside list-disc">
                         <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
                           <span className="left-4">
@@ -112,7 +114,7 @@ const Home: NextPage = () => {
                   </OfferPopup>
                   <OfferPopup title="UX/UI & Graphic Design">
                     <div>
-                      <span className="text-2xl text-orange">
+                      <span className="text-2xl text-orange dark:text-black">
                         Websites and Mobile Apps tailor-made specially for you
                       </span>
                       <p className="mt-0 text-lg leading-snug">
@@ -121,7 +123,7 @@ const Home: NextPage = () => {
                         experience over everything else. Complexity of the
                         requirements doesn’t scare us.
                       </p>
-                      <span className="text-2xl text-orange">
+                      <span className="text-2xl text-orange dark:text-black">
                         We can design:
                       </span>
                       <ul className="text-lg  relative list-inside list-disc">
@@ -165,7 +167,7 @@ const Home: NextPage = () => {
                     shortCurlySVG={true}
                   >
                     <div>
-                      <span className="text-2xl text-orange">
+                      <span className="text-2xl text-orange dark:text-black">
                         Fast, Secure and Optimized Websites, Mobile Apps and
                         solutions of all complexities
                       </span>
@@ -176,7 +178,9 @@ const Home: NextPage = () => {
                         develop your dream app or website. A very small one page
                         website to an enterprise level solution - We can do it.
                       </p>
-                      <span className="text-2xl text-orange">Process:</span>
+                      <span className="text-2xl text-orange dark:text-black">
+                        Process:
+                      </span>
                       <ul className="text-lg mt-4 ml-5 list-outside list-disc">
                         <li className="before:hidden m-0 p-0 h-fit translate-x-5 lg:translate-x-0">
                           <span className="static whitespace-normal">
@@ -213,7 +217,48 @@ const Home: NextPage = () => {
                     </div>
                   </OfferPopup>
                   <OfferPopup title="Consultancy" shortCurlySVG={true}>
-                    <h1>Hi 🙂</h1>
+                    <div>
+                      <span className="text-2xl text-orange dark:text-black">
+                        From idea refinement to launch
+                      </span>
+                      <p className="mt-0 text-lg leading-snug">
+                        Set of different processes and strategies to achieve all
+                        your wishes. This is a long term bond between you and
+                        us. We go through many discussions with you to come up
+                        with a solution or set of services for your particular
+                        needs. You may want to automate your organization or
+                        have a revolutionary idea, we will work on it together.
+                        Having a multi-skilled team with diverse experience and
+                        strong business acumen, We can deal with all things
+                        design, technology keeping in mind your audience and
+                        business.
+                      </p>
+                      <span className="text-2xl text-orange dark:text-black">
+                        Process:
+                      </span>
+                      <ul className="text-lg  relative list-inside list-disc">
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Initial Discussion</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">
+                            Detailed Analysis of Your Requirements
+                          </span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Idea Refinement</span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Documentation </span>
+                        </li>
+                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Product Development</span>
+                        </li>
+                        <li className="before:hidden  relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
+                          <span className="left-4">Product Launch</span>
+                        </li>
+                      </ul>
+                    </div>
                   </OfferPopup>
                 </ul>
               </div>
