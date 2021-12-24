@@ -38,7 +38,7 @@ function Menu() {
     },
     {
       title: "Testimonials",
-      url: "testimonials",
+      url: "/testimonials",
     },
     {
       title: "Blog",
