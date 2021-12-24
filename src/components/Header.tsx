@@ -62,7 +62,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             <a
               href="#"
               className={` bg-green dark:bg-black ${
-                menuOpen ? "dark:bg-white text-black" : ""
+                menuOpen ? "dark:bg-white dark:text-black" : ""
               } text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
             >
               I have an Idea!

@@ -61,20 +61,25 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <circle cx="14" cy="14" r="13.5" stroke="#FF6D42" />
+                <circle
+                  cx="14"
+                  cy="14"
+                  r="13.5"
+                  className="stroke-orange dark:stroke-grayish"
+                />
                 <path
                   d="M21 14L7 14"
                   stroke="#212121"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className={`${open ? "stroke-white" : ""}`}
+                  className={`${open ? "stroke-white" : "stroke-black"}`}
                 />
                 <path
                   d="M14 7L14 21"
                   stroke="#212121"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className={`${open ? "stroke-white" : ""}`}
+                  className={`${open ? "stroke-white" : "stroke-black"}`}
                 />
               </svg>
             }
