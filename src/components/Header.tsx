@@ -65,7 +65,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             }`}
           >
             {!(menuOpen && smallScreen) && (
-              <span>
+              <span className="transition-none">
                 <ColorSwitch />
               </span>
             )}
