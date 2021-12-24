@@ -19,7 +19,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
     <header
       className={`${
         styles.header
-      } sticky top-0 z-[100] shadow-md transition-none ${
+      } sticky top-0 z-[100] shadow-md dark:shadow-none transition-none ${
         menuOpen
           ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
           : ""
@@ -28,7 +28,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
       <div className={`container`}>
         <div
           className={`${styles.nav} h-[4.2rem] lg:h-32  dark:border-b ${
-            menuOpen ? "border-b-0" : ""
+            menuOpen ? "dark:border-b-0" : ""
           } dark:border-gray-300`}
         >
           <div className={`${styles.logoWrapper} lg:text-[25px] `}>
