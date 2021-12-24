@@ -2,6 +2,8 @@ import * as React from "react";
 import styles from "@styles/Header.module.scss";
 import ColorSwitch from "./ColorSwitch";
 import Menu from "./Menu";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 interface HeaderInterface {
   showContactBtn?: boolean;
@@ -9,6 +11,10 @@ interface HeaderInterface {
 
 function Header({ showContactBtn = false }: HeaderInterface) {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const router = useRouter();
+
+  const isNotHomePage = router.pathname !== "/";
+
   return (
     <header
       className={`${
@@ -26,22 +32,24 @@ function Header({ showContactBtn = false }: HeaderInterface) {
           } dark:border-gray-300`}
         >
           <div className={`${styles.logoWrapper} lg:text-[25px] `}>
-            <a href="/">
-              <span
-                className={`text-green  ${
-                  menuOpen ? "dark:text-white" : "dark:text-black"
-                }`}
-              >
-                REALLY
-              </span>
-              <span
-                className={`text-lightGreen  ${
-                  menuOpen ? "dark:text-gray-600" : "dark:text-grayish"
-                }`}
-              >
-                BEYOND
-              </span>
-            </a>
+            <Link href="/">
+              <a>
+                <span
+                  className={`text-green  ${
+                    menuOpen ? "dark:text-white" : "dark:text-black"
+                  }`}
+                >
+                  REALLY
+                </span>
+                <span
+                  className={`text-lightGreen  ${
+                    menuOpen ? "dark:text-gray-600" : "dark:text-grayish"
+                  }`}
+                >
+                  BEYOND
+                </span>
+              </a>
+            </Link>
           </div>
           <nav
             className={`ml-10 mr-auto transition-none ${
@@ -54,7 +62,9 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             {!menuOpen && (
               <a
                 href="#footer"
-                className={`contact-us ${showContactBtn ? "" : "hidden"}`}
+                className={`contact-us ${
+                  showContactBtn || isNotHomePage ? "" : "hidden"
+                }`}
               >
                 Contact us
               </a>
