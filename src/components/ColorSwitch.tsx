@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
+import { useLocalStorage } from "react-use";
 
 function ColorSwitch() {
-  // const { x, y } = useWindowScroll();
+  const [colorPref, setColorPref, deleteColorPref] = useLocalStorage<
+    "bw" | "color"
+  >("colorPref", "color");
+
   const elRef = React.useRef<HTMLDivElement | null>(null);
 
   function changeColorMode(mode: "bw" | "color") {
     if (process.browser) {
+      setColorPref(mode);
       const docElement = document.documentElement;
       if (mode == "bw") {
         docElement.classList.add("dark");
@@ -32,6 +37,12 @@ function ColorSwitch() {
       document.removeEventListener("scroll", checkPosition);
     };
   }, []);
+
+  useEffect(() => {
+    if (colorPref) {
+      changeColorMode(colorPref);
+    }
+  }, [colorPref]);
 
   return (
     <div ref={elRef} className="z-[1000] transition-none">
