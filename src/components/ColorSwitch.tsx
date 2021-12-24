@@ -46,7 +46,7 @@ function ColorSwitch() {
         </li>
         <li
           className="relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full
-      text-inherit after:bg-black transition-none
+      text-inherit after:bg-black transform-none
       after:h-[1px] after:opacity-0 dark:after:opacity-100"
           onClick={() => changeColorMode("bw")}
         >

@@ -4,6 +4,7 @@ import ColorSwitch from "./ColorSwitch";
 import Menu from "./Menu";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useWindowSize } from "react-use";
 
 interface HeaderInterface {
   showContactBtn?: boolean;
@@ -11,9 +12,16 @@ interface HeaderInterface {
 
 function Header({ showContactBtn = false }: HeaderInterface) {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const [smallScreen, setSmallScreen] = React.useState(true);
   const router = useRouter();
+  const { width, height } = useWindowSize();
 
   const isNotHomePage = router.pathname !== "/";
+
+  React.useEffect(() => {
+    if (width < 1024) setSmallScreen(true);
+    else setSmallScreen(false);
+  }, [width]);
 
   return (
     <header
@@ -56,7 +64,11 @@ function Header({ showContactBtn = false }: HeaderInterface) {
               menuOpen ? "text-white" : ""
             }`}
           >
-            {!menuOpen && <ColorSwitch />}
+            {!(menuOpen && smallScreen) && (
+              <span>
+                <ColorSwitch />
+              </span>
+            )}
           </nav>
           <div className={`hidden lg:flex gap-5 ${menuOpen ? "hidden" : ""}`}>
             {!menuOpen && (
