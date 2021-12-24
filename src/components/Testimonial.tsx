@@ -22,7 +22,9 @@ function Testimonial({
   return (
     <div
       className={`testimonials-grid__item ${borderColor ? borderColor : ""} ${
-        isSimple ? "border-0" : ""
+        isSimple
+          ? "border-0 border-b lg:border-b-0 last:border-b-0 border-gray-300"
+          : ""
       }`}
     >
       <span className={`gothic ${isSimple ? "text-green" : ""}`}> “ </span>

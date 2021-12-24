@@ -38,7 +38,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
         Very prompt and attentive to details, Honest and Dependable.
       </Testimonial>
 
-      <hr className="col-span-full border mt-10 bg-gray-600 mx-5" />
+      <hr className="col-span-full border mt-10 bg-gray-600 mx-5 hidden lg:block" />
 
       <Testimonial
         variant={variant}
