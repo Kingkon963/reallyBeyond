@@ -27,7 +27,12 @@ function Testimonial({
           : ""
       }`}
     >
-      <span className={`gothic ${isSimple ? "text-green" : ""}`}> “ </span>
+      <span
+        className={`gothic ${isSimple ? "text-green dark:text-black" : ""}`}
+      >
+        {" "}
+        “{" "}
+      </span>
       <p className="testimonials-grid__item__text">{children}</p>
       <div className="m-top-auto">
         <p className="testimonials-grid__item__author">{author.name}</p>

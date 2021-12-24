@@ -26,7 +26,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
           <div className={`${styles.logoWrapper} lg:text-[25px] `}>
             <a href="/">
               <span className="text-green dark:text-black">REALLY</span>
-              <span className="text-lightGreen dark:text-gray-400">BEYOND</span>
+              <span className="text-lightGreen dark:text-grayish">BEYOND</span>
             </a>
           </div>
           <nav
@@ -47,7 +47,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             )}
             <a
               href="#"
-              className={` bg-green text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
+              className={` bg-green dark:bg-black text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
             >
               I have an Idea!
             </a>
