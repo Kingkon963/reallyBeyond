@@ -54,15 +54,15 @@ function Menu() {
   React.useEffect(() => setActiveLink(), []);
 
   return (
-    <div className="bg-blue text-white h-full  flex justify-center pt-10 lg:pt-32">
+    <div className="bg-blue dark:bg-black text-white h-full  flex justify-center pt-10 lg:pt-32">
       <div className="container">
         <div className="grid lg:grid-cols-2 pb-10 lg:pb-0">
           <div className="flex flex-col gap-10 lg:border-r">
             {menuItems.map((item) => {
               return (
                 <span
-                  className={`font-poppinsRegular text-2xl lg:text-4xl hover:text-orange transition-none ${
-                    active === item.title ? "text-orange" : ""
+                  className={`font-poppinsRegular text-2xl lg:text-4xl dark:text-[#878787] dark:hover:text-white hover:text-orange transition-none ${
+                    active === item.title ? "text-orange dark:text-white" : ""
                   }`}
                   onClick={() => setActiveLink()}
                 >
@@ -72,7 +72,7 @@ function Menu() {
             })}
           </div>
           <div className="flex flex-col gap-10 justify-center items-center pt-10 lg:pt-0 pb-10 lg:pb-0 border-t mt-10 lg:mt-0 lg:border-t-0 lg:px-24">
-            <h1 className="font-poppinsLight text-orange text-5xl lg:text-7xl w-full">
+            <h1 className="font-poppinsLight text-orange dark:text-white text-5xl lg:text-7xl w-full">
               Get in Touch
             </h1>
             <div className="flex flex-col gap-10 w-full">

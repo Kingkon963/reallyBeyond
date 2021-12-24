@@ -14,7 +14,9 @@ function Header({ showContactBtn = false }: HeaderInterface) {
       className={`${
         styles.header
       } sticky top-0 z-[100] shadow-md transition-none ${
-        menuOpen ? "h-screen bg-blue overflow-y-scroll lg:overflow-y-clip" : ""
+        menuOpen
+          ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
+          : ""
       }`}
     >
       <div className={`container`}>
@@ -25,8 +27,20 @@ function Header({ showContactBtn = false }: HeaderInterface) {
         >
           <div className={`${styles.logoWrapper} lg:text-[25px] `}>
             <a href="/">
-              <span className="text-green dark:text-black">REALLY</span>
-              <span className="text-lightGreen dark:text-grayish">BEYOND</span>
+              <span
+                className={`text-green  ${
+                  menuOpen ? "dark:text-white" : "dark:text-black"
+                }`}
+              >
+                REALLY
+              </span>
+              <span
+                className={`text-lightGreen  ${
+                  menuOpen ? "dark:text-gray-600" : "dark:text-grayish"
+                }`}
+              >
+                BEYOND
+              </span>
             </a>
           </div>
           <nav
@@ -47,7 +61,9 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             )}
             <a
               href="#"
-              className={` bg-green dark:bg-black text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
+              className={` bg-green dark:bg-black ${
+                menuOpen ? "dark:bg-white text-black" : ""
+              } text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
             >
               I have an Idea!
             </a>
