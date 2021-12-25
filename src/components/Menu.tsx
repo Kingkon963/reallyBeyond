@@ -42,7 +42,7 @@ function Menu() {
     },
     {
       title: "Blog",
-      url: "#",
+      url: "/blog",
     },
   ];
 
