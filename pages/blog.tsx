@@ -14,8 +14,16 @@ const Testimonials: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container top-gap pb-24 px-32">
-          <InfinityHeader gap={20}>Our Thoughts</InfinityHeader>
+        <div className="container top-gap pb-24 lg:px-32 mt-20">
+          <div className="relative">
+            <span className="uppercase font-openSansBold text-gray-400 tracking-wide text-[.625rem]">
+              Learning Constantly. Exploring Opportunities. Always Improving
+            </span>
+            <InfinityHeader gap={20}>Our Thoughts</InfinityHeader>
+            <span className="uppercase font-openSansBold text-gray-400 tracking-wide text-[.625rem] absolute -bottom-8 left-32">
+              Here is all that we think and can't resist sharing it with you
+            </span>
+          </div>
         </div>
       </Layout>
     </div>

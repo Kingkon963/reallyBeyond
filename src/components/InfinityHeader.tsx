@@ -7,7 +7,7 @@ interface InfinityHeader {
 
 function InfinityHeader({ children, gap = 20 }: InfinityHeader) {
   return (
-    <h1 className="text-[#B4D7CE66] relative text-3xl lg:text-7xl font-poppinsSemibold mt-[43px] lg:pb-16 flex w-fit">
+    <h1 className="text-[#B4D7CE66] relative text-3xl lg:text-7xl font-poppinsSemibold flex w-fit">
       <span
         className={`absolute dark:text-grayish whitespace-nowrap`}
         style={{ left: `-${(100 + gap) * 4}%` }}
@@ -32,7 +32,9 @@ function InfinityHeader({ children, gap = 20 }: InfinityHeader) {
       >
         {children}
       </span>
-      <span className="text-green dark:text-black">{children}</span>
+      <span className="text-green dark:text-black whitespace-nowrap ">
+        {children}
+      </span>
       <span
         className={`absolute dark:text-grayish whitespace-nowrap`}
         style={{ left: `${100 + gap}%` }}

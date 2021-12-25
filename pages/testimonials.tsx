@@ -14,9 +14,11 @@ const Testimonials: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container top-gap pb-24">
+        <div className="container top-gap pb-24 mt-[43px]">
           <InfinityHeader gap={10}>Testimonials</InfinityHeader>
-          <TestimonialGrid variant="simple" />
+          <div className="lg:pt-16">
+            <TestimonialGrid variant="simple" />
+          </div>
         </div>
       </Layout>
     </div>
