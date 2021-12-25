@@ -33,7 +33,7 @@ const Home: NextPage = () => {
 
       <Layout showHeaderContactBtn={showHeaderBtn}>
         <div>
-          <section className="hero pt-16 lg:pt-32">
+          <section className="hero">
             <div className="container">
               <div className="flex-group">
                 <div className="hero__text">

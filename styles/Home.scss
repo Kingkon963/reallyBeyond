@@ -20,7 +20,7 @@
   font-size: 16px;
   line-height: 21px;
   font-family: "Poppins Semibold";
-  padding: 1.25rem 60px;
+  padding: 18px 42px;
   background-color: #094367;
   color: #fff;
   display: inline-block;
@@ -324,7 +324,7 @@ ul.special {
 
 section.hero {
   background-color: #f0e3d8;
-  padding: 130px 0 150px;
+  padding: 257px 0 150px;
   position: relative;
   p {
     margin: 24px 0 18px;
@@ -336,7 +336,7 @@ section.hero {
   .hero__offer {
     position: absolute;
     right: 193px;
-    top: 458px;
+    top: 585px;
     h4 {
       font-size: 25px;
       line-height: 37px;
@@ -749,7 +749,7 @@ section.two-cols {
 
 @media (max-width: 1800px) {
   section.hero {
-    padding-top: -206px;
+    padding-top: 206px;
     padding-bottom: 119px;
   }
   section.hero .hero__vectors {

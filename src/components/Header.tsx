@@ -26,11 +26,11 @@ function Header({ showContactBtn = false }: HeaderInterface) {
   return (
     <header
       className={`header
-     sticky top-0 z-[100] shadow-none transition-none ${
-       menuOpen
-         ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
-         : ""
-     }`}
+      z-[100] shadow-none transition-none ${
+        menuOpen
+          ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
+          : ""
+      }`}
     >
       <div className={`container`}>
         <div

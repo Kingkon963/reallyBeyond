@@ -17,7 +17,7 @@ module.exports = {
         grayish: "#CDCDCD",
       },
       screens: {
-        "3xl": "1600px",
+        "3xl": "1800px",
       },
       fontFamily: {
         montserratBold: "Montserrat Bold",
