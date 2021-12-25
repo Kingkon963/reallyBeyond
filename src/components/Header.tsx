@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "@styles/Header.module.scss";
+// import styles from "@styles/Header.module.scss";
 import ColorSwitch from "./ColorSwitch";
 import Menu from "./Menu";
 import { useRouter } from "next/router";
@@ -25,21 +25,20 @@ function Header({ showContactBtn = false }: HeaderInterface) {
 
   return (
     <header
-      className={`${
-        styles.header
-      } sticky top-0 z-[100] shadow-md dark:shadow-none transition-none ${
-        menuOpen
-          ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
-          : ""
-      }`}
+      className={`header
+     sticky top-0 z-[100] shadow-none transition-none ${
+       menuOpen
+         ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
+         : ""
+     }`}
     >
       <div className={`container`}>
         <div
-          className={`${styles.nav} h-[4.2rem] lg:h-32  dark:border-b ${
+          className={`nav  dark:border-b ${
             menuOpen ? "dark:border-b-0" : ""
           } dark:border-gray-300`}
         >
-          <div className={`${styles.logoWrapper} lg:text-[25px] `}>
+          <div className={`logo-wrapper lg:text-[25px] `}>
             <Link href="/">
               <a>
                 <span
@@ -85,7 +84,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
               href="#"
               className={` bg-green dark:bg-black ${
                 menuOpen ? "dark:bg-white dark:text-black" : ""
-              } text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
+              } text-white font-poppinsSemibold tracking-wide flex justify-center items-center text-[14px] 2xl:text-[16px] py-[15px] px-[30px] q`}
             >
               I have an Idea!
             </a>
