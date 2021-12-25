@@ -15,7 +15,7 @@ const Testimonials: NextPage = () => {
       </Head>
       <Layout>
         <div className="container top-gap pb-24">
-          <InfinityHeader>Testimonials</InfinityHeader>
+          <InfinityHeader gap={10}>Testimonials</InfinityHeader>
           <TestimonialGrid variant="simple" />
         </div>
       </Layout>

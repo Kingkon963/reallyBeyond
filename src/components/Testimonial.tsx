@@ -58,7 +58,7 @@ function Testimonial({
           )}
           {designElement && designElement === "blocksSmall" && (
             <div className="blocks-wrapper">
-              <div className="blocks w-[45px] h-[45px] top-20">
+              <div className="blocks">
                 <div className="blocks__first blocks__block"></div>
                 <div className="blocks__second blocks__block top-[13px] -left-[13px]"></div>
                 <div className="blocks__third blocks__block top-[26px] -left-[26px]"></div>
