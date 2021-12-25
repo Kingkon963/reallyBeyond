@@ -17,8 +17,10 @@ const overlayStyle = {
 
 function Popup({ open, close, children, callerRef }: PopupProps) {
   const contentRef = useRef(null);
-  useClickAway(contentRef, () => close());
+  // useClickAway(contentRef, () => close());
+
   if (!open) return <></>;
+
   return (
     <>
       <Portal>
@@ -26,18 +28,14 @@ function Popup({ open, close, children, callerRef }: PopupProps) {
           <div
             className="fixed top-0 left-0 right-0 bottom-0 z-[101]"
             style={overlayStyle}
+            onClick={() => close()}
           ></div>
         </>
       </Portal>
       <div
-        className="absolute mt-2 bg-white  lg:w-[44rem] px-7 pb-10 shadow z-[1000]"
+        className="absolute mt-2 bg-white w-screen sm:w-auto px-7 py-10 shadow z-[1000]"
         ref={contentRef}
       >
-        <div className="flex justify-end">
-          <button onClick={() => close()} className="scale-125 mt-1">
-            {crossIcon}
-          </button>
-        </div>
         <div className="font-openSansRegular">{children}</div>
       </div>
     </>

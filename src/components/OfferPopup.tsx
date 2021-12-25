@@ -12,7 +12,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
   const titleRef = useRef(null);
 
   return (
-    <>
+    <div>
       <li
         ref={titleRef}
         className={`flex items-center ${
@@ -52,7 +52,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
         </span>
         {title}
         <div className="ml-3 flex items-center ">
-          <button onClick={() => setOpen(true)}>
+          <button onClick={() => setOpen(!open)}>
             {
               <svg
                 width="28"
@@ -60,12 +60,15 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
                 viewBox="0 0 28 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className={`${open ? "rotate-45" : ""}`}
               >
                 <circle
                   cx="14"
                   cy="14"
                   r="13.5"
-                  className="stroke-orange dark:stroke-grayish"
+                  className={`stroke-orange dark:stroke-grayish ${
+                    open ? "stroke-white" : ""
+                  }`}
                 />
                 <path
                   d="M21 14L7 14"
@@ -89,7 +92,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
       <Popup open={open} close={() => setOpen(false)} callerRef={titleRef}>
         {children}
       </Popup>
-    </>
+    </div>
   );
 }
 

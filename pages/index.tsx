@@ -5,7 +5,7 @@ import { useIntersection } from "react-use";
 import OfferPopup from "@components/OfferPopup";
 import Layout from "@components/Layout";
 import TestimonialGrid from "@components/TestimonialGrid";
-// import styles from "../styles/Home.module.scss";
+import ListItem from "@components/ListItem";
 
 const Home: NextPage = () => {
   const heroContactBtn = React.useRef<HTMLAnchorElement>(null);
@@ -126,39 +126,23 @@ const Home: NextPage = () => {
                       <span className="text-2xl text-orange dark:text-black">
                         We can design:
                       </span>
-                      <ul className="text-lg  relative list-inside list-disc">
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Corporate websites, Blogs, Landing Pages
-                          </span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Data-rich dashboards and Admin Panels
-                          </span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Online stores and services
-                          </span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Multidimensional and multi-users Mobile and Web Apps
-                          </span>
-                        </li>
+                      <ul className="text-lg  relative list-outside ml-5 list-disc">
+                        <ListItem>
+                          Corporate websites, Blogs, Landing Pages
+                        </ListItem>
+                        <ListItem>
+                          Data-rich dashboards and Admin Panels
+                        </ListItem>
+                        <ListItem>Online stores and services</ListItem>
+                        <ListItem>
+                          Multidimensional and multi-users Mobile and Web Apps
+                        </ListItem>
                       </ul>
                       <span className="text-2xl text-orange">Process:</span>
-                      <ul className="text-lg  relative list-inside list-disc">
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Wireframes</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Prototype</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">User interface</span>
-                        </li>
+                      <ul className="text-lg  relative ml-5 list-outside list-disc">
+                        <ListItem>Wireframes </ListItem>
+                        <ListItem>Prototype</ListItem>
+                        <ListItem>User interface</ListItem>
                       </ul>
                     </div>
                   </OfferPopup>
@@ -182,37 +166,27 @@ const Home: NextPage = () => {
                         Process:
                       </span>
                       <ul className="text-lg mt-4 ml-5 list-outside list-disc">
-                        <li className="before:hidden m-0 p-0 h-fit translate-x-5 lg:translate-x-0">
-                          <span className="static whitespace-normal">
-                            UX/UI Design: An imagery representation and
-                            wireframes of your complete system with all the
-                            colors, icons, fonts...
-                          </span>
-                        </li>
-                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="static whitespace-normal ">
-                            Front-End Development: An interactive working
-                            prototype
-                          </span>
-                        </li>
-                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="static whitespace-normal">
-                            Backend-Development: Implement of the main logic of
-                            the system and integration with Front-End
-                          </span>
-                        </li>
-                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="static whitespace-normal">
-                            Testing: Each and every inch of your product will be
-                            tested by Pros.
-                          </span>
-                        </li>
-                        <li className="before:hidden m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="static whitespace-normal">
-                            Deployment and Maintenance: No headache for you, we
-                            will deploy and maintain
-                          </span>
-                        </li>
+                        <ListItem>
+                          UX/UI Design: An imagery representation and wireframes
+                          of your complete system with all the colors, icons,
+                          fonts...
+                        </ListItem>
+                        <ListItem>
+                          Front-End Development: An interactive working
+                          prototype
+                        </ListItem>
+                        <ListItem>
+                          Backend-Development: Implement of the main logic of
+                          the system and integration with Front-End
+                        </ListItem>
+                        <ListItem>
+                          Testing: Each and every inch of your product will be
+                          tested by Pros.
+                        </ListItem>
+                        <ListItem>
+                          Deployment and Maintenance: No headache for you, we
+                          will deploy and maintain
+                        </ListItem>
                       </ul>
                     </div>
                   </OfferPopup>
@@ -237,26 +211,14 @@ const Home: NextPage = () => {
                         Process:
                       </span>
                       <ul className="text-lg  relative list-inside list-disc">
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Initial Discussion</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Detailed Analysis of Your Requirements
-                          </span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Idea Refinement</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Documentation </span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Product Development</span>
-                        </li>
-                        <li className="before:hidden  relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Product Launch</span>
-                        </li>
+                        <ListItem>Initial Discussion</ListItem>
+                        <ListItem>
+                          Detailed Analysis of Your Requirements
+                        </ListItem>
+                        <ListItem>Idea Refinement</ListItem>
+                        <ListItem>Documentation</ListItem>
+                        <ListItem>Product Development</ListItem>
+                        <ListItem>Product Launch</ListItem>
                       </ul>
                     </div>
                   </OfferPopup>
