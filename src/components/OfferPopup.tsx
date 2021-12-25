@@ -12,7 +12,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
   const titleRef = useRef(null);
 
   return (
-    <div>
+    <>
       <li
         ref={titleRef}
         className={`flex items-center ${
@@ -92,7 +92,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
       <Popup open={open} close={() => setOpen(false)} callerRef={titleRef}>
         {children}
       </Popup>
-    </div>
+    </>
   );
 }
 
