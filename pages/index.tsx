@@ -72,10 +72,10 @@ const Home: NextPage = () => {
                 <ul className="special">
                   <OfferPopup title="Brand Identity">
                     <div>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         Realization of your ideas and birth of your brand.
                       </span>
-                      <p className="mt-0 text-lg leading-snug">
+                      <p className="mt-0 text-sm lg:text-lg leading-snug">
                         Colors, Marks, Fonts, Shapes - All is created during the
                         brand identity development and a personality of your
                         brand comes to life -It is a true sense of
@@ -83,10 +83,10 @@ const Home: NextPage = () => {
                         imagining from days or months. We make sure to create
                         the assets that you love to see.
                       </p>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-lg  relative list-inside list-disc">
+                      <ul className="text-sm lg:text-lg  relative list-inside list-disc">
                         <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
                           <span className="left-4">
                             Color Palette Selection
@@ -114,19 +114,19 @@ const Home: NextPage = () => {
                   </OfferPopup>
                   <OfferPopup title="UX/UI & Graphic Design">
                     <div>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         Websites and Mobile Apps tailor-made specially for you
                       </span>
-                      <p className="mt-0 text-lg leading-snug">
+                      <p className="mt-0 text-sm lg:text-lg leading-snug">
                         Your customers should enjoy using your website or app.
                         Keeping that in mind, we prioritize an excellent user
                         experience over everything else. Complexity of the
                         requirements doesn’t scare us.
                       </p>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         We can design:
                       </span>
-                      <ul className="text-lg  relative list-outside ml-5 list-disc">
+                      <ul className="text-sm lg:text-lg  relative list-outside ml-5 list-disc">
                         <ListItem>
                           Corporate websites, Blogs, Landing Pages
                         </ListItem>
@@ -138,8 +138,10 @@ const Home: NextPage = () => {
                           Multidimensional and multi-users Mobile and Web Apps
                         </ListItem>
                       </ul>
-                      <span className="text-2xl text-orange">Process:</span>
-                      <ul className="text-lg  relative ml-5 list-outside list-disc">
+                      <span className="text-lg lg:text-2xl text-orange">
+                        Process:
+                      </span>
+                      <ul className="text-sm lg:text-lg  relative ml-5 list-outside list-disc">
                         <ListItem>Wireframes </ListItem>
                         <ListItem>Prototype</ListItem>
                         <ListItem>User interface</ListItem>
@@ -151,21 +153,21 @@ const Home: NextPage = () => {
                     shortCurlySVG={true}
                   >
                     <div>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         Fast, Secure and Optimized Websites, Mobile Apps and
                         solutions of all complexities
                       </span>
-                      <p className="mt-0 text-lg leading-snug">
+                      <p className="mt-0 text-sm lg:text-lg leading-snug">
                         Skilled developers and Software Engineers will take care
                         of your needs and make everything like a breeze for you.
                         We make sure you just sit back and relax while we
                         develop your dream app or website. A very small one page
                         website to an enterprise level solution - We can do it.
                       </p>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-lg mt-4 ml-5 list-outside list-disc">
+                      <ul className="text-sm lg:text-lg mt-4 ml-5 list-outside list-disc">
                         <ListItem>
                           UX/UI Design: An imagery representation and wireframes
                           of your complete system with all the colors, icons,
@@ -192,10 +194,10 @@ const Home: NextPage = () => {
                   </OfferPopup>
                   <OfferPopup title="Consultancy" shortCurlySVG={true}>
                     <div>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         From idea refinement to launch
                       </span>
-                      <p className="mt-0 text-lg leading-snug">
+                      <p className="mt-0 text-sm lg:text-lg leading-snug">
                         Set of different processes and strategies to achieve all
                         your wishes. This is a long term bond between you and
                         us. We go through many discussions with you to come up
@@ -207,10 +209,10 @@ const Home: NextPage = () => {
                         design, technology keeping in mind your audience and
                         business.
                       </p>
-                      <span className="text-2xl text-orange dark:text-black">
+                      <span className="text-lg lg:text-2xl text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-lg  relative list-inside list-disc">
+                      <ul className="text-sm lg:text-lg relative list-inside list-disc">
                         <ListItem>Initial Discussion</ListItem>
                         <ListItem>
                           Detailed Analysis of Your Requirements
