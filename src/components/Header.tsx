@@ -38,7 +38,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             menuOpen ? "dark:border-b-0" : ""
           } dark:border-gray-300`}
         >
-          <div className={`logo-wrapper lg:text-[25px] `}>
+          <div className={`logo-wrapper  `}>
             <Link href="/">
               <a>
                 <span
