@@ -6,6 +6,9 @@
   .top-gap {
     @apply pt-[100px] 3xl:pt-[120px] !important;
   }
+  .btn-general {
+    @apply text-[14px] py-[11px] px-[28px] lg:py-[15px] lg:px-[30px] 3xl:py-[18px] 3xl:px-[42px] !important;
+  }
 }
 
 html,

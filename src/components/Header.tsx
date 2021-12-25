@@ -84,7 +84,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
               href="#"
               className={` bg-green dark:bg-black ${
                 menuOpen ? "dark:bg-white dark:text-black" : ""
-              } text-white font-poppinsSemibold tracking-wide flex justify-center items-center text-[14px] 2xl:text-[16px] py-[15px] px-[30px] q`}
+              } text-white font-poppinsSemibold tracking-wide flex justify-center items-center btn-general`}
             >
               I have an Idea!
             </a>
