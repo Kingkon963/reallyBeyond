@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const heroContactBtn = React.useRef<HTMLAnchorElement>(null);
   const contctBtnIntersect = useIntersection(heroContactBtn, {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "-6%",
     threshold: 1,
   });
   const [showHeaderBtn, setShowHeaderBtn] = React.useState(false);
