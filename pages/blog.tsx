@@ -15,7 +15,7 @@ const Testimonials: NextPage = () => {
       </Head>
       <Layout>
         <div className="container top-gap pb-24 lg:px-32 mt-20">
-          <div className="relative">
+          <div className="relative mb-8">
             <span className="uppercase font-openSansBold text-gray-400 tracking-wide text-[.625rem]">
               Learning Constantly. Exploring Opportunities. Always Improving
             </span>
@@ -24,6 +24,7 @@ const Testimonials: NextPage = () => {
               Here is all that we think and can't resist sharing it with you
             </span>
           </div>
+          <div>blogs</div>
         </div>
       </Layout>
     </div>

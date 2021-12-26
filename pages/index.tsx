@@ -47,10 +47,10 @@ const Home: NextPage = () => {
                   </h1>
                   <p>
                     By keeping you involved all along the process. A process
-                    that is designed to bring your ideas to life smoothly and
+                    that is designed to bring your <br className="hidden xl:block"/> ideas to life smoothly and
                     quickly.
                   </p>
-                  <a href="#footer" className="contact-us" ref={heroContactBtn}>
+                  <a href="#footer" className="contact-us w-[218px] text-center" ref={heroContactBtn}>
                     Contact us
                   </a>
                 </div>

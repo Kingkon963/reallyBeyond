@@ -335,7 +335,7 @@ section.hero {
   }
   .hero__offer {
     position: absolute;
-    right: 193px;
+    right: 293px;
     top: 585px;
     h4 {
       font-size: 25px;
@@ -345,10 +345,11 @@ section.hero {
     }
   }
   .hero__vectors {
-    padding-left: 120px;
+    padding-left: 100px;
     .circles {
-      width: 164px;
-      height: 164px;
+      $circle-size: 205px;
+      width: $circle-size;
+      height: $circle-size;
       position: relative;
       & > div {
         border-radius: 50%;
@@ -365,22 +366,23 @@ section.hero {
         border: 2px solid rgba(255, 109, 66, 0.3);
       }
       &__second {
-        width: 120px;
-        height: 120px;
+        width: $circle-size - 44;
+        height: $circle-size - 44;
         border: 2px solid rgba(255, 109, 66, 0.6);
       }
       &__third {
-        width: 77px;
-        height: 77px;
+        width: $circle-size - 87;
+        height: $circle-size - 87;
         border: 2px solid rgba(255, 109, 66, 1);
       }
     }
     .blocks {
+      $block-size: 85px;
       width: 85px;
       height: 85px;
       position: relative;
       transform: translate(100%, -48px);
-      left: 95px;
+      left: 130px;
       &__block {
         position: absolute;
         left: 0;
@@ -753,7 +755,10 @@ section.two-cols {
     padding-bottom: 119px;
   }
   section.hero .hero__vectors {
-    padding-top: 20px;
+    position: absolute;
+    top: 200px;
+    right: 210px;
+    
   }
   header .nav {
     min-height: 102px;
@@ -1035,7 +1040,7 @@ section.two-cols {
 
 @media (max-width: 1440px) {
   section.hero .hero__offer {
-    right: 116px;
+    right: 97px;
   }
   section.two-cols .left {
     padding-left: 139px;
