@@ -35,8 +35,8 @@ function Testimonial({
       </span>
       <p className="testimonials-grid__item__text">{children}</p>
       <div className="m-top-auto">
-        <p className="testimonials-grid__item__author">{author.name}</p>
-        <p className="testimonials-grid__item__location">{author.info}</p>
+        <p className="testimonials-grid__item__author 3xl:m-[5px]">{author.name}</p>
+        <p className="testimonials-grid__item__location 3xl:m-[5px]">{author.info}</p>
       </div>
       {!isSimple && (
         <>
@@ -57,7 +57,7 @@ function Testimonial({
             </div>
           )}
           {designElement && designElement === "blocksSmall" && (
-            <div className="blocks-wrapper">
+            <div className="blocks-wrapper 3xl:bottom-[135px] 3xl:right-1/2 3xl:translate-x-1/2">
               <div className="blocks">
                 <div className="blocks__first blocks__block"></div>
                 <div className="blocks__second blocks__block top-[13px] -left-[13px]"></div>

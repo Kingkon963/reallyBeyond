@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                     <br />
                     you happy.
                   </h1>
-                  <p className="font-openSansRegular text-[#333333]">
+                  <p className="font-openSansRegular text-[#333333] 3xl:my-10">
                     By keeping you involved all along the process. A process
                     that is designed to bring your <br className="hidden xl:block"/> ideas to life smoothly and
                     quickly.
@@ -54,8 +54,8 @@ const Home: NextPage = () => {
                     Contact us
                   </a>
                 </div>
-                <div className="hero__vectors">
-                  <div className="circles">
+                <div className="hero__vectors 3xl:scale-110 3xl:translate-y-[10px]">
+                  <div className="circles 3xl:scale-110 3xl:translate-y-[-10px] 3xl:translate-x-[-10px]">
                     <div className="circles__first"></div>
                     <div className="circles__second"></div>
                     <div className="circles__third"></div>
