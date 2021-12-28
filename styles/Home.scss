@@ -345,9 +345,9 @@ section.hero {
     }
   }
   .hero__vectors {
-    padding-left: 100px;
+    padding-left: 120px;
     .circles {
-      $circle-size: 205px;
+      $circle-size: 164px;
       width: $circle-size;
       height: $circle-size;
       position: relative;
@@ -382,7 +382,7 @@ section.hero {
       height: 85px;
       position: relative;
       transform: translate(100%, -48px);
-      left: 130px;
+      left: 95px;
       &__block {
         position: absolute;
         left: 0;
