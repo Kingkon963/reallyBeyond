@@ -154,7 +154,7 @@ header {
       background-color: #555555;
     }
   }
-  .homeFooter .inner .cards div p a:hover {
+  .homeFooter .inner .cards .card p a:hover {
     color: #555555;
   }
   section.hero h1 span,
@@ -206,7 +206,7 @@ header {
   .homeFooter {
     background-color: rgba(33, 33, 33, 1);
   }
-  .homeFooter .inner .cards div {
+  .homeFooter .inner .cards .card {
     border-color: #555555;
   }
   .homeFooter .inner .logo span:first-child {
@@ -724,7 +724,7 @@ section.two-cols {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       column-gap: 47px;
-      div {
+      .card {
         padding: 55px 65px 40px;
         border: 2.5px solid #348c41;
         min-height: 186px;
@@ -759,7 +759,6 @@ section.two-cols {
     position: absolute;
     top: 200px;
     right: 210px;
-    
   }
   header .nav {
     min-height: 102px;
@@ -1006,10 +1005,10 @@ section.two-cols {
   .homeFooter .inner .cards {
     column-gap: 30px;
   }
-  .homeFooter .inner .cards div h6 {
+  .homeFooter .inner .cards .card h6 {
     font-size: 16px;
   }
-  .homeFooter .inner .cards div p {
+  .homeFooter .inner .cards .card p {
     font-size: 20px;
     margin-top: 10px;
   }
@@ -1216,8 +1215,8 @@ section.two-cols {
     line-height: 60px;
     margin: 0 0 30px;
   }
-  .homeFooter .inner .cards div h6,
-  .homeFooter .inner .cards div p {
+  .homeFooter .inner .cards .card h6,
+  .homeFooter .inner .cards .card p {
     font-size: 23px;
   }
 
@@ -1241,7 +1240,7 @@ section.two-cols {
     height: 27px;
   }
 
-  .homeFooter .inner .cards div {
+  .homeFooter .inner .cards .card {
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -1417,8 +1416,8 @@ section.two-cols {
     right: 86px;
     bottom: 190px;
   }
-  .homeFooter .inner .cards div h6,
-  .homeFooter .inner .cards div p {
+  .homeFooter .inner .cards .card h6,
+  .homeFooter .inner .cards .card p {
     font-size: 20px;
   }
 }

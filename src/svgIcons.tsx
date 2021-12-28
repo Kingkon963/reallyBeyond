@@ -47,8 +47,8 @@ export const crossIcon = (
 
 export const linkedInIcon = (
   <svg
-    width="23"
-    height="21"
+    width="17"
+    height="16"
     viewBox="0 0 23 21"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
