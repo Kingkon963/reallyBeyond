@@ -7,10 +7,10 @@ import keyGen from "src/utils/genKey";
 function Info({ title, value }: { title: String; value: String }) {
   return (
     <div className="flex flex-col gap-1 justify-start w-full">
-      <span className="text-sm lg:text-[12px] text-[#878787] font-poppinsSemibold uppercase">
+      <span className="text-sm lg:text-[12px] 3xl:text-[14px] text-[#878787] font-poppinsSemibold uppercase">
         {title}
       </span>
-      <span className="font-poppinsRegular text-2xl lg:text-[20px]">
+      <span className="font-poppinsRegular text-2xl lg:text-[20px] 3xl:text-[25px]">
         {value}
       </span>
     </div>
@@ -60,11 +60,11 @@ function Menu() {
     <div className="bg-blue dark:bg-black text-white h-full  flex justify-center pt-10 lg:pt-32">
       <div className="container">
         <div className="grid lg:grid-cols-12  pb-10 lg:pb-0">
-          <div className="lg:col-span-6 lg:mr-10 flex flex-col gap-6 lg:gap-12 lg:border-r">
+          <div className="lg:col-span-6 lg:mr-10 flex flex-col gap-6 lg:gap-12 3xl:gap-14 lg:border-r border-[#878787]">
             {menuItems.map((item) => {
               return (
                 <span
-                  className={`font-poppinsRegular text-2xl lg:text-[30px] dark:text-[#878787] dark:hover:text-white hover:text-orange whitespace-nowrap transition-none ${
+                  className={`font-poppinsRegular text-2xl lg:text-[30px] 3xl:text-[40px] dark:text-[#878787] dark:hover:text-white hover:text-orange whitespace-nowrap transition-none ${
                     active === item.title ? "text-orange dark:text-white" : ""
                   }`}
                   onClick={() => setActiveLink()}
@@ -76,7 +76,7 @@ function Menu() {
             })}
           </div>
           <div className="lg:col-span-6 lg:pl-40 flex flex-col gap-10 justify-center items-end pt-10 lg:pt-0 pb-10 lg:pb-0 border-t mt-10 lg:mt-0 lg:border-t-0">
-            <h1 className="font-poppinsLight text-orange dark:text-white text-5xl lg:text-[60px] w-full whitespace-nowrap">
+            <h1 className="font-poppinsLight text-orange dark:text-white text-5xl lg:text-[60px] 3xl:text-[80px] w-full whitespace-nowrap">
               Get in Touch
             </h1>
             <div className="flex flex-col gap-10 w-full lg:mb-6">
