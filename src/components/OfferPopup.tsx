@@ -9,6 +9,7 @@ interface OfferPopup {
 
 function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
   const [open, setOpen] = useState(false);
+  const [btnHovered, setBtnHovered] = useState(false);
   const titleRef = useRef(null);
 
   return (
@@ -52,7 +53,11 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
         </span>
         {title}
         <div className="ml-3 flex items-center ">
-          <button onClick={() => setOpen(!open)}>
+          <button
+            onClick={() => setOpen(!open)}
+            onMouseEnter={() => setBtnHovered(true)}
+            onMouseLeave={() => setBtnHovered(false)}
+          >
             {
               <svg
                 width="28"
@@ -67,8 +72,8 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
                   cy="14"
                   r="13.5"
                   className={`stroke-orange dark:stroke-grayish ${
-                    open ? "stroke-white" : ""
-                  }`}
+                    btnHovered ? "stroke-green" : ""
+                  } ${open ? "stroke-white" : ""}`}
                 />
                 <path
                   d="M21 14L7 14"
