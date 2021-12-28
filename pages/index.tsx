@@ -60,7 +60,7 @@ const Home: NextPage = () => {
                     <div className="circles__second"></div>
                     <div className="circles__third"></div>
                   </div>
-                  <div className="blocks">
+                  <div className="blocks 3xl:left-[95px] 3xl:top-0">
                     <div className="blocks__first blocks__block"></div>
                     <div className="blocks__second blocks__block"></div>
                     <div className="blocks__third blocks__block"></div>
@@ -226,13 +226,13 @@ const Home: NextPage = () => {
                   </OfferPopup>
                 </ul>
               </div>
-              <h2 className="font-bold">What our customers say:</h2>
+              <h2 className="font-poppinsLight text-[#262626] font-light">What our customers say:</h2>
               <TestimonialGrid variant="decorated" />
             </div>
           </section>
           <section className="two-cols">
             <div className="left">
-              <h2 className="font-bold">
+              <h2>
                 Our <span>Character:</span>
               </h2>
               <ul className="special">
@@ -311,7 +311,7 @@ const Home: NextPage = () => {
               </ul>
             </div>
             <div className="right">
-              <h2 className="font-bold">
+              <h2>
                 <span>No Compromise</span>on:
               </h2>
               <ul className="special blue">

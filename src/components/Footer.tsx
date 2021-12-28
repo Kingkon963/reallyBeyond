@@ -8,7 +8,7 @@ function Footer() {
           <span>REALLY</span>
           <span>BEYOND </span>
         </div>
-        <h2 className="font-bold">Get in Touch</h2>
+        <h2 className="whitespace-nowrap">Get in Touch</h2>
         <div className="circles-wrapper">
           <div className="circles medium">
             <div className="circles__circle circles__first"></div>
