@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media (min-width: 1400px) {
@@ -335,8 +336,8 @@ section.hero {
   }
   .hero__offer {
     position: absolute;
-    right: 293px;
-    top: 585px;
+    right: 59px;
+    top: 299px;
     h4 {
       font-size: 25px;
       line-height: 37px;
@@ -757,8 +758,8 @@ section.two-cols {
   }
   section.hero .hero__vectors {
     position: absolute;
-    top: 200px;
-    right: 210px;
+    top: -41px;
+    right: 94px;
   }
   header .nav {
     min-height: 102px;
@@ -814,8 +815,8 @@ section.two-cols {
     margin-top: 30px;
   }
   section.hero .hero__offer {
-    right: 185px;
-    top: 430px;
+    right: -42px;
+    top: 222px;
   }
   section.hero h2 {
     margin-top: 270px;
@@ -1039,9 +1040,9 @@ section.two-cols {
 }
 
 @media (max-width: 1440px) {
-  section.hero .hero__offer {
-    right: 97px;
-  }
+  // section.hero .hero__offer {
+  //   right: 97px;
+  // }
   section.two-cols .left {
     padding-left: 139px;
   }
