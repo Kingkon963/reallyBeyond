@@ -37,20 +37,20 @@ const Home: NextPage = () => {
             <div className="container">
               <div className="flex-group">
                 <div className="hero__text">
-                  <h5>Working remotely globally</h5>
-                  <h1 className="font-poppinsSemibold">
+                  <h5 className="m-0 leading-none text-[#868686]">Working remotely globally.</h5>
+                  <h1 className="font-poppinsSemibold leading-tight">
                     We go really beyond your
                     <br />
                     expectations to make
                     <br />
                     you happy.
                   </h1>
-                  <p>
+                  <p className="font-openSansRegular text-[#333333]">
                     By keeping you involved all along the process. A process
                     that is designed to bring your <br className="hidden xl:block"/> ideas to life smoothly and
                     quickly.
                   </p>
-                  <a href="#footer" className="contact-us w-[218px] text-center" ref={heroContactBtn}>
+                  <a href="#footer" className="contact-us w-[218px] h-[65px] flex justify-center items-center mt-5" ref={heroContactBtn}>
                     Contact us
                   </a>
                 </div>
