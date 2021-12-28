@@ -235,7 +235,7 @@ const Home: NextPage = () => {
               <h2>
                 Our <span>Character:</span>
               </h2>
-              <ul className="special">
+              <ul className="special xl:-ml-[28px] 3xl:-ml-[164px]">
                 <li>
                   <span>
                     <svg
@@ -314,7 +314,7 @@ const Home: NextPage = () => {
               <h2>
                 <span>No Compromise</span>on:
               </h2>
-              <ul className="special blue">
+              <ul className="special blue 3xl:-ml-[164px]">
                 <li>
                   <span>
                     <svg
