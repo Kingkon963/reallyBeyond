@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <div className="cards">
           <CardWrapper>
-            <div className="card xl:w-full">
+            <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
               <h6>EMAIL</h6>
               <p>
                 <a href="mailto:info@reallybeyond.com">info@reallybeyond.com</a>
@@ -39,21 +39,21 @@ function Footer() {
             </div>
           </CardWrapper>
           <CardWrapper>
-            <div className="card xl:w-full">
+            <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
               <h6>Website</h6>
               <p>
                 <a href="http://www.reallybeyond.com/">www.reallybeyond.com</a>
               </p>
             </div>
-            <div className="flex gap-2 lg:gap-3 items-baseline">
-              <span className="self-start">{facebookIcon}</span>
+            <div className="flex gap-2 lg:gap-3 items-center">
+              <span className="self-s">{facebookIcon}</span>
               <span className="uppercase font-poppinsSemibold text-white">
                 Facebook
               </span>
             </div>
           </CardWrapper>
           <CardWrapper>
-            <div className="card xl:w-full">
+            <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
               <h6>WhatsApp/Telegram</h6>
               <p>
                 <a href="tel:+923484660336">+923484660336</a>
