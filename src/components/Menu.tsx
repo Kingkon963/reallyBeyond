@@ -54,7 +54,14 @@ function Menu() {
     });
   };
 
-  React.useEffect(() => setActiveLink(), []);
+  React.useEffect(() => {
+    setActiveLink();
+    document.body.style.overflowY = "hidden";
+
+    return () => {
+      document.body.style.overflowY = "scroll";
+    };
+  }, []);
 
   return (
     <div className="bg-blue dark:bg-black text-white h-full  flex justify-center pt-10 lg:pt-32">
