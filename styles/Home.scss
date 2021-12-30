@@ -31,9 +31,9 @@
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100vw;
   //   min-height: 10vh;
   z-index: 5;
@@ -325,7 +325,7 @@ ul.special {
 
 section.hero {
   background-color: #f0e3d8;
-  padding: 257px 0 150px;
+  padding: 130px 0 150px;
   position: relative;
   p {
     margin: 24px 0 18px;
@@ -753,7 +753,7 @@ section.two-cols {
 
 @media (max-width: 1800px) {
   section.hero {
-    padding-top: 206px;
+    padding-top: 105px;
     padding-bottom: 119px;
   }
   section.hero .hero__vectors {

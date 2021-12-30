@@ -8,7 +8,7 @@ interface TestimonialGrid {
 function TestimonialGrid({ variant }: TestimonialGrid) {
   const isSimple = variant === "simple";
   return (
-    <div className="testimonials-grid ">
+    <div className={`testimonials-grid ${isSimple ? "3xl:gap-x-[115px]" : ""}`}>
       <Testimonial
         variant={variant}
         author={{ name: "Dr. John Wong", info: "FluidBiotech - Canada" }}
@@ -40,7 +40,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
       </Testimonial>
 
       {isSimple && (
-        <hr className="col-span-full border mt-10 bg-gray-600 mx-5 hidden lg:block" />
+        <hr className="col-span-full border mt-10 bg-[#C9C9C9] hidden lg:block" />
       )}
 
       <Testimonial

@@ -23,20 +23,31 @@ function Testimonial({
     <div
       className={`testimonials-grid__item  ${borderColor ? borderColor : ""} ${
         isSimple
-          ? "border-0 border-b lg:border-b-0 last:border-b-0 border-gray-300"
+          ? "border-0 border-b lg:border-b-0 last:border-b-0 border-gray-300 px-0 min-h-0 h-fit"
           : ""
       }`}
     >
       <span
-        className={`gothic ${isSimple ? "text-green dark:text-black" : ""}`}
+        className={`gothic ${
+          isSimple ? "text-green dark:text-black left-0 " : ""
+        }`}
       >
-        {" "}
-        “{" "}
+        “
       </span>
-      <p className="testimonials-grid__item__text">{children}</p>
+      <p
+        className={`testimonials-grid__item__text ${
+          isSimple ? "mb-7 leading-6" : ""
+        }`}
+      >
+        {children}
+      </p>
       <div className="m-top-auto">
-        <p className="testimonials-grid__item__author 3xl:m-[5px]">{author.name}</p>
-        <p className="testimonials-grid__item__location 3xl:m-[5px]">{author.info}</p>
+        <p className="testimonials-grid__item__author 3xl:m-[5px]">
+          {author.name}
+        </p>
+        <p className="testimonials-grid__item__location 3xl:m-[5px]">
+          {author.info}
+        </p>
       </div>
       {!isSimple && (
         <>
