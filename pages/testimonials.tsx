@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useMedia, useWindowSize } from "react-use";
+import { useMedia } from "react-use";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "@components/Layout";
@@ -8,8 +8,7 @@ import InfinityHeader from "@components/InfinityHeader";
 
 const Testimonials: NextPage = () => {
   const is3XL = useMedia("(min-width: 1800px)");
-  const { width, height } = useWindowSize();
-  console.log(width);
+
   return (
     <div className="overflow-x-clip">
       <Head>
