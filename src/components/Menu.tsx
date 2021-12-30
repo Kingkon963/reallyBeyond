@@ -1,8 +1,8 @@
 import * as React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { behanceIcon, facebookIcon, linkedInIcon } from "src/svgIcons";
 import keyGen from "src/utils/genKey";
+import IconButton from "./IconButton";
 
 function Info({ title, value }: { title: String; value: String }) {
   return (
@@ -92,20 +92,9 @@ function Menu() {
               <Info title="WhatsApp/Telegram" value="+923484660336" />
             </div>
             <div className="w-full mt-auto flex justify-between items-baseline">
-              <div className="flex gap-2 lg:gap-3 items-baseline">
-                {linkedInIcon}
-                <span className="uppercase font-poppinsSemibold">LinkedIn</span>
-              </div>
-
-              <div className="flex gap-2 lg:gap-3 items-baseline">
-                <span className="self-start">{facebookIcon}</span>
-                <span className="uppercase font-poppinsSemibold">Facebook</span>
-              </div>
-
-              <div className="flex gap-2 lg:gap-3 items-baseline">
-                {behanceIcon}
-                <span className="uppercase font-poppinsSemibold">Behance</span>
-              </div>
+              <IconButton name="LinkedIn" />
+              <IconButton name="Facebook" />
+              <IconButton name="Behance" />
             </div>
           </div>
 

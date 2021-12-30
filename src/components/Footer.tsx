@@ -1,5 +1,5 @@
 import * as React from "react";
-import { linkedInIcon, facebookIcon, behanceIcon } from "src/svgIcons";
+import IconButton from "./IconButton";
 
 const CardWrapper: React.FC = ({ children }) => {
   return (
@@ -35,10 +35,7 @@ function Footer() {
                 <a href="mailto:info@reallybeyond.com">info@reallybeyond.com</a>
               </p>
             </div>
-            <div className="flex gap-2 lg:gap-3 items-baseline text-white">
-              {linkedInIcon}
-              <span className="uppercase font-poppinsSemibold">LinkedIn</span>
-            </div>
+            <IconButton name="LinkedIn" />
           </CardWrapper>
           <CardWrapper>
             <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
@@ -47,12 +44,7 @@ function Footer() {
                 <a href="http://www.reallybeyond.com/">www.reallybeyond.com</a>
               </p>
             </div>
-            <div className="flex gap-2 lg:gap-3 items-center">
-              <span className="self-s">{facebookIcon}</span>
-              <span className="uppercase font-poppinsSemibold text-white">
-                Facebook
-              </span>
-            </div>
+            <IconButton name="Facebook" />
           </CardWrapper>
           <CardWrapper>
             <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
@@ -61,12 +53,7 @@ function Footer() {
                 <a href="tel:+923484660336">+923484660336</a>
               </p>
             </div>
-            <div className="flex gap-2 lg:gap-3 items-baseline">
-              {behanceIcon}
-              <span className="uppercase font-poppinsSemibold text-white">
-                Behance
-              </span>
-            </div>
+            <IconButton name="Behance" />
           </CardWrapper>
         </div>
       </div>
