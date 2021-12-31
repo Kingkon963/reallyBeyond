@@ -56,6 +56,9 @@ function Menu() {
 
   React.useEffect(() => {
     setActiveLink();
+  }, [active, router]);
+
+  React.useEffect(() => {
     document.body.style.overflowY = "hidden";
 
     return () => {
@@ -71,8 +74,10 @@ function Menu() {
             {menuItems.map((item) => {
               return (
                 <span
-                  className={`font-poppinsRegular text-2xl lg:text-[30px] 3xl:text-[40px] dark:text-[#878787] dark:hover:text-white hover:text-orange whitespace-nowrap transition-none ${
-                    active === item.title ? "text-orange dark:text-white" : ""
+                  className={`font-poppinsRegular text-2xl lg:text-[30px] 3xl:text-[40px] dark:hover:text-white hover:text-orange whitespace-nowrap transition-none ${
+                    active === item.title
+                      ? "text-orange dark:text-white"
+                      : "dark:text-[#878787]"
                   }`}
                   onClick={() => setActiveLink()}
                   key={keyGen()}
