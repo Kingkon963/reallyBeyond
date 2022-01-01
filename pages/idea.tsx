@@ -12,7 +12,7 @@ const Questions: React.FC = ({ children }) => {
     "Do you have an idea but simply don’t know what is the next step?",
   ];
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-col lg:flex-row ">
       {quetions.map((question, _idx) => {
         return (
           <Question key={keyGen()} number={_idx + 1}>
@@ -26,18 +26,18 @@ const Questions: React.FC = ({ children }) => {
 
 const Question: React.FC<{ number: Number }> = ({ children, number }) => {
   return (
-    <div className="border-t border-[#C9C9C9] relative pt-7 w-1/4">
-      <span className="absolute -top-[13px] left-0 border border-[#C9C9C9] bg-white text-green font-openSansBold rounded-full w-[26px] h-[26px] text-[14px] flex justify-center items-center">
+    <div className="grid grid-flow-col grid-cols-12 lg:block mb-5 last:mb-0 lg:mb-0 lg:border-t border-[#C9C9C9] relative lg:pt-7 lg:w-1/4">
+      <span className=" col-span-1 lg:absolute lg:-top-[13px] lg:left-0 border border-[#C9C9C9] bg-white text-green font-openSansBold rounded-full w-[26px] h-[26px] text-[14px] flex justify-center items-center">
         {number}
       </span>
-      <p className="text-[18px] font-openSansRegular lg:w-[250px]">
+      <p className=" col-start-2 col-end-13 pl-[8px] lg:pl-0  text-[18px] font-openSansRegular lg:w-[250px] mt-[2px] lg:mt-0 overflow-clip">
         {children}
       </p>
     </div>
   );
 };
 
-const Testimonials: NextPage = () => {
+const IdeaPage: NextPage = () => {
   return (
     <div className="overflow-x-clip">
       <Head>
@@ -70,4 +70,4 @@ const Testimonials: NextPage = () => {
   );
 };
 
-export default Testimonials;
+export default IdeaPage;
