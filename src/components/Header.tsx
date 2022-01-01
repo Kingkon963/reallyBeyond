@@ -81,7 +81,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
               </a>
             )}
             <a
-              href="#"
+              href="idea"
               className={` bg-green hover:bg-orange dark:bg-black ${
                 menuOpen ? "dark:bg-white dark:text-black" : ""
               } text-white font-poppinsSemibold tracking-wide flex justify-center items-center btn-general`}
