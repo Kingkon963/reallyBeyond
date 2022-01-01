@@ -47,11 +47,22 @@ const Testimonials: NextPage = () => {
       </Head>
       <Layout>
         <div className="container pt-12">
-          <h1 className="font-poppinsRegular text-[30px] lg:text-[60px]">
+          <h1 className="font-poppinsRegular text-[#262626] text-[30px] lg:text-[60px]">
             A few questions for you:
           </h1>
           <div className="mt-10 mb-20">
             <Questions />
+          </div>
+          <div>
+            <h1 className="font-poppinsRegular text-[#262626] text-[30px] lg:text-[60px]">
+              If your answer is yes
+            </h1>
+            <p className="text-[18px] mt-[5px]">
+              to any of these questions we can be a big help and there are
+              plenty of <br /> details for you on this page. Do you have an idea
+              which you think can be <br /> a great business? We listen to your
+              idea and turn it into a detailed <br /> specifications document.
+            </p>
           </div>
         </div>
       </Layout>
