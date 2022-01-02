@@ -46,25 +46,76 @@ const IdeaPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container pt-12">
-          <h1 className="font-poppinsRegular text-[#262626] text-[30px] lg:text-[60px]">
-            A few questions for you:
-          </h1>
-          <div className="mt-10 mb-20">
-            <Questions />
-          </div>
-          <div>
-            <h1 className="font-poppinsRegular text-[#262626] text-[30px] lg:text-[60px]">
-              If your answer is yes
+        <>
+          <div className="container pt-12 pb-16">
+            <h1 className="font-poppinsLight text-[#262626] text-[30px] lg:text-[60px]">
+              A few questions for you:
             </h1>
-            <p className="text-[18px] mt-[5px]">
-              to any of these questions we can be a big help and there are
-              plenty of <br /> details for you on this page. Do you have an idea
-              which you think can be <br /> a great business? We listen to your
-              idea and turn it into a detailed <br /> specifications document.
-            </p>
+            <div className="mt-10 mb-20">
+              <Questions />
+            </div>
+            <div>
+              <h1 className="font-poppinsLight text-[#262626] text-[30px] lg:text-[60px]">
+                If your answer is yes
+              </h1>
+              <p className="text-[18px] mt-[5px]">
+                to any of these questions we can be a big help and there are
+                plenty of <br /> details for you on this page. Do you have an
+                idea which you think can be <br /> a great business? We listen
+                to your idea and turn it into a detailed <br /> specifications
+                document.
+              </p>
+            </div>
           </div>
-        </div>
+          <div className="bg-blue w-screen py-16 mb-96 ">
+            <div className="container flex relative">
+              <div>
+                <h1 className="font-poppinsLight text-white text-[30px] lg:text-[60px]">
+                  And what after that?
+                </h1>
+                <p className="text-white text-[14px] leading-[150%]">
+                  You can use that visual documentation to quickly share your
+                  ideas with other vendors,
+                  <br /> collaborate on projects with us, or plan your business
+                  budget in no time. We will essentially
+                  <br /> create a document that will have all the information
+                  and specifications that you may need in
+                  <br /> order to get price quotes from technology companies.
+                  <br />
+                  <br /> We have priced this service at $2,000 and we would like
+                  to include a few words on why we
+                  <br /> charge for this server apart from the reason of course
+                  we spend our time.
+                  <br />
+                  <br /> We have collective experience of 15 years to refine the
+                  ideas and create specification
+                  <br /> documents and product development plans.
+                  <br /> We have tried and tested many practices to execute the
+                  product development so we might
+                  <br /> have some great suggestions for you.
+                  <br /> And based on years of experience we have come to the
+                  conclusion that if as a client you don’t
+                  <br /> have a proper specifications document, you end up
+                  spending a lot of extra money and time
+                  <br /> to get the product developed and the journey itself can
+                  be a frustrating one.
+                  <br />
+                  <br />
+                </p>
+                <button className="bg-orange text-white w-[180px] h-[49px]">
+                  Let’s Get Started
+                </button>
+              </div>
+              <div className="flex-1 relative">
+                <div className="w-[365px] h-[352px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center absolute right-0 -top-[225px]">
+                  illustration
+                </div>
+              </div>
+
+              <hr className="border-2 border-orange w-[66px] absolute -top-[66px] -left-[14px] rotate-90" />
+            </div>
+          </div>
+        </>
       </Layout>
     </div>
   );
