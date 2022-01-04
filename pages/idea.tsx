@@ -66,8 +66,8 @@ interface RequirementBox {
 const RequirementBox: React.FC<RequirementBox> = ({ children, color }) => {
   return (
     <div
-      className={`w-[172px] h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[14px] 3xl:text-[16px] 
-      text-[#212121] font-openSansRegular flex justify-center items-center border border-${color}`}
+      className={`w-[153px] h-[55px] xs:w-[170px] lg:w-[172px] lg:h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[17px] lg:text-[14px] 3xl:text-[16px] 
+      text-[#212121] font-openSansRegular flex justify-center items-center border border-${color} `}
     >
       {children}
     </div>
@@ -239,13 +239,13 @@ const IdeaPage: NextPage = () => {
             </div>
             {/* Final Report */}
             <div className="flex">
-              <div className="w-1/2 mt-[85px] 3xl:mt-[125px] -ml-[4px] 3xl:ml-0">
+              <div className="lg:w-1/2 mt-[85px] 3xl:mt-[125px] -ml-[4px] 3xl:ml-0">
                 <PathHeading number={3} text="Final Report" />
-                <p className="text-[14px] 3xl:text-[16px] leading-[150%] max-w-[632px] mt-[7px]">
+                <p className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] max-w-[632px] mt-[7px]">
                   Once step 2 is approved by you, we will prepare a final
                   specifications document consisting of the following:
                 </p>
-                <div className="text-[14px] 3xl:text-[16px] leading-[150%] mt-[16px]">
+                <div className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] mt-[16px]">
                   <ol className="list-[square] ml-[20px] max-w-[665px] text-blue">
                     <li>A refined and detailed project introduction.</li>
                     <li>Functional requirements of the system</li>
@@ -258,15 +258,31 @@ const IdeaPage: NextPage = () => {
                     </li>
                   </ol>
                 </div>
-                <div className="grid grid-cols-3 gap-y-[12px] my-[32px]">
-                  <RequirementBox color="green">Speed</RequirementBox>
-                  <RequirementBox color="orange">Security</RequirementBox>
-                  <RequirementBox color="blue">Capacity</RequirementBox>
-                  <RequirementBox color="orange">Compatibility</RequirementBox>
-                  <RequirementBox color="blue">Reliability</RequirementBox>
-                  <RequirementBox color="green">Usability</RequirementBox>
+                <div className="hidden lg:block">
+                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-[12px] my-[32px]">
+                    <RequirementBox color="green">Speed</RequirementBox>
+                    <RequirementBox color="orange">Security</RequirementBox>
+                    <RequirementBox color="blue">Capacity</RequirementBox>
+                    <RequirementBox color="orange">
+                      Compatibility
+                    </RequirementBox>
+                    <RequirementBox color="blue">Reliability</RequirementBox>
+                    <RequirementBox color="green">Usability</RequirementBox>
+                  </div>
                 </div>
-                <ol className="text-[14px] 3xl:text-[16px] leading-[150%] list-[square] w-[533px] 3xl:w-[647px] ml-[20px] text-blue">
+                <div className="lg:hidden block">
+                  <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-[12px] my-[32px] max-w-[372px]">
+                    <RequirementBox color="green">Speed</RequirementBox>
+                    <RequirementBox color="blue">Reliability</RequirementBox>
+                    <RequirementBox color="orange">
+                      Compatibility
+                    </RequirementBox>
+                    <RequirementBox color="blue">Capacity</RequirementBox>
+                    <RequirementBox color="orange">Security</RequirementBox>
+                    <RequirementBox color="green">Usability</RequirementBox>
+                  </div>
+                </div>
+                <ol className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] list-[square] lg:w-[533px] 3xl:w-[647px] ml-[20px] text-blue">
                   <li className="mb-[16px]">
                     Use Cases. This is a diagram that is a visual representation
                     of who a product’s users are, how they will interact with
@@ -281,7 +297,7 @@ const IdeaPage: NextPage = () => {
                   <li>Timeline estimations.</li>
                 </ol>
               </div>
-              <div className="flex-1 flex justify-center items-center ml-[25px]">
+              <div className="flex-1 hidden lg:flex justify-center items-center ml-[25px]">
                 <div className="w-[365px] h-[352px] 3xl:w-[443px] 3xl:h-[427px] bg-[#F2F8F6] text-[30px] 3xl:text-[36px] font-poppinsLight flex justify-center items-center mt-[63px]">
                   illustration
                 </div>
