@@ -66,7 +66,7 @@ interface RequirementBox {
 const RequirementBox: React.FC<RequirementBox> = ({ children, color }) => {
   return (
     <div
-      className={`w-[153px] h-[55px] xs:w-[170px] lg:w-[172px] lg:h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[17px] lg:text-[14px] 3xl:text-[16px] 
+      className={`w-[153px] h-[55px] xs+:w-[170px] lg:w-[172px] lg:h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[17px] lg:text-[14px] 3xl:text-[16px] 
       text-[#212121] font-openSansRegular flex justify-center items-center border border-${color} `}
     >
       {children}

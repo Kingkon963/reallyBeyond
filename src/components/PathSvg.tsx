@@ -75,6 +75,54 @@ const svgPath1440 = (
   </svg>
 );
 
+const svgPath414 = (
+  <svg
+    width="378"
+    height="1006"
+    viewBox="0 0 378 1006"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="234.393" cy="31.393" r="16.393" fill="white" />
+    <circle
+      cx="234.393"
+      cy="31.393"
+      r="15.7858"
+      stroke="#FF6D42"
+      stroke-opacity="0.7"
+      stroke-width="1.2143"
+    />
+    <circle cx="234.389" cy="31.3929" r="7.89292" fill="#094367" />
+    <path
+      d="M247.499 21.4992C247.499 21.4992 345.348 -59.1252 372.971 100.362C415.86 347.989 82.9766 363.997 25.0002 383.499C-79.9402 418.799 194.146 514.443 194.149 681.194C194.153 922.527 -17.7272 716.59 33.2903 984.999"
+      stroke="#FF6D42"
+      stroke-opacity="0.4"
+      stroke-width="1.2143"
+      stroke-dasharray="7.29 7.29"
+    />
+    <circle cx="16.393" cy="380.393" r="16.393" fill="white" />
+    <circle
+      cx="16.393"
+      cy="380.393"
+      r="15.7858"
+      stroke="#FF6D42"
+      stroke-opacity="0.7"
+      stroke-width="1.2143"
+    />
+    <circle cx="16.3968" cy="380.393" r="7.89292" fill="#094367" />
+    <circle cx="17.1117" cy="989.393" r="16.393" fill="white" />
+    <circle
+      cx="17.1117"
+      cy="989.393"
+      r="15.7858"
+      stroke="#FF6D42"
+      stroke-opacity="0.7"
+      stroke-width="1.2143"
+    />
+    <circle cx="17.1117" cy="989.393" r="7.89292" fill="#094367" />
+  </svg>
+);
+
 const svgPath = (
   <svg
     width="328"
@@ -128,8 +176,11 @@ const PathSvg: React.FC = () => {
 
   return (
     <>
-      <span className="absolute top-[110px] left-[14px]  xs:hidden">
+      <span className="absolute top-[110px] left-[14px]  hidden xs:inline-block">
         {svgPath}
+      </span>
+      <span className="absolute top-[114px] left-[18px] xs:hidden inline-block lg:hidden">
+        {svgPath414}
       </span>
       <span className="absolute top-[49px] -left-[27px] hidden lg:inline-block 3xl:hidden">
         {svgPath1440}

@@ -17,7 +17,8 @@ module.exports = {
         grayish: "#CDCDCD",
       },
       screens: {
-        xs: "400px",
+        xs: { min: "360px", max: "413px" },
+        "xs+": "414px",
         "3xl": "1800px",
       },
       fontFamily: {
