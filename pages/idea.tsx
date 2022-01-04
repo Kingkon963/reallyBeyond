@@ -37,6 +37,56 @@ const Question: React.FC<{ number: Number }> = ({ children, number }) => {
   );
 };
 
+const svgPath = (
+  <svg
+    width="1084"
+    height="677"
+    viewBox="0 0 1084 677"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M204.001 91.001C551.001 185 807.001 -157.499 1030.5 97.5005C1209.3 301.501 881.974 346.515 794.001 337.501C389.001 296.001 110.529 436.71 285.001 576C528.001 770.001 -170.687 447.381 42.0016 668.501"
+      stroke="#FF6D42"
+      stroke-opacity="0.4"
+      stroke-dasharray="6 6"
+    />
+    <circle cx="38.5" cy="663.5" r="13.5" fill="white" />
+    <circle cx="38.5" cy="663.5" r="13" stroke="#FF6D42" stroke-opacity="0.7" />
+    <circle cx="645.5" cy="325.5" r="13.5" fill="white" />
+    <circle
+      cx="645.5"
+      cy="325.5"
+      r="13"
+      stroke="#FF6D42"
+      stroke-opacity="0.7"
+    />
+    <circle cx="208.5" cy="90.5" r="13.5" fill="white" />
+    <circle cx="208.5" cy="90.5" r="13" stroke="#FF6D42" stroke-opacity="0.7" />
+    <circle cx="208.5" cy="90.5" r="6.5" fill="#094367" />
+    <circle cx="645.5" cy="325.5" r="6.5" fill="#094367" />
+    <circle cx="38.5" cy="663.5" r="6.5" fill="#094367" />
+  </svg>
+);
+
+interface PathHeading {
+  number: number;
+  text: String;
+}
+
+const PathHeading: React.FC<PathHeading> = ({ number, text }) => {
+  return (
+    <div className="relative h-[36px]">
+      <span className="absolute -bottom-[18px] -left-[20px] z-0 font-openSansBold text-[#EEF3F2] text-[70px]">
+        {number}
+      </span>
+      <h1 className="absolute left-0 text-[24px] leading-[150%] z-20 font-openSansRegular">
+        {text}
+      </h1>
+    </div>
+  );
+};
+
 const IdeaPage: NextPage = () => {
   return (
     <div className="overflow-x-clip">
@@ -71,7 +121,7 @@ const IdeaPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="bg-blue w-screen py-16 mb-96 ">
+          <div className="bg-blue w-screen py-16">
             <div className="container flex relative">
               <div>
                 <h1 className="font-poppinsLight text-white text-[30px] lg:text-[60px]">
@@ -123,6 +173,74 @@ const IdeaPage: NextPage = () => {
               </div>
 
               <hr className="border-2 border-orange w-[66px] absolute -top-[66px] -left-[14px] rotate-90" />
+            </div>
+          </div>
+          <div className="container py-24  relative h-[3000px]">
+            <span className="absolute top-[25px] -left-[25px]">{svgPath}</span>
+            {/* First Meeting */}
+            <div className="flex mb-[110px]">
+              <div className="w-[550px]">
+                <PathHeading number={1} text="First Meeting" />
+                <p className="text-[14px] leading-[150%]  mt-[7px]">
+                  In our first meeting, we want to know everything about your
+                  idea. You don’t even have to stress about how you are going to
+                  do this. We will be there helping you in the process, asking
+                  you everything we need to know.
+                  <br /> <br /> After our initial meeting we will share a
+                  summary with you. It will be about our conclusions and our
+                  understanding of your idea. Just to make sure we are on the
+                  same page. When we get your approval, we will be ready for the
+                  next step.
+                </p>
+              </div>
+              <div className="flex-1">
+                <div className="w-[205px] h-[198px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:-right-[71px] lg:top-[30px]">
+                  illustration
+                </div>
+              </div>
+            </div>
+            {/* Project Introduction Document */}
+            <div className="flex">
+              <div className="w-1/2 border">
+                <div className="w-[205px] h-[198px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:-left-[76px] lg:top-[342px]">
+                  illustration
+                </div>
+              </div>
+              <div className="flex-1 ml-[25px]">
+                <PathHeading number={2} text="Project Introduction Document" />
+                <p className="text-[14px] leading-[150%]  mt-[7px]">
+                  Once we have the initial overview ready and we are all clear
+                  about the basic idea of the project, we will then prepare a
+                  document consisting of the following:
+                  <div>
+                    <h6 className="text-[18px] text-blue leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
+                      What? Why? How? Who?
+                    </h6>
+                    <ol className="list-[square] ml-[20px] text-blue">
+                      {/*  Why:  How:  Who: */}
+                      <li>
+                        <span className="font-openSansBold">What:</span> We will
+                        define your project, its features and its goals.
+                      </li>
+                      <li>
+                        <span className="font-openSansBold">Why:</span> We will
+                        talk about its importance. What kind of problem it will
+                        help solve.
+                      </li>
+                      <li>
+                        <span className="font-openSansBold">How:</span> We will
+                        explain the procedures that should be followed for
+                        maximum effectiveness of the project.
+                      </li>
+                      <li>
+                        <span className="font-openSansBold">Who:</span> The
+                        roles of everyone that participates in the project will
+                        be defined and their responsibilities will be shared.
+                      </li>
+                    </ol>
+                  </div>
+                </p>
+              </div>
             </div>
           </div>
         </>
