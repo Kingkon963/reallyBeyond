@@ -18,7 +18,7 @@ module.exports = {
       },
       screens: {
         xs: { min: "360px", max: "413px" },
-        "xs+": "414px",
+        xsp: "414px",
         "3xl": "1800px",
       },
       fontFamily: {

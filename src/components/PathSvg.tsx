@@ -89,16 +89,16 @@ const svgPath414 = (
       cy="31.393"
       r="15.7858"
       stroke="#FF6D42"
-      stroke-opacity="0.7"
-      stroke-width="1.2143"
+      strokeOpacity="0.7"
+      strokeWidth="1.2143"
     />
     <circle cx="234.389" cy="31.3929" r="7.89292" fill="#094367" />
     <path
       d="M247.499 21.4992C247.499 21.4992 345.348 -59.1252 372.971 100.362C415.86 347.989 82.9766 363.997 25.0002 383.499C-79.9402 418.799 194.146 514.443 194.149 681.194C194.153 922.527 -17.7272 716.59 33.2903 984.999"
       stroke="#FF6D42"
-      stroke-opacity="0.4"
-      stroke-width="1.2143"
-      stroke-dasharray="7.29 7.29"
+      strokeOpacity="0.4"
+      strokeWidth="1.2143"
+      strokeDasharray="7.29 7.29"
     />
     <circle cx="16.393" cy="380.393" r="16.393" fill="white" />
     <circle
@@ -106,8 +106,8 @@ const svgPath414 = (
       cy="380.393"
       r="15.7858"
       stroke="#FF6D42"
-      stroke-opacity="0.7"
-      stroke-width="1.2143"
+      strokeOpacity="0.7"
+      strokeWidth="1.2143"
     />
     <circle cx="16.3968" cy="380.393" r="7.89292" fill="#094367" />
     <circle cx="17.1117" cy="989.393" r="16.393" fill="white" />
@@ -116,8 +116,8 @@ const svgPath414 = (
       cy="989.393"
       r="15.7858"
       stroke="#FF6D42"
-      stroke-opacity="0.7"
-      stroke-width="1.2143"
+      strokeOpacity="0.7"
+      strokeWidth="1.2143"
     />
     <circle cx="17.1117" cy="989.393" r="7.89292" fill="#094367" />
   </svg>
