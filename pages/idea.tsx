@@ -87,6 +87,20 @@ const PathHeading: React.FC<PathHeading> = ({ number, text }) => {
   );
 };
 
+interface RequirementBox {
+  color: "green" | "orange" | "blue";
+}
+
+const RequirementBox: React.FC<RequirementBox> = ({ children, color }) => {
+  return (
+    <div
+      className={`w-[172px] h-[45px] text-[14px] text-[#212121] font-openSansRegular flex justify-center items-center border border-${color}`}
+    >
+      {children}
+    </div>
+  );
+};
+
 const IdeaPage: NextPage = () => {
   return (
     <div className="overflow-x-clip">
@@ -179,9 +193,9 @@ const IdeaPage: NextPage = () => {
             <span className="absolute top-[25px] -left-[25px]">{svgPath}</span>
             {/* First Meeting */}
             <div className="flex mb-[110px]">
-              <div className="w-[550px]">
+              <div className="w-1/2">
                 <PathHeading number={1} text="First Meeting" />
-                <p className="text-[14px] leading-[150%]  mt-[7px]">
+                <p className="text-[14px] leading-[150%] w-[550px] mt-[7px]">
                   In our first meeting, we want to know everything about your
                   idea. You don’t even have to stress about how you are going to
                   do this. We will be there helping you in the process, asking
@@ -201,7 +215,7 @@ const IdeaPage: NextPage = () => {
             </div>
             {/* Project Introduction Document */}
             <div className="flex">
-              <div className="w-1/2 border">
+              <div className="w-1/2 ">
                 <div className="w-[205px] h-[198px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:-left-[76px] lg:top-[342px]">
                   illustration
                 </div>
@@ -240,6 +254,56 @@ const IdeaPage: NextPage = () => {
                     </ol>
                   </div>
                 </p>
+              </div>
+            </div>
+            {/* Final Report */}
+            <div className="flex">
+              <div className="w-1/2 mt-[80px] -ml-[4px]">
+                <PathHeading number={3} text="Final Report" />
+                <p className="text-[14px] leading-[150%] mt-[7px]">
+                  Once step 2 is approved by you, we will prepare a final
+                  specifications document consisting of the following:
+                  <div className="mt-[16px]">
+                    <ol className="list-[square] ml-[20px] text-blue">
+                      <li>A refined and detailed project introduction.</li>
+                      <li>Functional requirements of the system</li>
+                      <li>
+                        Non-Functional Requirements that will explain how the
+                        project should perform. It covers all the remaining
+                        requirements which are not covered by the functional
+                        requirements. It is an added document that covers topics
+                        like
+                      </li>
+                    </ol>
+                  </div>
+                </p>
+                <div className="grid grid-cols-3 gap-y-[12px] my-[32px]">
+                  <RequirementBox color="green">Speed</RequirementBox>
+                  <RequirementBox color="orange">Security</RequirementBox>
+                  <RequirementBox color="blue">Capacity</RequirementBox>
+                  <RequirementBox color="orange">Compatibility</RequirementBox>
+                  <RequirementBox color="blue">Reliability</RequirementBox>
+                  <RequirementBox color="green">Usability</RequirementBox>
+                </div>
+                <ol className="text-[14px] leading-[150%] list-[square] w-[533px] ml-[20px] text-blue">
+                  <li className="mb-[16px]">
+                    Use Cases. This is a diagram that is a visual representation
+                    of who a product’s users are, how they will interact with
+                    the product, and what the product does.
+                  </li>
+                  <li className="mb-[16px]">
+                    Technical Specifications. This is a detailed document that
+                    talks about the technical requirements agreed by both
+                    parties that will serve to define the requirements of the
+                    product.
+                  </li>
+                  <li>Timeline estimations.</li>
+                </ol>
+              </div>
+              <div className="flex-1 flex justify-center items-center ml-[25px]">
+                <div className="w-[365px] h-[352px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center mt-[63px]">
+                  illustration
+                </div>
               </div>
             </div>
           </div>
