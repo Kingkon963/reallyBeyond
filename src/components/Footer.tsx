@@ -19,7 +19,7 @@ function Footer() {
         </div>
         <div className="relative">
           <h2 className="whitespace-nowrap">Get in Touch</h2>
-          <div className="circles-wrapper -top-[38px] -right-[104px] 3xl:-top-[46px] 3xl:-right-[126px]">
+          <div className="circles-wrapper -top-[40px] -right-[57px] lg:-top-[38px] lg:-right-[104px] 3xl:-top-[46px] 3xl:-right-[126px]">
             <div className="circles medium">
               <div className="circles__circle circles__first"></div>
               <div className="circles__circle circles__second"></div>
