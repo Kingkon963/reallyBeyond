@@ -80,14 +80,15 @@ function Header({ showContactBtn = false }: HeaderInterface) {
                 Contact us
               </a>
             )}
-            <a
-              href="idea"
-              className={` bg-green hover:bg-orange dark:bg-black ${
-                menuOpen ? "dark:bg-white dark:text-black" : ""
-              } text-white font-poppinsSemibold tracking-wide flex justify-center items-center btn-general`}
-            >
-              I have an Idea!
-            </a>
+            <Link href="idea">
+              <a
+                className={` bg-green hover:bg-orange dark:bg-black ${
+                  menuOpen ? "dark:bg-white dark:text-black" : ""
+                } text-white font-poppinsSemibold tracking-wide flex justify-center items-center btn-general`}
+              >
+                I have an Idea!
+              </a>
+            </Link>
           </div>
           <button
             className={`font-montserratBold ml-7 tracking-widest text-xl ${
