@@ -78,8 +78,8 @@ const IdeaPage: NextPage = () => {
   return (
     <div className="overflow-x-clip">
       <Head>
-        <title>Really Beyond | Blog</title>
-        <meta name="description" content="Blog" />
+        <title>Really Beyond | Idea</title>
+        <meta name="description" content="Idea" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
@@ -103,7 +103,7 @@ const IdeaPage: NextPage = () => {
                 document.
               </p>
             </div>
-            <div className="w-[365px] h-[352px] mt-5 lg:hidden bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:right-0 lg:-top-[225px]">
+            <div className="w-[328px] h-[316px] xsp:w-[377px] lg:w-[365px] lg:h-[352px] mt-5 lg:hidden bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:right-0 lg:-top-[225px]">
               illustration
             </div>
           </div>
@@ -299,6 +299,43 @@ const IdeaPage: NextPage = () => {
               </div>
               <div className="flex-1 hidden lg:flex justify-center items-center ml-[25px]">
                 <div className="w-[365px] h-[352px] 3xl:w-[443px] 3xl:h-[427px] bg-[#F2F8F6] text-[30px] 3xl:text-[36px] font-poppinsLight flex justify-center items-center mt-[63px]">
+                  illustration
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-blue w-screen pt-16 pb-16 lg:pb-40 3xl:pb-40 mb-12">
+            <div className="container lg:flex relative">
+              <div>
+                <h1
+                  className="font-poppinsLight text-white text-[30px] mb-4 lg:mb-0 lg:text-[60px] lg:w-[974px] 3xl:w-[1091px] 
+                leading-tight"
+                >
+                  Having a clear plan and specifications document is a peace of
+                  mind.
+                </h1>
+                <p className="text-white text-[14px] 3xl:text-[16px] leading-[150%] lg:mt-[35px] lg:w-[548px] 3xl:w-[697px]">
+                  Worth mentioning here that once we deliver the service and you
+                  decide to continue working with us for your product
+                  development we will return $2000 back to you.
+                  <br />
+                  <br /> Lack of clarity brings confusion and you end up
+                  spending much more than initially planned. What we want to do
+                  is shine a light on your ideas so that you can communicate
+                  them better with the companies you want to work with.
+                  <br />
+                  <br />
+                </p>
+                <button className="bg-orange text-white w-full lg:w-[180px] h-[49px]">
+                  Let’s Get Started
+                </button>
+              </div>
+              <div className="flex-1 lg:relative">
+                <div
+                  className="w-[328px] h-[307px] xsp:w-[382px] xsp:h-[363px] lg:w-[365px] lg:h-[352px] bg-[#F2F8F6] text-[30px] font-poppinsLight 
+                flex justify-center items-center mt-8 lg:mt-0 lg:absolute lg:right-[98px] lg:top-[203px] 3xl:right-[164px]"
+                >
                   illustration
                 </div>
               </div>
