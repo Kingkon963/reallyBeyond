@@ -45,11 +45,14 @@ interface PathHeading {
 
 const PathHeading: React.FC<PathHeading> = ({ number, text }) => {
   return (
-    <div className="relative h-[36px]">
-      <span className="absolute -bottom-[18px] -left-[20px] 3xl:-bottom-[29px] 3xl:-left-[27px] z-0 font-openSansBold text-[#EEF3F2] text-[70px] 3xl:text-[85px]">
-        {number}
-      </span>
-      <h1 className="absolute left-0 text-[24px] 3xl:text-[30px] leading-[150%] z-20 font-openSansRegular">
+    <div>
+      <h1 className=" relative left-0 text-[30px] lg:text-[24px] 3xl:text-[30px] leading-[150%] z-20 font-openSansRegular">
+        <span
+          className="absolute -top-[24px] -left-[12px] lg:-bottom-[18px] lg:-left-[20px] 3xl:-bottom-[29px] 3xl:-left-[27px] -z-10 
+      font-openSansBold text-[#EEF3F2] text-[85px] lg:text-[70px] 3xl:text-[85px] "
+        >
+          {number}
+        </span>
         {text}
       </h1>
     </div>
@@ -63,7 +66,8 @@ interface RequirementBox {
 const RequirementBox: React.FC<RequirementBox> = ({ children, color }) => {
   return (
     <div
-      className={`w-[172px] h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[14px] 3xl:text-[16px] text-[#212121] font-openSansRegular flex justify-center items-center border border-${color}`}
+      className={`w-[172px] h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[14px] 3xl:text-[16px] 
+      text-[#212121] font-openSansRegular flex justify-center items-center border border-${color}`}
     >
       {children}
     </div>
@@ -159,13 +163,13 @@ const IdeaPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="container py-[73px] 3xl:py-36 relative ">
+          <div className="container pt-[120px] pb-[100px] 3xl:pt-[165px] relative ">
             <PathSvg />
             {/* First Meeting */}
-            <div className="flex mb-[110px] 3xl:mb-[145px]">
-              <div className="w-1/2">
+            <div className="flex mb-[114px] 3xl:mb-[140px]">
+              <div className="lg:w-1/2">
                 <PathHeading number={1} text="First Meeting" />
-                <p className="text-[14px] 3xl:text-[16px] leading-[150%] w-[550px] 3xl:w-[668px] mt-[7px] 3xl:mt-[14px]">
+                <p className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] lg:w-[550px] 3xl:w-[668px] mt-[7px] 3xl:mt-[14px]">
                   In our first meeting, we want to know everything about your
                   idea. You don’t even have to stress about how you are going to
                   do this. We will be there helping you in the process, asking
@@ -177,11 +181,11 @@ const IdeaPage: NextPage = () => {
                   next step.
                 </p>
               </div>
-              <div className="flex-1">
+              <div className="flex-1 hidden lg:block">
                 <div
                   className="w-[205px] h-[198px] 3xl:w-[249px] 3xl:h-[240.5px] bg-[#F2F8F6] 
-                text-[30px] 3xl:text-[36px] font-poppinsLight flex justify-center items-center 
-                lg:absolute lg:-right-[71px] lg:top-[30px] 3xl:-right-[170px] 3xl:top-[82px]"
+                text-[30px] 3xl:text-[36px] font-poppinsLight lg:flex justify-center items-center 
+                lg:absolute lg:-right-[69px] lg:top-[55px] 3xl:-right-[170px] 3xl:top-[82px]"
                 >
                   illustration
                 </div>
@@ -189,23 +193,23 @@ const IdeaPage: NextPage = () => {
             </div>
             {/* Project Introduction Document */}
             <div className="flex">
-              <div className="w-1/2 ">
+              <div className="lg:w-1/2 hidden lg:block">
                 <div
                   className="w-[205px] h-[198px] 3xl:w-[250px] 3xl:h-[240px] bg-[#F2F8F6] text-[30px] 3xl:text-[36px] font-poppinsLight 
-                flex justify-center items-center lg:absolute lg:-left-[76px] lg:top-[342px] 3xl:top-[460px] 3xl:-left-[130px]"
+                 lg:flex justify-center items-center lg:absolute lg:-left-[76px] lg:top-[368px] 3xl:top-[460px] 3xl:-left-[130px]"
                 >
                   illustration
                 </div>
               </div>
-              <div className="flex-1 ml-[25px] 3xl:ml-[32px]">
+              <div className="flex-1 lg:ml-[22px] 3xl:ml-[32px]">
                 <PathHeading number={2} text="Project Introduction Document" />
-                <p className="text-[14px] 3xl:text-[16px] leading-[150%]  mt-[7px]">
+                <p className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%]  mt-[7px]">
                   Once we have the initial overview ready and we are all clear
                   about the basic idea of the project, we will then prepare a
                   document consisting of the following:
                 </p>
-                <div className="text-[14px] 3xl:text-[16px] leading-[150%]">
-                  <h6 className="text-[18px] text-blue leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
+                <div className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%]">
+                  <h6 className="text-[21px] lg:text-[18px] text-blue leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
                     What? Why? How? Who?
                   </h6>
                   <ol className="list-[square] ml-[20px] text-blue">
@@ -235,7 +239,7 @@ const IdeaPage: NextPage = () => {
             </div>
             {/* Final Report */}
             <div className="flex">
-              <div className="w-1/2 mt-[80px] 3xl:mt-[130px] -ml-[4px]">
+              <div className="w-1/2 mt-[85px] 3xl:mt-[125px] -ml-[4px] 3xl:ml-0">
                 <PathHeading number={3} text="Final Report" />
                 <p className="text-[14px] 3xl:text-[16px] leading-[150%] max-w-[632px] mt-[7px]">
                   Once step 2 is approved by you, we will prepare a final

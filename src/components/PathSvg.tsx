@@ -80,14 +80,16 @@ const PathSvg: React.FC = () => {
 
   return (
     <>
-      <span className="absolute top-[25px] -left-[25px] hidden lg:inline-block 3xl:hidden">
+      <span className="absolute top-[49px] -left-[27px] hidden lg:inline-block 3xl:hidden">
         {svgPath}
       </span>
-      ;
+      {/* <span className="hidden lg:inline-block">;</span>
+      Will remove later */}
       <span className="absolute top-[82px] -left-[33px] hidden 3xl:inline-block">
         {svgPath1920}
       </span>
-      ;
+      {/* <span className="hidden lg:inline-block">;</span>
+      Will remove later */}
     </>
   );
 };
