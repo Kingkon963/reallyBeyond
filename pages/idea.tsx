@@ -239,7 +239,7 @@ const IdeaPage: NextPage = () => {
             </div>
             {/* Final Report */}
             <div className="flex">
-              <div className="lg:w-1/2 mt-[85px] 3xl:mt-[125px] -ml-[4px] 3xl:ml-0">
+              <div className="lg:w-1/2 mt-[125px] lg:mt-[85px] 3xl:mt-[125px]  lg:-ml-[4px] 3xl:ml-0">
                 <PathHeading number={3} text="Final Report" />
                 <p className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] max-w-[632px] mt-[7px]">
                   Once step 2 is approved by you, we will prepare a final
