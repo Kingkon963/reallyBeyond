@@ -80,7 +80,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
                 Contact us
               </a>
             )}
-            <Link href="idea">
+            <Link href="/idea">
               <a
                 className={` bg-green hover:bg-orange dark:bg-black ${
                   menuOpen ? "dark:bg-white dark:text-black" : ""

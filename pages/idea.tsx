@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Layout from "@components/Layout";
 import keyGen from "src/utils/genKey";
+import PathSvg from "@components/PathSvg";
 
 const Questions: React.FC = ({ children }) => {
   const quetions = [
@@ -37,38 +38,6 @@ const Question: React.FC<{ number: Number }> = ({ children, number }) => {
   );
 };
 
-const svgPath = (
-  <svg
-    width="1084"
-    height="677"
-    viewBox="0 0 1084 677"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M204.001 91.001C551.001 185 807.001 -157.499 1030.5 97.5005C1209.3 301.501 881.974 346.515 794.001 337.501C389.001 296.001 110.529 436.71 285.001 576C528.001 770.001 -170.687 447.381 42.0016 668.501"
-      stroke="#FF6D42"
-      stroke-opacity="0.4"
-      stroke-dasharray="6 6"
-    />
-    <circle cx="38.5" cy="663.5" r="13.5" fill="white" />
-    <circle cx="38.5" cy="663.5" r="13" stroke="#FF6D42" stroke-opacity="0.7" />
-    <circle cx="645.5" cy="325.5" r="13.5" fill="white" />
-    <circle
-      cx="645.5"
-      cy="325.5"
-      r="13"
-      stroke="#FF6D42"
-      stroke-opacity="0.7"
-    />
-    <circle cx="208.5" cy="90.5" r="13.5" fill="white" />
-    <circle cx="208.5" cy="90.5" r="13" stroke="#FF6D42" stroke-opacity="0.7" />
-    <circle cx="208.5" cy="90.5" r="6.5" fill="#094367" />
-    <circle cx="645.5" cy="325.5" r="6.5" fill="#094367" />
-    <circle cx="38.5" cy="663.5" r="6.5" fill="#094367" />
-  </svg>
-);
-
 interface PathHeading {
   number: number;
   text: String;
@@ -77,10 +46,10 @@ interface PathHeading {
 const PathHeading: React.FC<PathHeading> = ({ number, text }) => {
   return (
     <div className="relative h-[36px]">
-      <span className="absolute -bottom-[18px] -left-[20px] z-0 font-openSansBold text-[#EEF3F2] text-[70px]">
+      <span className="absolute -bottom-[18px] -left-[20px] 3xl:-bottom-[29px] 3xl:-left-[27px] z-0 font-openSansBold text-[#EEF3F2] text-[70px] 3xl:text-[85px]">
         {number}
       </span>
-      <h1 className="absolute left-0 text-[24px] leading-[150%] z-20 font-openSansRegular">
+      <h1 className="absolute left-0 text-[24px] 3xl:text-[30px] leading-[150%] z-20 font-openSansRegular">
         {text}
       </h1>
     </div>
@@ -94,7 +63,7 @@ interface RequirementBox {
 const RequirementBox: React.FC<RequirementBox> = ({ children, color }) => {
   return (
     <div
-      className={`w-[172px] h-[45px] text-[14px] text-[#212121] font-openSansRegular flex justify-center items-center border border-${color}`}
+      className={`w-[172px] h-[45px] 3xl:w-[209px] 3xl:h-[55px] text-[14px] 3xl:text-[16px] text-[#212121] font-openSansRegular flex justify-center items-center border border-${color}`}
     >
       {children}
     </div>
@@ -141,7 +110,7 @@ const IdeaPage: NextPage = () => {
                 <h1 className="font-poppinsLight text-white text-[30px] lg:text-[60px]">
                   And what after that?
                 </h1>
-                <p className="text-white text-[14px] leading-[150%]">
+                <p className="text-white text-[14px] 3xl:text-[16px] leading-[150%]">
                   You can use that visual documentation to quickly share your
                   ideas with other vendors,
                   <br className="hidden lg:block" /> collaborate on projects
@@ -189,13 +158,14 @@ const IdeaPage: NextPage = () => {
               <hr className="border-2 border-orange w-[66px] absolute -top-[66px] -left-[14px] rotate-90" />
             </div>
           </div>
-          <div className="container py-24  relative h-[3000px]">
-            <span className="absolute top-[25px] -left-[25px]">{svgPath}</span>
+
+          <div className="container py-[73px] 3xl:py-36 relative ">
+            <PathSvg />
             {/* First Meeting */}
-            <div className="flex mb-[110px]">
+            <div className="flex mb-[110px] 3xl:mb-[145px]">
               <div className="w-1/2">
                 <PathHeading number={1} text="First Meeting" />
-                <p className="text-[14px] leading-[150%] w-[550px] mt-[7px]">
+                <p className="text-[14px] 3xl:text-[16px] leading-[150%] w-[550px] 3xl:w-[668px] mt-[7px] 3xl:mt-[14px]">
                   In our first meeting, we want to know everything about your
                   idea. You don’t even have to stress about how you are going to
                   do this. We will be there helping you in the process, asking
@@ -208,7 +178,11 @@ const IdeaPage: NextPage = () => {
                 </p>
               </div>
               <div className="flex-1">
-                <div className="w-[205px] h-[198px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:-right-[71px] lg:top-[30px]">
+                <div
+                  className="w-[205px] h-[198px] 3xl:w-[249px] 3xl:h-[240.5px] bg-[#F2F8F6] 
+                text-[30px] 3xl:text-[36px] font-poppinsLight flex justify-center items-center 
+                lg:absolute lg:-right-[71px] lg:top-[30px] 3xl:-right-[170px] 3xl:top-[82px]"
+                >
                   illustration
                 </div>
               </div>
@@ -216,67 +190,70 @@ const IdeaPage: NextPage = () => {
             {/* Project Introduction Document */}
             <div className="flex">
               <div className="w-1/2 ">
-                <div className="w-[205px] h-[198px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center lg:absolute lg:-left-[76px] lg:top-[342px]">
+                <div
+                  className="w-[205px] h-[198px] 3xl:w-[250px] 3xl:h-[240px] bg-[#F2F8F6] text-[30px] 3xl:text-[36px] font-poppinsLight 
+                flex justify-center items-center lg:absolute lg:-left-[76px] lg:top-[342px] 3xl:top-[460px] 3xl:-left-[130px]"
+                >
                   illustration
                 </div>
               </div>
-              <div className="flex-1 ml-[25px]">
+              <div className="flex-1 ml-[25px] 3xl:ml-[32px]">
                 <PathHeading number={2} text="Project Introduction Document" />
-                <p className="text-[14px] leading-[150%]  mt-[7px]">
+                <p className="text-[14px] 3xl:text-[16px] leading-[150%]  mt-[7px]">
                   Once we have the initial overview ready and we are all clear
                   about the basic idea of the project, we will then prepare a
                   document consisting of the following:
-                  <div>
-                    <h6 className="text-[18px] text-blue leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
-                      What? Why? How? Who?
-                    </h6>
-                    <ol className="list-[square] ml-[20px] text-blue">
-                      {/*  Why:  How:  Who: */}
-                      <li>
-                        <span className="font-openSansBold">What:</span> We will
-                        define your project, its features and its goals.
-                      </li>
-                      <li>
-                        <span className="font-openSansBold">Why:</span> We will
-                        talk about its importance. What kind of problem it will
-                        help solve.
-                      </li>
-                      <li>
-                        <span className="font-openSansBold">How:</span> We will
-                        explain the procedures that should be followed for
-                        maximum effectiveness of the project.
-                      </li>
-                      <li>
-                        <span className="font-openSansBold">Who:</span> The
-                        roles of everyone that participates in the project will
-                        be defined and their responsibilities will be shared.
-                      </li>
-                    </ol>
-                  </div>
                 </p>
+                <div className="text-[14px] 3xl:text-[16px] leading-[150%]">
+                  <h6 className="text-[18px] text-blue leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
+                    What? Why? How? Who?
+                  </h6>
+                  <ol className="list-[square] ml-[20px] text-blue">
+                    {/*  Why:  How:  Who: */}
+                    <li>
+                      <span className="font-openSansBold">What:</span> We will
+                      define your project, its features and its goals.
+                    </li>
+                    <li>
+                      <span className="font-openSansBold">Why:</span> We will
+                      talk about its importance. What kind of problem it will
+                      help solve.
+                    </li>
+                    <li>
+                      <span className="font-openSansBold">How:</span> We will
+                      explain the procedures that should be followed for maximum
+                      effectiveness of the project.
+                    </li>
+                    <li>
+                      <span className="font-openSansBold">Who:</span> The roles
+                      of everyone that participates in the project will be
+                      defined and their responsibilities will be shared.
+                    </li>
+                  </ol>
+                </div>
               </div>
             </div>
             {/* Final Report */}
             <div className="flex">
-              <div className="w-1/2 mt-[80px] -ml-[4px]">
+              <div className="w-1/2 mt-[80px] 3xl:mt-[130px] -ml-[4px]">
                 <PathHeading number={3} text="Final Report" />
-                <p className="text-[14px] leading-[150%] mt-[7px]">
+                <p className="text-[14px] 3xl:text-[16px] leading-[150%] max-w-[632px] mt-[7px]">
                   Once step 2 is approved by you, we will prepare a final
                   specifications document consisting of the following:
-                  <div className="mt-[16px]">
-                    <ol className="list-[square] ml-[20px] text-blue">
-                      <li>A refined and detailed project introduction.</li>
-                      <li>Functional requirements of the system</li>
-                      <li>
-                        Non-Functional Requirements that will explain how the
-                        project should perform. It covers all the remaining
-                        requirements which are not covered by the functional
-                        requirements. It is an added document that covers topics
-                        like
-                      </li>
-                    </ol>
-                  </div>
                 </p>
+                <div className="text-[14px] 3xl:text-[16px] leading-[150%] mt-[16px]">
+                  <ol className="list-[square] ml-[20px] max-w-[665px] text-blue">
+                    <li>A refined and detailed project introduction.</li>
+                    <li>Functional requirements of the system</li>
+                    <li>
+                      Non-Functional Requirements that will explain how the
+                      project should perform. It covers all the remaining
+                      requirements which are not covered by the functional
+                      requirements. It is an added document that covers topics
+                      like
+                    </li>
+                  </ol>
+                </div>
                 <div className="grid grid-cols-3 gap-y-[12px] my-[32px]">
                   <RequirementBox color="green">Speed</RequirementBox>
                   <RequirementBox color="orange">Security</RequirementBox>
@@ -285,7 +262,7 @@ const IdeaPage: NextPage = () => {
                   <RequirementBox color="blue">Reliability</RequirementBox>
                   <RequirementBox color="green">Usability</RequirementBox>
                 </div>
-                <ol className="text-[14px] leading-[150%] list-[square] w-[533px] ml-[20px] text-blue">
+                <ol className="text-[14px] 3xl:text-[16px] leading-[150%] list-[square] w-[533px] 3xl:w-[647px] ml-[20px] text-blue">
                   <li className="mb-[16px]">
                     Use Cases. This is a diagram that is a visual representation
                     of who a product’s users are, how they will interact with
@@ -301,7 +278,7 @@ const IdeaPage: NextPage = () => {
                 </ol>
               </div>
               <div className="flex-1 flex justify-center items-center ml-[25px]">
-                <div className="w-[365px] h-[352px] bg-[#F2F8F6] text-[30px] font-poppinsLight flex justify-center items-center mt-[63px]">
+                <div className="w-[365px] h-[352px] 3xl:w-[443px] 3xl:h-[427px] bg-[#F2F8F6] text-[30px] 3xl:text-[36px] font-poppinsLight flex justify-center items-center mt-[63px]">
                   illustration
                 </div>
               </div>
