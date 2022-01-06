@@ -28,7 +28,7 @@ const Questions: React.FC = ({ children }) => {
 const Question: React.FC<{ number: Number }> = ({ children, number }) => {
   return (
     <div className="grid grid-flow-col grid-cols-12 lg:block mb-5 last:mb-0 lg:mb-0 lg:border-t border-[#C9C9C9] relative lg:pt-7 lg:w-1/4">
-      <span className=" col-span-1 lg:absolute lg:-top-[13px] lg:left-0 border border-[#C9C9C9] bg-white text-green font-openSansBold rounded-full w-[26px] h-[26px] text-[14px] flex justify-center items-center">
+      <span className=" col-span-1 lg:absolute lg:-top-[13px] lg:left-0 border border-[#C9C9C9] bg-white text-green dark:text-black font-openSansBold rounded-full w-[26px] h-[26px] text-[14px] flex justify-center items-center">
         {number}
       </span>
       <p className=" col-start-2 col-end-13 pl-[8px] lg:pl-0  text-[18px] font-openSansRegular lg:w-[250px] mt-[2px] lg:mt-0 overflow-clip">
@@ -72,7 +72,7 @@ const RequirementBox: React.FC<RequirementBox> = ({ children, color }) => {
       ${color === "green" ? "border-green" : ""}
       ${color === "orange" ? "border-orange" : ""}
       ${color === "blue" ? "border-blue" : ""}
-      
+      dark:border-[#9F9F9F]
       `}
     >
       {children}
@@ -114,7 +114,7 @@ const IdeaPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="bg-blue w-screen py-16">
+          <div className="bg-blue dark:bg-black w-screen py-16">
             <div className="container flex relative">
               <div>
                 <h1 className="font-poppinsLight text-white text-[30px] lg:text-[60px]">
@@ -155,7 +155,7 @@ const IdeaPage: NextPage = () => {
                   <br />
                   <br />
                 </p>
-                <button className="bg-orange text-white w-full lg:w-[180px] h-[49px]">
+                <button className="bg-orange dark:bg-white text-white dark:text-black font-poppinsSemibold w-full lg:w-[180px] h-[49px]">
                   Let’s Get Started
                 </button>
               </div>
@@ -165,7 +165,7 @@ const IdeaPage: NextPage = () => {
                 </div>
               </div>
 
-              <hr className="border-2 border-orange w-[66px] absolute -top-[66px] -left-[14px] rotate-90" />
+              <hr className="border border-orange dark:border-grayish w-[66px] absolute -top-[66px] -left-[14px] rotate-90" />
             </div>
           </div>
 
@@ -215,11 +215,10 @@ const IdeaPage: NextPage = () => {
                   document consisting of the following:
                 </p>
                 <div className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%]">
-                  <h6 className="text-[21px] lg:text-[18px] text-blue leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
+                  <h6 className="text-[21px] lg:text-[18px] text-blue dark:text-black leading-[150%] font-openSansRegular mt-[12px] mb-[5px]">
                     What? Why? How? Who?
                   </h6>
-                  <ol className="list-[square] ml-[20px] text-blue">
-                    {/*  Why:  How:  Who: */}
+                  <ol className="list-[square] ml-[20px] text-blue dark:text-black">
                     <li>
                       <span className="font-openSansBold">What:</span> We will
                       define your project, its features and its goals.
@@ -252,7 +251,7 @@ const IdeaPage: NextPage = () => {
                   specifications document consisting of the following:
                 </p>
                 <div className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] mt-[16px]">
-                  <ol className="list-[square] ml-[20px] max-w-[665px] text-blue">
+                  <ol className="list-[square] ml-[20px] max-w-[665px] text-blue dark:text-black">
                     <li>A refined and detailed project introduction.</li>
                     <li>Functional requirements of the system</li>
                     <li>
@@ -288,7 +287,10 @@ const IdeaPage: NextPage = () => {
                     <RequirementBox color="green">Usability</RequirementBox>
                   </div>
                 </div>
-                <ol className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] list-[square] lg:w-[533px] 3xl:w-[647px] ml-[20px] text-blue">
+                <ol
+                  className="text-[16px] lg:text-[14px] 3xl:text-[16px] leading-[150%] list-[square] lg:w-[533px] 3xl:w-[647px] ml-[20px]
+                 text-blue dark:text-black"
+                >
                   <li className="mb-[16px]">
                     Use Cases. This is a diagram that is a visual representation
                     of who a product’s users are, how they will interact with
@@ -311,7 +313,7 @@ const IdeaPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="bg-blue w-screen pt-16 pb-16 lg:pb-40 3xl:pb-40">
+          <div className="bg-blue dark:bg-black w-screen pt-16 pb-16 lg:pb-40 3xl:pb-40">
             <div className="container lg:flex relative">
               <div>
                 <h1
@@ -333,7 +335,7 @@ const IdeaPage: NextPage = () => {
                   <br />
                   <br />
                 </p>
-                <button className="bg-orange text-white w-full lg:w-[180px] h-[49px]">
+                <button className="bg-orange dark:bg-white text-white dark:text-black font-poppinsSemibold w-full lg:w-[180px] h-[49px]">
                   Let’s Get Started
                 </button>
               </div>
@@ -348,10 +350,10 @@ const IdeaPage: NextPage = () => {
             </div>
           </div>
 
-          <div className="bg-[#F0E3D8] w-screen py-14 ">
+          <div className="bg-[#F0E3D8] dark:bg-[#E7E7E7] w-screen py-14 ">
             <div className="container lg:flex justify-between items-center">
               <h1
-                className="font-poppinsSemibold text-blue text-[50px] lg:text-[90px] 3xl:text-[110px] 
+                className="font-poppinsSemibold text-blue dark:text-black text-[50px] lg:text-[90px] 3xl:text-[110px] 
               leading-[60px] lg:leading-[108px] 3xl:leading-[132px]"
               >
                 <span className="text-black">Sign up</span> <br />
@@ -374,7 +376,7 @@ const IdeaPage: NextPage = () => {
                     lg:w-[308px]"
                   />
                 </div>
-                <button className=" h-[50px] font-poppinsSemibold text-white text-[14px] bg-orange ">
+                <button className=" h-[50px] font-poppinsSemibold text-white text-[14px] bg-orange dark:bg-black dark:text-white">
                   Get the newsletter
                 </button>
               </div>

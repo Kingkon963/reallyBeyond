@@ -24,6 +24,7 @@ const svgPath1920 = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
     <circle cx="783.295" cy="394.883" r="16.393" fill="white" />
     <circle
@@ -33,6 +34,7 @@ const svgPath1920 = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
     <circle cx="252.655" cy="109.524" r="16.393" fill="white" />
     <circle
@@ -42,10 +44,29 @@ const svgPath1920 = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="252.651" cy="109.524" r="7.89292" fill="#094367" />
-    <circle cx="783.299" cy="394.883" r="7.89292" fill="#094367" />
-    <circle cx="46.221" cy="805.315" r="7.89292" fill="#094367" />
+    <circle
+      cx="252.651"
+      cy="109.524"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
+    <circle
+      cx="783.299"
+      cy="394.883"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
+    <circle
+      cx="46.221"
+      cy="805.315"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
   </svg>
 );
 
@@ -64,14 +85,53 @@ const svgPath1440 = (
       strokeDasharray="6 6"
     />
     <circle cx="38.5" cy="663.5" r="13.5" fill="white" />
-    <circle cx="38.5" cy="663.5" r="13" stroke="#FF6D42" strokeOpacity="0.7" />
+    <circle
+      cx="38.5"
+      cy="663.5"
+      r="13"
+      stroke="#FF6D42"
+      strokeOpacity="0.7"
+      className="dark:stroke-grayish"
+    />
     <circle cx="645.5" cy="325.5" r="13.5" fill="white" />
-    <circle cx="645.5" cy="325.5" r="13" stroke="#FF6D42" strokeOpacity="0.7" />
+    <circle
+      cx="645.5"
+      cy="325.5"
+      r="13"
+      stroke="#FF6D42"
+      strokeOpacity="0.7"
+      className="dark:stroke-grayish"
+    />
     <circle cx="208.5" cy="90.5" r="13.5" fill="white" />
-    <circle cx="208.5" cy="90.5" r="13" stroke="#FF6D42" strokeOpacity="0.7" />
-    <circle cx="208.5" cy="90.5" r="6.5" fill="#094367" />
-    <circle cx="645.5" cy="325.5" r="6.5" fill="#094367" />
-    <circle cx="38.5" cy="663.5" r="6.5" fill="#094367" />
+    <circle
+      cx="208.5"
+      cy="90.5"
+      r="13"
+      stroke="#FF6D42"
+      strokeOpacity="0.7"
+      className="dark:stroke-grayish"
+    />
+    <circle
+      cx="208.5"
+      cy="90.5"
+      r="6.5"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
+    <circle
+      cx="645.5"
+      cy="325.5"
+      r="6.5"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
+    <circle
+      cx="38.5"
+      cy="663.5"
+      r="6.5"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
   </svg>
 );
 
@@ -91,8 +151,15 @@ const svgPath414 = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="234.389" cy="31.3929" r="7.89292" fill="#094367" />
+    <circle
+      cx="234.389"
+      cy="31.3929"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
     <path
       d="M247.499 21.4992C247.499 21.4992 345.348 -59.1252 372.971 100.362C415.86 347.989 82.9766 363.997 25.0002 383.499C-79.9402 418.799 194.146 514.443 194.149 681.194C194.153 922.527 -17.7272 716.59 33.2903 984.999"
       stroke="#FF6D42"
@@ -108,8 +175,15 @@ const svgPath414 = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="16.3968" cy="380.393" r="7.89292" fill="#094367" />
+    <circle
+      cx="16.3968"
+      cy="380.393"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
     <circle cx="17.1117" cy="989.393" r="16.393" fill="white" />
     <circle
       cx="17.1117"
@@ -118,8 +192,15 @@ const svgPath414 = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="17.1117" cy="989.393" r="7.89292" fill="#094367" />
+    <circle
+      cx="17.1117"
+      cy="989.393"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
   </svg>
 );
 
@@ -139,8 +220,15 @@ const svgPath = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="218.389" cy="34.3929" r="7.89292" fill="#094367" />
+    <circle
+      cx="218.389"
+      cy="34.3929"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
     <path
       d="M224.999 17.9995C224.999 17.9995 298.564 -56.5004 323.576 102.968C362.411 350.566 79.4969 440 26.9999 459.5C-68.0222 494.795 161.652 517 161.655 683.731C161.659 925.035 -32.1957 754.622 14 1023"
       stroke="#FF6D42"
@@ -156,8 +244,15 @@ const svgPath = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="48.3968" cy="452.393" r="7.89292" fill="#094367" />
+    <circle
+      cx="48.3968"
+      cy="452.393"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
     <circle cx="17.1117" cy="1040.39" r="16.393" fill="white" />
     <circle
       cx="17.1117"
@@ -166,8 +261,15 @@ const svgPath = (
       stroke="#FF6D42"
       strokeOpacity="0.7"
       strokeWidth="1.2143"
+      className="dark:stroke-grayish"
     />
-    <circle cx="17.1117" cy="1040.39" r="7.89292" fill="#094367" />
+    <circle
+      cx="17.1117"
+      cy="1040.39"
+      r="7.89292"
+      fill="#094367"
+      className="dark:fill-[#7A7A7A]"
+    />
   </svg>
 );
 
