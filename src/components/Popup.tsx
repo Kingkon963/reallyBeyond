@@ -33,7 +33,7 @@ function Popup({ open, close, children, callerRef }: PopupProps) {
         </>
       </Portal>
       <div
-        className="absolute -left-12 mt-2 bg-white w-screen lg:w-[603px] px-7 py-10 shadow z-[1000]"
+        className="absolute left-[18%] lg:-left-12 mt-2 bg-white w-[320px] lg:w-[603px] px-[25px] py-[28px] shadow z-[1000]"
         ref={contentRef}
       >
         <div className="font-openSansRegular">{children}</div>

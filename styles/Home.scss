@@ -1350,6 +1350,9 @@ section.two-cols {
 }
 
 @media (max-width: 400px) {
+  section.hero {
+    padding-top: 73px;
+  }
   section.hero h5 {
     font-size: 12px;
   }
@@ -1383,7 +1386,10 @@ section.two-cols {
   ul.special {
     font-size: 13px;
   }
-
+  section.hero .hero__offer .special {
+    left: -56px;
+    top: -9px;
+  }
   section.two-cols ul {
     font-size: 14px;
   }

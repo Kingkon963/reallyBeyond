@@ -55,7 +55,7 @@ const Home: NextPage = () => {
                   </p>
                   <a
                     href="#footer"
-                    className="contact-us w-[218px] h-[65px] flex justify-center items-center mt-5"
+                    className="contact-us sm:w-[218px] h-[65px] flex justify-center items-center mt-5"
                     ref={heroContactBtn}
                   >
                     Contact us
@@ -94,28 +94,12 @@ const Home: NextPage = () => {
                         Process:
                       </span>
                       <ul className="text-sm lg:text-[14px]  relative list-inside list-disc">
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Color Palette Selection
-                          </span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Fonts Selection</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Sketches</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Logo Draft</span>
-                        </li>
-                        <li className="before:hidden relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">Revisions</span>
-                        </li>
-                        <li className="before:hidden  relative m-0 p-0 w-full translate-x-5 lg:translate-x-0">
-                          <span className="left-4">
-                            Polishing and Final Touches
-                          </span>
-                        </li>
+                        <ListItem>Color Palette Selection</ListItem>
+                        <ListItem>Fonts Selection</ListItem>
+                        <ListItem>Sketches</ListItem>
+                        <ListItem>Logo Draft</ListItem>
+                        <ListItem>Revisions</ListItem>
+                        <ListItem>Polishing and Final Touches</ListItem>
                       </ul>
                     </div>
                   </OfferPopup>
@@ -164,7 +148,7 @@ const Home: NextPage = () => {
                         Fast, Secure and Optimized Websites, Mobile Apps and
                         solutions of all complexities
                       </span>
-                      <p className="mt-0 text-sm lg:text-[14px] leading-snug">
+                      <p className="mt-0 text-sm lg:text-[14px] leading-snug w-[273px] sm:w-auto">
                         Skilled developers and Software Engineers will take care
                         of your needs and make everything like a breeze for you.
                         We make sure you just sit back and relax while we
@@ -174,7 +158,7 @@ const Home: NextPage = () => {
                       <p className="text-lg lg:text-[18px] text-orange dark:text-black mb-0">
                         Process:
                       </p>
-                      <ul className="text-sm lg:text-[14px] ml-5 list-outside list-disc">
+                      <ul className="text-sm lg:text-[14px] ml-5 list-outside list-disc w-[258px] sm:w-auto">
                         <ListItem>
                           UX/UI Design: An imagery representation and wireframes
                           of your complete system with all the colors, icons,
@@ -219,7 +203,7 @@ const Home: NextPage = () => {
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-sm lg:text-[14px] relative list-inside list-disc">
+                      <ul className="text-sm lg:text-[14px] relative ml-5 list-outside list-disc">
                         <ListItem>Initial Discussion</ListItem>
                         <ListItem>
                           Detailed Analysis of Your Requirements
