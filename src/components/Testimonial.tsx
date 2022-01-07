@@ -2,7 +2,7 @@ import React from "react";
 
 interface Testimonial {
   variant?: "simple" | "decorated";
-  borderColor?: "orange" | "greenish";
+  borderColor?: "orange" | "greenish" | String;
   children: String | JSX.Element;
   designElement?: "circles" | "blocks" | "blocksSmall";
   author: {

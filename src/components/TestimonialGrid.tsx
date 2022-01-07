@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useMedia } from "react-use";
 import Testimonial from "./Testimonial";
 
 interface TestimonialGrid {
@@ -6,7 +7,14 @@ interface TestimonialGrid {
 }
 
 function TestimonialGrid({ variant }: TestimonialGrid) {
+  const [isMobile, setIsMobile] = useState(true);
+  const isBelow_sm = useMedia("(max-width: 640px)");
   const isSimple = variant === "simple";
+
+  useEffect(() => {
+    setIsMobile(isBelow_sm);
+  }, [isBelow_sm]);
+
   return (
     <div className={`testimonials-grid ${isSimple ? "3xl:gap-x-[115px]" : ""}`}>
       <Testimonial
@@ -46,6 +54,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
       <Testimonial
         variant={variant}
         author={{ name: "Adil Ali", info: "Sincere Digital - UK" }}
+        borderColor={isMobile ? "orange" : ""}
       >
         Nailed absolutely every element of the work. Understood the brief and
         the quality of the work was fantastic. Would highly recommend!
@@ -54,7 +63,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
         variant={variant}
         author={{ name: "Josh M.", info: "Lichen - Canada" }}
         designElement="blocksSmall"
-        borderColor="greenish"
+        borderColor={isMobile ? "" : "greenish"}
       >
         <>
           Great work. Built our entire site on React. Created custom graphics
@@ -70,7 +79,7 @@ function TestimonialGrid({ variant }: TestimonialGrid) {
           info: "Mission-Beach House Apartment - Australia",
         }}
         designElement="circles"
-        borderColor="orange"
+        borderColor={isMobile ? "greenish" : "orange"}
       >
         <>
           Did a terrific job developing a website for our holiday let apartment.

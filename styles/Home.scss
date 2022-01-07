@@ -1352,6 +1352,7 @@ section.two-cols {
 @media (max-width: 400px) {
   section.hero {
     padding-top: 73px;
+    padding-bottom: 60px;
   }
   section.hero h5 {
     font-size: 12px;
@@ -1426,5 +1427,13 @@ section.two-cols {
   .homeFooter .inner .cards .card h6,
   .homeFooter .inner .cards .card p {
     font-size: 20px;
+  }
+
+  .testimonials-grid__item:nth-child(3) .bolt {
+    transform: rotate(90deg);
+    transform-origin: right;
+  }
+  .testimonials-grid__item:nth-child(5) .bolt {
+    visibility: hidden;
   }
 }
