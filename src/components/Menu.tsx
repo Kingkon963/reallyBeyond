@@ -106,7 +106,7 @@ function Menu() {
           <div className="lg:hidden">
             <Link href="/idea">
               <a
-                className={` bg-green text-white font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
+                className={` bg-green text-white dark:bg-white dark:text-black font-poppinsSemibold tracking-wide flex justify-center items-center px-12 py-5 q`}
               >
                 I have an Idea!
               </a>

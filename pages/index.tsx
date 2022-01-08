@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-sm lg:text-[14px]  relative list-inside list-disc">
+                      <ul className="text-sm lg:text-[14px]  relative ml-5 list-outside list-disc">
                         <ListItem>Color Palette Selection</ListItem>
                         <ListItem>Fonts Selection</ListItem>
                         <ListItem>Sketches</ListItem>
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
                           Multidimensional and multi-users Mobile and Web Apps
                         </ListItem>
                       </ul>
-                      <p className="text-lg lg:text-[18px] mb-0 text-orange">
+                      <p className="text-lg lg:text-[18px] mb-0 text-orange dark:text-black">
                         Process:
                       </p>
                       <ul className="text-sm lg:text-[14px]  relative ml-5 list-outside list-disc">

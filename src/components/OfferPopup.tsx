@@ -16,7 +16,7 @@ function OfferPopup({ title, children, shortCurlySVG = false }: OfferPopup) {
     <>
       <li
         ref={titleRef}
-        className={`flex items-center ${
+        className={`flex items-center font-poppinsRegular ${
           open ? "text-white z-[1000]" : ""
         } transition-none`}
       >
