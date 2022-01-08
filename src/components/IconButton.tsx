@@ -6,7 +6,7 @@ function LinkedinIcon({ hovered }: { hovered: boolean }) {
     <div
       className={`flex gap-2 lg:gap-3 items-baseline ${
         hovered ? "text-orange dark:text-white" : "text-white"
-      } transition-none`}
+      } transition-none `}
     >
       <svg
         width="17"
@@ -14,6 +14,7 @@ function LinkedinIcon({ hovered }: { hovered: boolean }) {
         viewBox="0 0 23 21"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="mt-[0px]"
       >
         <path
           d="M0.899414 2.45339C0.899414 1.76886 1.14267 1.20413 1.62917 0.759204C2.11567 0.314259 2.74815 0.0917969 3.52655 0.0917969C4.29107 0.0917969 4.90962 0.31083 5.38223 0.748936C5.86873 1.20072 6.11199 1.78939 6.11199 2.515C6.11199 3.17214 5.87569 3.71974 5.40308 4.15785C4.91658 4.60963 4.27716 4.83552 3.48485 4.83552H3.464C2.69948 4.83552 2.08094 4.60963 1.60832 4.15785C1.13571 3.70606 0.899414 3.1379 0.899414 2.45339ZM1.17047 20.422V6.70426H5.79924V20.422H1.17047ZM8.36382 20.422H12.9926V12.7623C12.9926 12.2831 13.0482 11.9134 13.1594 11.6533C13.354 11.1879 13.6494 10.7943 14.0455 10.4725C14.4417 10.1508 14.9386 9.98995 15.5363 9.98995C17.0932 9.98995 17.8716 11.0236 17.8716 13.0908V20.422H22.5003V12.5569C22.5003 10.5307 22.0138 8.99398 21.0408 7.94666C20.0678 6.89935 18.782 6.37569 17.1835 6.37569C15.3904 6.37569 13.9934 7.13551 12.9926 8.65514V8.69621H12.9717L12.9926 8.65514V6.70426H8.36382C8.39162 7.14234 8.40552 8.50453 8.40552 10.7908C8.40552 13.0771 8.39162 16.2875 8.36382 20.422Z"
@@ -21,7 +22,7 @@ function LinkedinIcon({ hovered }: { hovered: boolean }) {
           className={`${hovered ? "fill-orange dark:fill-white" : ""}`}
         />
       </svg>
-      <span className="uppercase font-poppinsSemibold transition-none">
+      <span className="uppercase font-poppinsSemibold transition-none text-[14px]  self-start">
         LinkedIn
       </span>
     </div>
@@ -55,7 +56,7 @@ function FacebookIcon({ hovered }: { hovered: boolean }) {
           />
         </svg>
       </span>
-      <span className="uppercase font-poppinsSemibold transition-none">
+      <span className="uppercase font-poppinsSemibold transition-none text-[14px]">
         Facebook
       </span>
     </div>
@@ -82,7 +83,7 @@ function BehanceIcon({ hovered }: { hovered: boolean }) {
           className={`${hovered ? "fill-orange dark:fill-white" : ""}`}
         />
       </svg>
-      <span className="uppercase font-poppinsSemibold transition-none">
+      <span className="uppercase font-poppinsSemibold transition-none text-[14px]">
         Behance
       </span>
     </div>

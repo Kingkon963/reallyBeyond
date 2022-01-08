@@ -696,7 +696,7 @@ section.two-cols {
   }
   .inner {
     margin: 0 auto;
-    padding: 110px 268px 126px;
+    padding: 110px 268px 0px;
     max-width: 1920px;
     display: flex;
     flex-direction: column;
@@ -735,6 +735,7 @@ section.two-cols {
           text-align: center;
           font-family: "Poppins Semibold";
           color: #fff;
+          text-transform: uppercase;
         }
         p {
           text-align: center;
@@ -1049,8 +1050,9 @@ section.two-cols {
   section.two-cols .right {
     padding-left: 50px;
   }
+
   .homeFooter .inner {
-    padding: 88px 167px 100px;
+    padding: 88px 167px 31px;
   }
   .homeFooter .circles-wrapper {
     top: 75px;

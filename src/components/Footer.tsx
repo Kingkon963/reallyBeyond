@@ -12,7 +12,7 @@ const CardWrapper: React.FC = ({ children }) => {
 function Footer() {
   return (
     <footer id="footer" className="homeFooter">
-      <div className="inner xl:pb-[50px] 3xl:pb-[63px]">
+      <div className="inner">
         <div className="logo">
           <span>REALLY</span>
           <span>BEYOND </span>
@@ -35,7 +35,6 @@ function Footer() {
                 <a href="mailto:info@reallybeyond.com">info@reallybeyond.com</a>
               </p>
             </div>
-            <IconButton name="LinkedIn" />
           </CardWrapper>
           <CardWrapper>
             <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
@@ -44,7 +43,6 @@ function Footer() {
                 <a href="http://www.reallybeyond.com/">www.reallybeyond.com</a>
               </p>
             </div>
-            <IconButton name="Facebook" />
           </CardWrapper>
           <CardWrapper>
             <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
@@ -53,8 +51,18 @@ function Footer() {
                 <a href="tel:+923484660336">+923484660336</a>
               </p>
             </div>
-            <IconButton name="Behance" />
           </CardWrapper>
+        </div>
+        <div className="cards grid-cols-3 mt-5 lg:mt-[42px] 3xl:mt-[53px] bg-re-500 w-full">
+          <div className="bg-yello-400 flex justify-start sm:justify-center">
+            <IconButton name="LinkedIn" />
+          </div>
+          <div className="bg-yello-400 flex justify-center">
+            <IconButton name="Facebook" />
+          </div>
+          <div className="bg-yello-400 flex justify-end sm:justify-center">
+            <IconButton name="Behance" />
+          </div>
         </div>
       </div>
     </footer>
