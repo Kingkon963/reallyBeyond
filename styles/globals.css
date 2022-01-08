@@ -36,6 +36,11 @@ body {
   font-display: swap;
 }
 @font-face {
+  font-family: "Open Sans Medium";
+  src: url("/fonts/OpenSans/OpenSans-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
   font-family: "Open Sans Bold";
   src: url("/fonts/OpenSans/OpenSans-Bold.ttf");
   font-display: swap;

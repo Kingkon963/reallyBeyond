@@ -155,7 +155,7 @@ const Home: NextPage = () => {
                         develop your dream app or website. A very small one page
                         website to an enterprise level solution - We can do it.
                       </p>
-                      <p className="text-lg lg:text-[18px] text-orange dark:text-black mb-0">
+                      <p className="text-lg lg:text-[18px] text-orange dark:text-black mb-[5px] lg:mb-auto">
                         Process:
                       </p>
                       <ul className="text-sm lg:text-[14px] ml-5 list-outside list-disc w-[258px] sm:w-auto">
@@ -186,7 +186,8 @@ const Home: NextPage = () => {
                   <OfferPopup title="Consultancy" shortCurlySVG={true}>
                     <div>
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
-                        From idea refinement to launch
+                        From idea refinement to <br className="xsp:hidden" />{" "}
+                        launch
                       </span>
                       <p className="mt-0 text-sm lg:text-[14px] leading-snug">
                         Set of different processes and strategies to achieve all
@@ -203,7 +204,7 @@ const Home: NextPage = () => {
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-sm lg:text-[14px] relative ml-5 list-outside list-disc">
+                      <ul className="text-sm lg:text-[14px] relative ml-5 list-outside list-disc w-full sm:w-auto">
                         <ListItem>Initial Discussion</ListItem>
                         <ListItem>
                           Detailed Analysis of Your Requirements

@@ -25,6 +25,7 @@ module.exports = {
         montserratBold: "Montserrat Bold",
         pathwayGothicOne: "Pathway Gothic One",
         openSansRegular: "Open Sans Regular",
+        openSansMedium: "Open Sans Medium",
         poppinsSemibold: "Poppins Semibold",
         poppinsRegular: "Poppins Regular",
         poppinsLight: "Poppins Light",
