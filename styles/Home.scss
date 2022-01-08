@@ -1250,7 +1250,7 @@ section.two-cols {
   }
 
   ul.special {
-    font-size: 15px;
+    font-size: 16px;
   }
   ul.special li {
     padding-left: 150px;
@@ -1351,13 +1351,36 @@ section.two-cols {
   }
 }
 
+@media (max-width: 640px) {
+  section.hero {
+    padding-top: 78px;
+    padding-bottom: 60px;
+  }
+  section.hero h5 {
+    padding-bottom: 12.5px;
+  }
+  section.hero .hero__offer .special {
+    left: -42px;
+    top: -9px;
+  }
+
+  .testimonials-grid__item:nth-child(3) .bolt {
+    transform: rotate(90deg);
+    transform-origin: right;
+  }
+  .testimonials-grid__item:nth-child(5) .bolt {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 400px) {
   section.hero {
-    padding-top: 73px;
+    padding-top: 71px;
     padding-bottom: 60px;
   }
   section.hero h5 {
     font-size: 12px;
+    padding-bottom: 10px;
   }
   section.hero h1 {
     font-size: 25px;
@@ -1387,7 +1410,7 @@ section.two-cols {
   }
 
   ul.special {
-    font-size: 13px;
+    font-size: 14px;
   }
   section.hero .hero__offer .special {
     left: -56px;
@@ -1429,13 +1452,5 @@ section.two-cols {
   .homeFooter .inner .cards .card h6,
   .homeFooter .inner .cards .card p {
     font-size: 20px;
-  }
-
-  .testimonials-grid__item:nth-child(3) .bolt {
-    transform: rotate(90deg);
-    transform-origin: right;
-  }
-  .testimonials-grid__item:nth-child(5) .bolt {
-    visibility: hidden;
   }
 }
