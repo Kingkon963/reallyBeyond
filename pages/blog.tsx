@@ -14,8 +14,8 @@ const Testimonials: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container relative border pb-24 lg:px-32 mt-20">
-          <div className="relative my-24 border">
+        <div className="container relative pb-24 lg:px-32 mt-20">
+          <div className="relative mb-24 mt-32">
             <span
               className="uppercase font-openSansBold text-gray-400 tracking-wide 
             text-[.625rem] absolute left-0 -top-10"
@@ -31,7 +31,13 @@ const Testimonials: NextPage = () => {
             </span>
           </div>
 
-          <div className="">
+          <div className="mb-5">
+            <BlogPost />
+            <BlogPost />
+            <BlogPost />
+            <BlogPost />
+            <BlogPost />
+            <BlogPost />
             <BlogPost />
           </div>
         </div>
