@@ -726,9 +726,10 @@ section.two-cols {
       grid-template-columns: repeat(3, minmax(0, 1fr));
       column-gap: 47px;
       .card {
-        padding: 55px 65px 40px;
+        //padding: 55px 65px 40px;
         border: 2.5px solid #348c41;
-        min-height: 186px;
+        //min-height: 186px;
+        height: 100%;
         h6 {
           font-size: 20px;
           line-height: 30px;
@@ -1209,6 +1210,11 @@ section.two-cols {
     column-gap: 0;
     row-gap: 27px;
   }
+  .homeFooter {
+    .card {
+      min-height: 149px;
+    }
+  }
   .homeFooter .inner .logo {
     font-size: 16px;
   }
@@ -1379,6 +1385,12 @@ section.two-cols {
   .testimonials-grid__item:nth-child(5) .bolt {
     visibility: hidden;
   }
+
+  .homeFooter {
+    .card {
+      min-height: 174.85px;
+    }
+  }
 }
 
 @media (max-width: 400px) {
@@ -1447,6 +1459,11 @@ section.two-cols {
   .homeFooter .inner h2 {
     font-size: 35px;
     line-height: 52px;
+  }
+  .homeFooter {
+    .card {
+      min-height: 154px;
+    }
   }
 
   section.hero .testimonials-grid__item .blocks-wrapper {

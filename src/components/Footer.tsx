@@ -3,7 +3,7 @@ import IconButton from "./IconButton";
 
 const CardWrapper: React.FC = ({ children }) => {
   return (
-    <div className="flex flex-col items-center xl:gap-[50px] 3xl:gap-[63px]">
+    <div className="lg:w-[343px] lg:h-[149px] 3xl:w-[429px] 3xl:h-[186px]">
       {children}
     </div>
   );
@@ -27,9 +27,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="cards">
+        <div className="cards lg:gap-x-[38px] 3xl:gap-x-[48px]">
           <CardWrapper>
-            <div className="card xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
+            <div className="card  xl:w-full py-0 flex flex-col justify-center items-center 3xl:gap-5">
               <h6>EMAIL</h6>
               <p>
                 <a href="mailto:info@reallybeyond.com">info@reallybeyond.com</a>
