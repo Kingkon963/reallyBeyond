@@ -55,7 +55,7 @@ const Home: NextPage = () => {
                   </p>
                   <a
                     href="#footer"
-                    className="contact-us sm:w-[218px] h-[65px] flex justify-center items-center mt-5"
+                    className="contact-us dark:bg-black dark:visited:bg-black sm:w-[218px] h-[65px] flex justify-center items-center mt-5"
                     ref={heroContactBtn}
                   >
                     Contact us
