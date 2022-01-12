@@ -14,15 +14,15 @@ const Testimonials: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container relative pb-24 lg:px-32 mt-20">
-          <div className="relative mb-24 mt-32">
+        <div className="container relative py-24 lg:pl-[150px]">
+          <div className="relative mb-24 ">
             <span
               className="uppercase font-openSansBold text-gray-400 tracking-wide 
             text-[.625rem] absolute left-0 -top-10"
             >
               Learning Constantly. Exploring Opportunities. Always Improving
             </span>
-            <InfinityHeader gap={20}>Our Thoughts</InfinityHeader>
+            <InfinityHeader gap={9.5}>Our Thoughts</InfinityHeader>
             <span
               className="uppercase font-openSansBold text-gray-400 tracking-wide 
             text-[.625rem] absolute top-[86px] left-[259px]"
@@ -31,7 +31,7 @@ const Testimonials: NextPage = () => {
             </span>
           </div>
 
-          <div className="mb-5">
+          <div>
             <BlogPost />
             <BlogPost />
             <BlogPost />
