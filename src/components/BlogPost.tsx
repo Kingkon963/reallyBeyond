@@ -7,7 +7,7 @@ const BlogPost: React.FC = () => {
     <div className="flex py-[40px] gap-[31px] border-b border-green lg:w-[904px]">
       <div className="flex-1 flex flex-col items-center justify-start gap-2 text-[12px] text-[#7D7D7D]">
         <div className="rounded-full w-[65px] h-[65px] border overflow-clip flex justify-center items-center">
-          <Image src="/images/profile_pic_demo.jpg" width={65} height={65} />
+          <Image src="/images/profile_pic.png" width={65} height={65} />
         </div>
         <span className="uppercase font-openSansBold text-[12px]">
           Jane Elliot
