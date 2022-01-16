@@ -4,7 +4,7 @@ import * as React from "react";
 
 const BlogPost: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row pt-[40px] pb-[20px] lg:py-[40px] gap-[12px] lg:gap-[31px] border-b border-green lg:w-[904px]">
+    <div className="flex flex-col lg:flex-row py-[20px] lg:py-[40px] gap-[12px] lg:gap-[31px] border-b border-green lg:w-[904px]">
       <div className="flex-1 flex lg:flex-col items-center justify-start gap-3 text-[12px] text-[#7D7D7D] ">
         <div className="rounded-full w-[65px] h-[65px] border overflow-clip flex justify-center items-center">
           <Image src="/images/profile_pic.png" width={65} height={65} />
