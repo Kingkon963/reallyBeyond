@@ -14,18 +14,18 @@ const Testimonials: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className="container relative py-24 flex flex-col items-center ">
-          <div className="relative mb-24 w-[904px]">
+        <div className="container relative pt-24 pb-12 lg:py-24 lg:flex lg:flex-col lg:items-center ">
+          <div className="relative mb-[62px] lg:mb-24 lg:w-[904px]">
             <span
-              className="uppercase font-openSansBold text-gray-400 tracking-wide 
-            text-[.625rem] absolute left-0 -top-10"
+              className="uppercase font-openSansBold text-[#7D7D7D] 
+            text-[12px] absolute left-0 -top-10"
             >
               Learning Constantly. Exploring Opportunities. Always Improving
             </span>
             <InfinityHeader gap={11}>Our Thoughts</InfinityHeader>
             <span
-              className="uppercase font-openSansBold text-gray-400 tracking-wide 
-            text-[.625rem] absolute top-[86px] left-[259px]"
+              className="uppercase font-openSansBold text-[#7D7D7D] 
+              text-[12px] absolute mt-[10px] lg:mt-0 lg:top-[86px] lg:left-[259px]"
             >
               Here is all that we think and can't resist sharing it with you
             </span>
