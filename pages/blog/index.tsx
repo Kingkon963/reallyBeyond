@@ -5,7 +5,7 @@ import Layout from "@components/Layout";
 import InfinityHeader from "@components/InfinityHeader";
 import BlogPost from "@components/BlogPost";
 
-const Testimonials: NextPage = () => {
+const BlogPage: NextPage = () => {
   return (
     <div className="overflow-x-clip">
       <Head>
@@ -48,4 +48,4 @@ const Testimonials: NextPage = () => {
   );
 };
 
-export default Testimonials;
+export default BlogPage;
