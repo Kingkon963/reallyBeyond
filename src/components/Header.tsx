@@ -29,13 +29,19 @@ function Header({ showContactBtn = false }: HeaderInterface) {
       z-[100] shadow-none transition-none ${
         menuOpen
           ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
-          : "border-b border-[#C9C9C9]"
+          : smallScreen
+          ? "border-b border-[#C9C9C9]"
+          : ""
       }`}
     >
       <div className={`container`}>
         <div
           className={`nav  ${
-            menuOpen ? "border-b-0 dark:border-b-0" : "dark:border-gray-300"
+            menuOpen
+              ? "border-b-0 dark:border-b-0"
+              : !smallScreen
+              ? "border-b dark:border-gray-300"
+              : "border-b-0"
           } `}
         >
           <div className={`logo-wrapper  `}>
