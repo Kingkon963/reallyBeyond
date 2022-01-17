@@ -20,7 +20,7 @@ function ColorSwitch() {
 
   const checkPosition = () => {
     if (process.browser && elRef.current) {
-      if (window.scrollY > 40 && window.innerWidth <= 1024) {
+      if (window.scrollY > 18 && window.innerWidth <= 1024) {
         elRef.current.hidden = true;
       } else {
         elRef.current.hidden = false;
