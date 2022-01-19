@@ -59,7 +59,6 @@ interface ServiceCard {
   title: string | JSX.Element;
   number: number;
   mirror?: boolean;
-  titleY?: number;
 }
 
 const ServiceCard: React.FC<ServiceCard> = ({
@@ -67,7 +66,6 @@ const ServiceCard: React.FC<ServiceCard> = ({
   number,
   children,
   mirror = false,
-  titleY,
 }) => {
   const getTextContent = (elem: JSX.Element, text = ""): string => {
     if (typeof elem.props.children === "string") return elem.props.children;
@@ -86,7 +84,6 @@ const ServiceCard: React.FC<ServiceCard> = ({
   let largeTitle = false; // Checking if the title is double line or not
   if (typeof title === "string") largeTitle = title.length > 17;
   else {
-    console.log(title);
     largeTitle = getTextContent(title).length > 17;
   }
 
@@ -103,15 +100,13 @@ const ServiceCard: React.FC<ServiceCard> = ({
       <div
         className={`font-poppinsLight text-[30px] leading-[45px]
         lg:text-[60px] lg:leading-[90px]
-        absolute top-[28px] ${
+        absolute top-[28px] lg:top-[101px] ${
           mirror
-            ? "left-[44px]"
+            ? "lg:scale-x-flip left-[44px]"
             : largeTitle
             ? "left-[27px] lg:left-[67px]"
             : "left-[67px]"
         }
-        ${titleY ? `lg:top-[${titleY}px]` : "lg:top-[101px]"}
-        ${mirror ? "lg:scale-x-flip" : ""}
          z-10`}
       >
         {title}
@@ -134,7 +129,7 @@ const ServiceCard: React.FC<ServiceCard> = ({
       </div>
 
       <div
-        className={`absolute right-[28px] lg:-right-[401px] lg:top-[97px] 3xl:-right-[475px] 3xl:top-[110px]
+        className={`absolute right-[28px] lg:-right-[401px] lg:top-[110px] 3xl:-right-[475px] 3xl:top-[110px]
       flex flex-col items-end z-10 ${mirror ? "lg:scale-x-flip" : ""}`}
       >
         <span className="font-poppinsLight text-[30px] leading-[45px] lg:text-[60px] lg:leading-[65px]">
