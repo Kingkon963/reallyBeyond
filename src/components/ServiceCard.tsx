@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useMedia } from "react-use";
 
 const UnderlineSVG = ({ size }: { size: "small" | "medium" | "large" }) => {
   const SVGs = {
@@ -57,28 +58,36 @@ interface ServiceCard {
 }
 
 const ServiceCard: React.FC<ServiceCard> = ({ title, number, children }) => {
+  const isLG = useMedia("(min-width: 1024px)");
   return (
-    <div className="bg-[#F2F8F6] text-[#262626] pt-[146px] pb-[38px] relative">
+    <div className="bg-[#F2F8F6] text-[#262626] lg:w-[765px] lg:h-[655px] pt-[146px] pb-[38px] relative">
       <h1
         className="font-poppinsLight text-[30px] leading-[45px]
+        lg:text-[60px] lg:leading-[90px]
       absolute top-[28px] left-[67px]"
       >
         {title}
       </h1>
-      <div className="absolute top-[75px]">
-        <UnderlineSVG size="small" />
+      <div className="absolute top-[75px] lg:top-[124px]">
+        <UnderlineSVG size={isLG ? "medium" : "small"} />
       </div>
 
-      <div className="absolute right-[28px] flex flex-col items-end">
-        <span className="font-poppinsLight text-[30px] leading-[45px]">
+      <div
+        className="absolute right-[28px] lg:-right-[401px] lg:top-[97px] 
+      flex flex-col items-end z-10"
+      >
+        <span className="font-poppinsLight text-[30px] leading-[45px] lg:text-[60px] lg:leading-[65px]">
           {number.toString().padStart(2, "0")}
         </span>
         <UnderlineSVG size="medium" />
       </div>
       {/* Illustration */}
-      <div className="w-[167px] h-[147px] xsp:w-[201px] xsp:h-[177px] bg-[#F0E3D8]"></div>
+      <div
+        className="bg-[#F0E3D8] w-[167px] h-[147px] xsp:w-[201px] xsp:h-[177px] 
+      lg:w-[417px] lg:h-[437px] lg:absolute lg:top-[109px] lg:left-[648px]"
+      ></div>
 
-      <div>{children}</div>
+      <div className="lg:ml-[58px]">{children}</div>
     </div>
   );
 };
