@@ -45,7 +45,11 @@ const ServicesPage: NextPage = () => {
                 </ul>
               </div>
             </ServiceCard>
-            <ServiceCard title="UX/UI & Graphic Design" number={2}>
+            <ServiceCard
+              title="UX/UI & Graphic Design"
+              number={2}
+              mirror={true}
+            >
               <div className="w-[298px] xsp:w-[358px] lg:w-auto mx-[12px] mt-[22px]">
                 <span className="text-[18px] text-green dark:text-black">
                   Realization of your ideas and birth of your brand.
@@ -60,7 +64,7 @@ const ServicesPage: NextPage = () => {
                 <h2 className="text-[18px] text-green dark:text-black mt-5">
                   Process:
                 </h2>
-                <ul className="text-[14px] lg:ml-[1px] 3xl:ml-[19px] relative pt-1 list-outside list-[square]">
+                <ul className="text-[14px] lg:ml-[17px] 3xl:ml-[19px] relative pt-1 list-outside list-[square]">
                   <ListItem>Color Palette Selection</ListItem>
                   <ListItem>Fonts Selection</ListItem>
                   <ListItem>Sketches</ListItem>
