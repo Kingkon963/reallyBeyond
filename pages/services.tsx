@@ -25,7 +25,7 @@ const ServicesPage: NextPage = () => {
                 <span className="text-[18px] text-green dark:text-black">
                   Realization of your ideas and birth of your brand.
                 </span>
-                <p className="mt-0 text-[14px] lg:w-[498px] leading-snug">
+                <p className="mt-0 text-[14px] lg:w-[498px] 3xl:w-[631px] leading-snug">
                   Colors, Marks, Fonts, Shapes - All is created during the brand
                   identity development and a personality of your brand comes to
                   life -It is a true sense of accomplishment to see how it looks
@@ -35,7 +35,7 @@ const ServicesPage: NextPage = () => {
                 <h2 className="text-[18px] text-green dark:text-black mt-5">
                   Process:
                 </h2>
-                <ul className="text-[14px] lg:ml-[1px] relative pt-1 list-outside list-[square]">
+                <ul className="text-[14px] lg:ml-[1px] 3xl:ml-[19px] relative pt-1 list-outside list-[square]">
                   <ListItem>Color Palette Selection</ListItem>
                   <ListItem>Fonts Selection</ListItem>
                   <ListItem>Sketches</ListItem>

@@ -60,20 +60,23 @@ interface ServiceCard {
 const ServiceCard: React.FC<ServiceCard> = ({ title, number, children }) => {
   const isLG = useMedia("(min-width: 1024px)");
   return (
-    <div className="bg-[#F2F8F6] text-[#262626] lg:w-[765px] lg:h-[655px] pt-[146px] pb-[38px] relative">
+    <div
+      className="bg-[#F2F8F6] text-[#262626] lg:w-[765px] lg:h-[655px] 3xl:w-[944px]
+    pt-[146px] 3xl:pt-[250px] pb-[38px] relative"
+    >
       <h1
         className="font-poppinsLight text-[30px] leading-[45px]
         lg:text-[60px] lg:leading-[90px]
-      absolute top-[28px] left-[67px]"
+      absolute top-[28px] left-[67px] 3xl:top-[101px]"
       >
         {title}
       </h1>
-      <div className="absolute top-[75px] lg:top-[124px]">
+      <div className="absolute top-[75px] lg:top-[124px] 3xl:top-[197px]">
         <UnderlineSVG size={isLG ? "medium" : "small"} />
       </div>
 
       <div
-        className="absolute right-[28px] lg:-right-[401px] lg:top-[97px] 
+        className="absolute right-[28px] lg:-right-[401px] lg:top-[97px] 3xl:-right-[475px] 3xl:top-[110px]
       flex flex-col items-end z-10"
       >
         <span className="font-poppinsLight text-[30px] leading-[45px] lg:text-[60px] lg:leading-[65px]">
@@ -84,7 +87,8 @@ const ServiceCard: React.FC<ServiceCard> = ({ title, number, children }) => {
       {/* Illustration */}
       <div
         className="bg-[#F0E3D8] w-[167px] h-[147px] xsp:w-[201px] xsp:h-[177px] 
-      lg:w-[417px] lg:h-[437px] lg:absolute lg:top-[109px] lg:left-[648px]"
+      lg:w-[417px] lg:h-[437px] 3xl:w-[515px] 3xl:h-[453px]
+       lg:absolute lg:top-[109px] lg:left-[648px] 3xl:left-[799px]"
       ></div>
 
       <div className="lg:ml-[58px]">{children}</div>
