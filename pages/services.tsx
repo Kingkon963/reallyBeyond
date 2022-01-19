@@ -46,7 +46,11 @@ const ServicesPage: NextPage = () => {
               </div>
             </ServiceCard>
             <ServiceCard
-              title="UX/UI & Graphic Design"
+              title={
+                <span>
+                  UX/UI &<br className="lg:hidden" /> Graphic Design
+                </span>
+              }
               number={2}
               mirror={true}
             >
