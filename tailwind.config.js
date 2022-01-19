@@ -31,6 +31,9 @@ module.exports = {
         poppinsLight: "Poppins Light",
         openSansBold: "Open Sans Bold",
       },
+      scale: {
+        flip: "-1",
+      },
       keyframes: {
         popup: {
           "0%": { transform: "scale(0.9)" },

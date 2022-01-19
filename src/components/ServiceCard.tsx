@@ -5,7 +5,7 @@ import { useMedia } from "react-use";
 import ReactDOM from "react-dom";
 
 const UnderlineSVG = ({ size }: { size: "small" | "medium" | "large" }) => {
-  const SVGs = {
+  const UnderlineSVGs = {
     small: (
       <svg
         width="95"
@@ -52,13 +52,14 @@ const UnderlineSVG = ({ size }: { size: "small" | "medium" | "large" }) => {
       </svg>
     ),
   };
-  return SVGs[size];
+  return UnderlineSVGs[size];
 };
 
 interface ServiceCard {
   title: string | JSX.Element;
   number: number;
   mirror?: boolean;
+  titleY?: number;
 }
 
 const ServiceCard: React.FC<ServiceCard> = ({
@@ -66,11 +67,11 @@ const ServiceCard: React.FC<ServiceCard> = ({
   number,
   children,
   mirror = false,
+  titleY,
 }) => {
-  const isLG = useMedia("(min-width: 1024px)");
-
   const getTextContent = (elem: JSX.Element, text = ""): string => {
-    if (elem.props.children) {
+    if (typeof elem.props.children === "string") return elem.props.children;
+    if (elem.props.children instanceof Array) {
       const childs: Array<string | JSX.Element> = elem.props.children;
       childs.forEach((child) => {
         if (typeof child === "string") text += child;
@@ -85,41 +86,56 @@ const ServiceCard: React.FC<ServiceCard> = ({
   let largeTitle = false; // Checking if the title is double line or not
   if (typeof title === "string") largeTitle = title.length > 17;
   else {
+    console.log(title);
     largeTitle = getTextContent(title).length > 17;
   }
-
-  if (!isLG) mirror = false;
 
   return (
     <div
       className={`bg-[#F2F8F6] text-[#262626] lg:w-[765px] lg:h-[655px] 3xl:w-[944px]
     ${
       largeTitle ? "pt-[191px]" : "pt-[146px]"
-    }  lg:pt-[250px] pb-[38px] relative`}
-      style={mirror ? { transform: "scale(-1, 1)", marginLeft: "auto" } : {}}
+    }  lg:pt-[250px] pb-[38px] relative ${
+        mirror ? "lg:scale-x-flip lg:ml-auto" : ""
+      }`}
     >
-      <h1
+      {/* title */}
+      <div
         className={`font-poppinsLight text-[30px] leading-[45px]
         lg:text-[60px] lg:leading-[90px]
-      absolute top-[28px] ${
-        mirror ? "left-[44px]" : largeTitle ? "left-[27px]" : "left-[67px]"
-      }  lg:top-[101px] z-10`}
-        style={mirror ? { transform: "scale(-1, 1)" } : {}}
+        absolute top-[28px] ${
+          mirror
+            ? "left-[44px]"
+            : largeTitle
+            ? "left-[27px] lg:left-[67px]"
+            : "left-[67px]"
+        }
+        ${titleY ? `lg:top-[${titleY}px]` : "lg:top-[101px]"}
+        ${mirror ? "lg:scale-x-flip" : ""}
+         z-10`}
       >
         {title}
-      </h1>
+      </div>
       <div
-        className={`absolute ${
-          largeTitle ? "top-[126px]" : "top-[75px]"
-        } lg:top-[197px]`}
+        className={`absolute ${largeTitle ? "top-[126px]" : "top-[75px]"}
+        ${mirror ? "lg:scale-x-flip" : ""}
+        lg:top-[197px]`}
       >
-        <UnderlineSVG size={isLG ? (mirror ? "large" : "medium") : "small"} />
+        <span className="lg:hidden">
+          <UnderlineSVG size="small" />
+        </span>
+        <span className="hidden lg:inline-block">
+          {mirror ? (
+            <UnderlineSVG size="large" />
+          ) : (
+            <UnderlineSVG size="medium" />
+          )}
+        </span>
       </div>
 
       <div
         className={`absolute right-[28px] lg:-right-[401px] lg:top-[97px] 3xl:-right-[475px] 3xl:top-[110px]
-      flex flex-col items-end z-10`}
-        style={mirror ? { transform: "scale(-1, 1)" } : {}}
+      flex flex-col items-end z-10 ${mirror ? "lg:scale-x-flip" : ""}`}
       >
         <span className="font-poppinsLight text-[30px] leading-[45px] lg:text-[60px] lg:leading-[65px]">
           {number.toString().padStart(2, "0")}
@@ -128,19 +144,20 @@ const ServiceCard: React.FC<ServiceCard> = ({
       </div>
       {/* Illustration */}
       <div
-        className="bg-[#F0E3D8] 
+        className={`bg-[#F0E3D8] 
         w-[167px] h-[147px] 
         xsp:w-[201px] xsp:h-[177px] 
         lg:w-[417px] lg:h-[437px] 
         3xl:w-[515px] 3xl:h-[453px]
         lg:absolute lg:top-[109px] lg:left-[648px] 3xl:left-[799px]
-       "
-        style={mirror ? { transform: "scale(-1, 1)" } : {}}
+        ${mirror ? "lg:scale-x-flip" : ""}
+        `}
       ></div>
 
       <div
-        className={`${mirror ? "lg:mr-[191px]" : "lg:ml-[58px]"}`}
-        style={mirror ? { transform: "scale(-1, 1)" } : {}}
+        className={`${mirror ? "lg:mr-[191px]" : "lg:ml-[58px]"} ${
+          mirror ? "lg:scale-x-flip" : ""
+        }`}
       >
         {children}
       </div>
