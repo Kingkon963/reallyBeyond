@@ -76,7 +76,7 @@ const ServiceCard: React.FC<ServiceCard> = ({ title, number, children }) => {
         <UnderlineSVG size="medium" />
       </div>
       {/* Illustration */}
-      <div className="w-[167px] h-[147px] bg-[#F0E3D8]"></div>
+      <div className="w-[167px] h-[147px] xsp:w-[201px] xsp:h-[177px] bg-[#F0E3D8]"></div>
 
       <div>{children}</div>
     </div>

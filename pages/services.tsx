@@ -21,7 +21,7 @@ const ServicesPage: NextPage = () => {
 
           <div className="mt-[43px]">
             <ServiceCard title="Brand Identity" number={1}>
-              <div className="w-[298px] mx-[12px] mt-[22px]">
+              <div className="w-[298px] xsp:w-[358px] mx-[12px] mt-[22px]">
                 <span className="text-[18px] text-green dark:text-black">
                   Realization of your ideas and birth of your brand.
                 </span>
