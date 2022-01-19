@@ -93,7 +93,7 @@ const Home: NextPage = () => {
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Process:
                       </span>
-                      <ul className="text-sm lg:text-[14px]  relative ml-5 list-outside list-disc">
+                      <ul className="text-sm lg:text-[14px] relative ml-5 list-outside list-disc">
                         <ListItem>Color Palette Selection</ListItem>
                         <ListItem>Fonts Selection</ListItem>
                         <ListItem>Sketches</ListItem>
