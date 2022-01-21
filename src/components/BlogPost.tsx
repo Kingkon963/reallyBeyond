@@ -1,8 +1,9 @@
+import { Post } from "interfaces/Post";
 import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
-const BlogPost: React.FC = () => {
+const BlogPost: React.FC<{ post: Post }> = ({ post }) => {
   return (
     <div className="flex flex-col lg:flex-row py-[20px] lg:py-[40px] gap-[12px] lg:gap-[31px] border-b border-green lg:w-[904px]">
       <div className="flex-1 flex lg:flex-col items-center justify-start gap-3 text-[12px] text-[#7D7D7D] ">
@@ -22,7 +23,7 @@ const BlogPost: React.FC = () => {
             className="font-poppinsSemibold text-[##333333] text-[18px] leading-[27px]
           lg:text-[26px] lg:leading-[39px] cursor-pointer"
           >
-            Lorem Ipsum dolores sit amet, consectetur
+            {post.attributes.title}
             <hr className="border-green mt-[6px] lg:mt-0 mb-[6px] w-[20px]" />
           </h2>
         </Link>

@@ -1,11 +1,22 @@
 import * as React from "react";
-import type { NextPage } from "next";
+import type { NextPage, GetStaticProps, GetStaticPaths } from "next";
 import Head from "next/head";
+
 import Layout from "@components/Layout";
 import InfinityHeader from "@components/InfinityHeader";
 import BlogPost from "@components/BlogPost";
+import { axios, getStrapiURL } from "const/api";
+import { Post, PostMeta } from "interfaces/Post";
 
-const BlogPage: NextPage = () => {
+interface BlogPageData {
+  data?: {
+    data: Post[];
+  };
+  meta: PostMeta;
+}
+
+const BlogPage = ({ data }: BlogPageData) => {
+  console.log(data);
   return (
     <div className="overflow-x-clip">
       <Head>
@@ -37,18 +48,55 @@ const BlogPage: NextPage = () => {
           </div>
 
           <div>
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
+            {data && data.data.length !== 0 && <BlogPost post={data.data[0]} />}
+
+            {data && data.data.length === 0 && (
+              <div className="flex justify-center items-center">
+                <h1 className="text-3xl text-grayish">No Blog Post Found!</h1>
+              </div>
+            )}
           </div>
         </div>
       </Layout>
     </div>
   );
+};
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const qs = require("qs");
+  const query = qs.stringify(
+    {
+      populate: {
+        author: {
+          fields: ["username"],
+          populate: "avatar",
+        },
+      },
+    },
+    {
+      encodeValuesOnly: true,
+    }
+  );
+
+  try {
+    const res = await axios.get(getStrapiURL(`/api/posts?${query}`));
+    if (res.statusText === "OK") {
+      return {
+        props: {
+          data: JSON.parse(res.data),
+        },
+        revalidate: 10,
+      };
+    }
+  } catch (error) {
+    return {
+      props: {
+        error,
+      },
+    };
+  }
+
+  return { props: {} };
 };
 
 export default BlogPage;
