@@ -1,15 +1,24 @@
+import { getStrapiMedia } from "const/api";
 import { Post } from "interfaces/Post";
-import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
+import Avatar from "./Avatar";
 
 const BlogPost: React.FC<{ post: Post }> = ({ post }) => {
+  const getAvatarURL = (post: Post): string | null => {
+    const avatarData = post?.attributes.author.data?.attributes.avatar;
+    if (avatarData) {
+      // if (avatarData.data.attributes.formats?.xsmall)
+      //   return getStrapiMedia(avatarData.data.attributes.formats.xsmall.url);
+      return getStrapiMedia(avatarData.data.attributes.url);
+    }
+    return null;
+  };
+
   return (
     <div className="flex flex-col lg:flex-row py-[20px] lg:py-[40px] gap-[12px] lg:gap-[31px] border-b border-green lg:w-[904px]">
       <div className="flex-1 flex lg:flex-col items-center justify-start gap-3 text-[12px] text-[#7D7D7D] ">
-        <div className="rounded-full w-[65px] h-[65px] border overflow-clip flex justify-center items-center">
-          <Image src="/images/profile_pic.png" width={65} height={65} />
-        </div>
+        <Avatar imgUrl={getAvatarURL(post)} />
         <span className=" flex flex-col lg:items-center gap-2">
           <span className="uppercase font-openSansBold text-[12px]">
             Jane Elliot

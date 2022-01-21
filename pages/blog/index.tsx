@@ -7,6 +7,7 @@ import InfinityHeader from "@components/InfinityHeader";
 import BlogPost from "@components/BlogPost";
 import { axios, getStrapiURL } from "const/api";
 import { Post, PostMeta } from "interfaces/Post";
+import keyGen from "src/utils/genKey";
 
 interface BlogPageData {
   data?: {
@@ -48,7 +49,11 @@ const BlogPage = ({ data }: BlogPageData) => {
           </div>
 
           <div>
-            {data && data.data.length !== 0 && <BlogPost post={data.data[0]} />}
+            {data &&
+              data.data.length !== 0 &&
+              data.data.map((post) => {
+                return <BlogPost post={post} key={keyGen()} />;
+              })}
 
             {data && data.data.length === 0 && (
               <div className="flex justify-center items-center">

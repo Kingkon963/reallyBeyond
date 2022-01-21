@@ -56,13 +56,13 @@ export interface AvatarAttributes {
 }
 
 export interface Formats {
-  thumbnail?: Medium;
-  medium?: Medium;
-  small?: Medium;
-  xsmall?: Medium;
+  thumbnail?: Media;
+  medium?: Media;
+  small?: Media;
+  xsmall?: Media;
 }
 
-export interface Medium {
+export interface Media {
   name: string;
   hash: string;
   ext: string;
