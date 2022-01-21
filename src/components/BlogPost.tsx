@@ -18,12 +18,17 @@ const BlogPost: React.FC<{ post: Post }> = ({ post }) => {
   return (
     <div className="flex flex-col lg:flex-row py-[20px] lg:py-[40px] gap-[12px] lg:gap-[31px] border-b border-green lg:w-[904px]">
       <div className="flex-1 flex lg:flex-col items-center justify-start gap-3 text-[12px] text-[#7D7D7D] ">
-        <Avatar imgUrl={getAvatarURL(post)} />
+        {post.attributes.author.data && <Avatar imgUrl={getAvatarURL(post)} />}
         <span className=" flex flex-col lg:items-center gap-2">
-          <span className="uppercase font-openSansBold text-[12px]">
-            Jane Elliot
+          <span className="uppercase font-openSansBold text-[12px] text-center">
+            {post.attributes.author.data?.attributes.username}
           </span>
-          <span className="font-openSansBold text-[12px]">22.12.22</span>
+          <span className="font-openSansBold text-[12px]">
+            {new Date(post.attributes.publishedAt).toLocaleDateString(
+              undefined,
+              { day: "2-digit", month: "2-digit", year: "2-digit" }
+            )}
+          </span>
         </span>
       </div>
       <div className="flex flex-col ml-auto lg:w-[800px] ">

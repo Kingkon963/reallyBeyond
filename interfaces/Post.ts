@@ -14,7 +14,7 @@ export interface PostAttributes {
 }
 
 export interface Author {
-  data: AuthorData;
+  data?: AuthorData;
 }
 
 export interface AuthorData {
