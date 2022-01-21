@@ -1,5 +1,5 @@
-import { getStrapiMedia } from "const/api";
-import { Post } from "interfaces/Post";
+import { getStrapiMedia } from "@lib/api";
+import { Post } from "interfaces/GetAllPostsResponse";
 import Link from "next/link";
 import * as React from "react";
 import Avatar from "./Avatar";

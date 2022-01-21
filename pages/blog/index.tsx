@@ -1,23 +1,19 @@
 import * as React from "react";
-import type { NextPage, GetStaticProps, GetStaticPaths } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 
 import Layout from "@components/Layout";
 import InfinityHeader from "@components/InfinityHeader";
 import BlogPost from "@components/BlogPost";
-import { axios, getStrapiURL } from "const/api";
-import { Post, PostMeta } from "interfaces/Post";
+import { getAllPosts } from "@lib/api";
 import keyGen from "src/utils/genKey";
+import { GetAllPostsResponse } from "interfaces/GetAllPostsResponse";
 
 interface BlogPageData {
-  data?: {
-    data: Post[];
-  };
-  meta: PostMeta;
+  posts?: GetAllPostsResponse | null;
 }
 
-const BlogPage = ({ data }: BlogPageData) => {
-  console.log(data);
+const BlogPage = ({ posts }: BlogPageData) => {
   return (
     <div className="overflow-x-clip">
       <Head>
@@ -49,13 +45,13 @@ const BlogPage = ({ data }: BlogPageData) => {
           </div>
 
           <div>
-            {data &&
-              data.data.length !== 0 &&
-              data.data.map((post) => {
+            {posts &&
+              posts.data.length !== 0 &&
+              posts.data.map((post) => {
                 return <BlogPost post={post} key={keyGen()} />;
               })}
 
-            {data && data.data.length === 0 && (
+            {posts && posts.data.length === 0 && (
               <div className="flex justify-center items-center">
                 <h1 className="text-3xl text-grayish">No Blog Post Found!</h1>
               </div>
@@ -68,40 +64,14 @@ const BlogPage = ({ data }: BlogPageData) => {
 };
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const qs = require("qs");
-  const query = qs.stringify(
-    {
-      populate: {
-        author: {
-          fields: ["username"],
-          populate: "avatar",
-        },
-      },
+  const postsData = await getAllPosts();
+
+  return {
+    props: {
+      posts: postsData,
     },
-    {
-      encodeValuesOnly: true,
-    }
-  );
-
-  try {
-    const res = await axios.get(getStrapiURL(`/api/posts?${query}`));
-    if (res.statusText === "OK") {
-      return {
-        props: {
-          data: JSON.parse(res.data),
-        },
-        revalidate: 10,
-      };
-    }
-  } catch (error) {
-    return {
-      props: {
-        error,
-      },
-    };
-  }
-
-  return { props: {} };
+    revalidate: 10,
+  };
 };
 
 export default BlogPage;
