@@ -34,7 +34,7 @@ const BlogPostPage: NextPage = () => {
       <Layout>
         <>
           <div className="container pt-[69px]">
-            <div className="lg:w-[650px] mx-auto">
+            <div className="lg:w-[650px] mx-auto mb-[50px] lg:mb-[90px]">
               <h1 className="font-poppinsSemibold text-[30px] leading-[39px] lg:text-[40px] lg:leading-[52px] text-[#333333]">
                 Lorem Ipsum dolores sit amet, consectetur unde
               </h1>
@@ -76,7 +76,7 @@ const BlogPostPage: NextPage = () => {
                 </Quote>
               </div>
 
-              <div className="flex justify-between">
+              <div className="flex justify-between mt-[20px] lg:mt-[40px]">
                 <Link href="#">
                   <div className="flex items-center gap-[15px]">
                     <span>
