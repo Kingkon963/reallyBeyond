@@ -2,9 +2,10 @@ import React, { useEffect } from "react";
 import { useLocalStorage } from "react-use";
 
 function ColorSwitch() {
-  const [colorPref, setColorPref, deleteColorPref] = useLocalStorage<
-    "bw" | "color"
-  >("colorPref", "color");
+  const [colorPref, setColorPref, deleteColorPref] = useLocalStorage<"bw" | "color">(
+    "colorPref",
+    "color"
+  );
 
   const elRef = React.useRef<HTMLDivElement | null>(null);
 
@@ -46,7 +47,7 @@ function ColorSwitch() {
 
   return (
     <div ref={elRef} className="z-[1000] transition-none">
-      <ul className="flex gap-[0px] absolute right-0 bottom-[-20px] translate-y-full mr-4 lg:relative lg:bottom-auto lg:translate-y-0 lg:mr-6 transition-none">
+      <ul className="flex gap-[0px] absolute -right-[13px] bottom-[-20px] translate-y-full mr-4 lg:relative lg:bottom-auto lg:translate-y-0 lg:mr-6 transition-none">
         <li
           className={`relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full
       text-orange after:bg-orange dark:text-gray-400 dark:after:bg-gray-400 

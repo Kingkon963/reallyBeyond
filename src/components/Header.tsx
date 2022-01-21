@@ -27,48 +27,20 @@ function Header({ showContactBtn = false }: HeaderInterface) {
     <header
       className={`header sticky top-0
       z-[100] shadow-none transition-none ${
-        menuOpen
-          ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip"
-          : smallScreen
-          ? "border-b border-[#C9C9C9]"
-          : ""
+        menuOpen ? "h-screen bg-blue dark:bg-black overflow-y-scroll lg:overflow-y-clip" : smallScreen ? "border-b border-[#C9C9C9]" : ""
       }`}
     >
       <div className={`container`}>
-        <div
-          className={`nav  ${
-            menuOpen
-              ? "border-b-0 dark:border-b-0"
-              : !smallScreen
-              ? "border-b dark:border-gray-300"
-              : "border-b-0"
-          } `}
-        >
+        <div className={`nav  ${menuOpen ? "border-b-0 dark:border-b-0" : !smallScreen ? "border-b dark:border-gray-300" : "border-b-0"} `}>
           <div className={`logo-wrapper  `}>
             <Link href="/">
               <a>
-                <span
-                  className={`text-green  ${
-                    menuOpen ? "dark:text-white" : "dark:text-black"
-                  }`}
-                >
-                  REALLY
-                </span>
-                <span
-                  className={`text-lightGreen  ${
-                    menuOpen ? "dark:text-gray-600" : "dark:text-grayish"
-                  }`}
-                >
-                  BEYOND
-                </span>
+                <span className={`text-green  ${menuOpen ? "dark:text-white" : "dark:text-black"}`}>REALLY</span>
+                <span className={`text-lightGreen  ${menuOpen ? "dark:text-gray-600" : "dark:text-grayish"}`}>BEYOND</span>
               </a>
             </Link>
           </div>
-          <nav
-            className={`ml-10 mr-auto transition-none ${
-              menuOpen ? "text-white" : ""
-            }`}
-          >
+          <nav className={`ml-10 mr-auto transition-none ${menuOpen ? "text-white" : ""}`}>
             {!(menuOpen && smallScreen) && (
               <span className="transition-none">
                 <ColorSwitch />
@@ -77,12 +49,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
           </nav>
           <div className={`hidden lg:flex gap-5 ${menuOpen ? "hidden" : ""}`}>
             {!menuOpen && (
-              <a
-                href="#footer"
-                className={`contact-us ${
-                  showContactBtn || isNotHomePage ? "" : "hidden"
-                }`}
-              >
+              <a href="#footer" className={`contact-us ${showContactBtn || isNotHomePage ? "" : "hidden"}`}>
                 Contact us
               </a>
             )}
@@ -97,9 +64,7 @@ function Header({ showContactBtn = false }: HeaderInterface) {
             </Link>
           </div>
           <button
-            className={`font-montserratBold ml-7 tracking-widest text-xl ${
-              menuOpen ? "text-white" : "text-lightBlack"
-            }`}
+            className={`font-montserratBold ml-7 tracking-widest text-xl ${menuOpen ? "text-white" : "text-lightBlack"}`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? "BACK" : "MENU"}

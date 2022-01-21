@@ -10,7 +10,7 @@ import keyGen from "src/utils/genKey";
 import { GetAllPostsResponse } from "interfaces/GetAllPostsResponse";
 
 interface BlogPageData {
-  posts?: GetAllPostsResponse | null;
+  posts: GetAllPostsResponse | null;
 }
 
 const BlogPage = ({ posts }: BlogPageData) => {
@@ -51,7 +51,7 @@ const BlogPage = ({ posts }: BlogPageData) => {
                 return <BlogPost post={post} key={keyGen()} />;
               })}
 
-            {posts && posts.data.length === 0 && (
+            {(!posts || posts.data.length === 0) && (
               <div className="flex justify-center items-center">
                 <h1 className="text-3xl text-grayish">No Blog Post Found!</h1>
               </div>
