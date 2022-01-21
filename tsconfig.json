@@ -18,7 +18,6 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@styles/*": ["styles/*"],
-      "@graphql": ["graphql"],
       "@lib/*": ["lib/*"]
     }
   },
