@@ -11,7 +11,7 @@ const Quote: React.FC = ({ children }) => {
   return (
     <div className="flex gap-[10px] my-5">
       <span
-        className="font-redHatDisplayMedium text-green text-[50px] leading-[60px]
+        className="font-redHatDisplayMedium text-green dark:text-black text-[50px] leading-[60px]
       -mt-[8px] -ml-[12px]"
       >
         “
