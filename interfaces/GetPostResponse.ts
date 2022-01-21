@@ -12,6 +12,7 @@ export interface DatumAttributes {
   title: string;
   slug: string;
   content: string;
+  description?: string;
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date;

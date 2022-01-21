@@ -6,9 +6,16 @@ import Avatar from "@components/Avatar";
 import Newsletter from "@components/Newsletter";
 import Link from "next/link";
 import { getAllSlugs, getPost, getStrapiMedia } from "@lib/api";
-import { GetPostResponse } from "interfaces/GetPostResponse";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+
+const Heading: React.FC = ({ children }) => {
+  return <h1 className="font-poppinsMedium text-[20px] leading-[24px] lg:text-[26px] lg:leading-[31px] mb-[15px]">{children}</h1>;
+};
+
+const P: React.FC = ({ children }) => {
+  return <p className="text-[#313131]">{children}</p>;
+};
 
 const Quote: React.FC = ({ children }) => {
   return (
@@ -25,7 +32,9 @@ const Quote: React.FC = ({ children }) => {
 };
 
 const MDX_ENABLE_COMPONENTS = {
-  Quote,
+  q: Quote,
+  h: Heading,
+  p: P,
 };
 
 interface BlogPostPageProps {
