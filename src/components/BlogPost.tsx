@@ -32,7 +32,7 @@ const BlogPost: React.FC<{ post: Post }> = ({ post }) => {
         </span>
       </div>
       <div className="flex flex-col ml-auto lg:w-[800px] ">
-        <Link href="#">
+        <Link href={`blog/${post.attributes.slug}`}>
           <h2
             className="font-poppinsSemibold text-[##333333] text-[18px] leading-[27px]
           lg:text-[26px] lg:leading-[39px] cursor-pointer"

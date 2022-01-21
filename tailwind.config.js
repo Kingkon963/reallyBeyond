@@ -27,9 +27,11 @@ module.exports = {
         openSansRegular: "Open Sans Regular",
         openSansMedium: "Open Sans Medium",
         poppinsSemibold: "Poppins Semibold",
+        poppinsMedium: "Poppins Medium",
         poppinsRegular: "Poppins Regular",
         poppinsLight: "Poppins Light",
         openSansBold: "Open Sans Bold",
+        redHatDisplayMedium: "Red Hat Display",
       },
       scale: {
         flip: "-1",

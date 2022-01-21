@@ -56,8 +56,18 @@ body {
   font-display: swap;
 }
 @font-face {
+  font-family: "Poppins Medium";
+  src: url("/fonts/Poppins/Poppins-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
   font-family: "Poppins Semibold";
   src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("/fonts/RedHatDisplay/RedHatDisplay-Medium.ttf");
   font-display: swap;
 }
 
