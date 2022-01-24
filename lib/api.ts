@@ -4,9 +4,7 @@ import { GetPostResponse } from "interfaces/GetPostResponse";
 import { GetAllPostsResponse } from "interfaces/GetAllPostsResponse";
 
 export const getStrapiURL = (path = "") => {
-  return `${
-    process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
-  }${path}`;
+  return `${process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"}${path}`;
 };
 
 export function getStrapiMedia(url: string) {

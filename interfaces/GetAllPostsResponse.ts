@@ -16,7 +16,7 @@ export interface PostAttributes {
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date;
-  author: Author;
+  author?: Author;
 }
 
 export interface Author {
@@ -34,7 +34,7 @@ export interface PurpleAttributes {
 }
 
 export interface Avatar {
-  data: AvatarData;
+  data?: AvatarData;
 }
 
 export interface AvatarData {
