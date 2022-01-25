@@ -37,9 +37,7 @@ const Home: NextPage = () => {
             <div className="container">
               <div className="flex-group">
                 <div className="hero__text">
-                  <h5 className="m-0 leading-none text-[#868686]">
-                    Working remotely globally.
-                  </h5>
+                  <h5 className="m-0 leading-none text-[#868686]">Working remotely globally.</h5>
                   <h1 className="font-poppinsSemibold leading-tight">
                     We go really beyond your
                     <br />
@@ -48,10 +46,9 @@ const Home: NextPage = () => {
                     you happy.
                   </h1>
                   <p className="font-openSansRegular text-[#333333] 3xl:my-10">
-                    By keeping you involved all along the process. A process
-                    that is designed to bring your{" "}
-                    <br className="hidden xl:block" /> ideas to life smoothly
-                    and quickly.
+                    By keeping you involved all along the process. A process that is designed to
+                    bring your <br className="hidden xl:block" /> ideas to life smoothly and
+                    quickly.
                   </p>
                   <a
                     href="#footer"
@@ -79,16 +76,14 @@ const Home: NextPage = () => {
                 <ul className="special">
                   <OfferPopup title="Brand Identity">
                     <div>
-                      <span className="text-lg lg:text-[18px] text-orange dark:text-black">
+                      <h1 className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Realization of your ideas and birth of your brand.
-                      </span>
+                      </h1>
                       <p className="mt-0 text-sm lg:text-[14px] leading-snug">
-                        Colors, Marks, Fonts, Shapes - All is created during the
-                        brand identity development and a personality of your
-                        brand comes to life -It is a true sense of
-                        accomplishment to see how it looks what you have been
-                        imagining from days or months. We make sure to create
-                        the assets that you love to see.
+                        Colors, Marks, Fonts, Shapes - All is created during the brand identity
+                        development and a personality of your brand comes to life -It is a true
+                        sense of accomplishment to see how it looks what you have been imagining
+                        from days or months. We make sure to create the assets that you love to see.
                       </p>
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Process:
@@ -105,29 +100,22 @@ const Home: NextPage = () => {
                   </OfferPopup>
                   <OfferPopup title="UX/UI & Graphic Design">
                     <div>
-                      <span className="text-lg lg:text-[18px] text-orange dark:text-black">
+                      <h1 className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Websites and Mobile Apps tailor-made specially for you
-                      </span>
+                      </h1>
                       <p className="mt-0 text-sm lg:text-[14px] leading-snug">
-                        Your customers should enjoy using your website or app.
-                        Keeping that in mind, we prioritize an excellent user
-                        experience over everything else. Complexity of the
-                        requirements doesn’t scare us.
+                        Your customers should enjoy using your website or app. Keeping that in mind,
+                        we prioritize an excellent user experience over everything else. Complexity
+                        of the requirements doesn’t scare us.
                       </p>
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         We can design:
                       </span>
                       <ul className="text-sm lg:text-[14px]  relative list-outside ml-5 list-disc">
-                        <ListItem>
-                          Corporate websites, Blogs, Landing Pages
-                        </ListItem>
-                        <ListItem>
-                          Data-rich dashboards and Admin Panels
-                        </ListItem>
+                        <ListItem>Corporate websites, Blogs, Landing Pages</ListItem>
+                        <ListItem>Data-rich dashboards and Admin Panels</ListItem>
                         <ListItem>Online stores and services</ListItem>
-                        <ListItem>
-                          Multidimensional and multi-users Mobile and Web Apps
-                        </ListItem>
+                        <ListItem>Multidimensional and multi-users Mobile and Web Apps</ListItem>
                       </ul>
                       <p className="text-lg lg:text-[18px] mb-0 text-orange dark:text-black">
                         Process:
@@ -139,20 +127,16 @@ const Home: NextPage = () => {
                       </ul>
                     </div>
                   </OfferPopup>
-                  <OfferPopup
-                    title="Web and Mobile Apps Development"
-                    shortCurlySVG={true}
-                  >
+                  <OfferPopup title="Web and Mobile Apps Development" shortCurlySVG={true}>
                     <div>
-                      <span className="text-lg lg:text-[18px] text-orange dark:text-black">
-                        Fast, Secure and Optimized Websites, Mobile Apps and
-                        solutions of all complexities
-                      </span>
+                      <h1 className="text-lg lg:text-[18px] text-orange dark:text-black">
+                        Fast, Secure and Optimized Websites, Mobile Apps and solutions of all
+                        complexities
+                      </h1>
                       <p className="mt-0 text-sm lg:text-[14px] leading-snug w-[273px] sm:w-auto">
-                        Skilled developers and Software Engineers will take care
-                        of your needs and make everything like a breeze for you.
-                        We make sure you just sit back and relax while we
-                        develop your dream app or website. A very small one page
+                        Skilled developers and Software Engineers will take care of your needs and
+                        make everything like a breeze for you. We make sure you just sit back and
+                        relax while we develop your dream app or website. A very small one page
                         website to an enterprise level solution - We can do it.
                       </p>
                       <p className="text-lg lg:text-[18px] text-orange dark:text-black mb-[5px] lg:mb-auto">
@@ -160,55 +144,44 @@ const Home: NextPage = () => {
                       </p>
                       <ul className="text-sm lg:text-[14px] ml-5 list-outside list-disc w-[258px] sm:w-auto">
                         <ListItem>
-                          UX/UI Design: An imagery representation and wireframes
-                          of your complete system with all the colors, icons,
-                          fonts...
+                          UX/UI Design: An imagery representation and wireframes of your complete
+                          system with all the colors, icons, fonts...
+                        </ListItem>
+                        <ListItem>Front-End Development: An interactive working prototype</ListItem>
+                        <ListItem>
+                          Backend-Development: Implement of the main logic of the system and
+                          integration with Front-End
                         </ListItem>
                         <ListItem>
-                          Front-End Development: An interactive working
-                          prototype
+                          Testing: Each and every inch of your product will be tested by Pros.
                         </ListItem>
                         <ListItem>
-                          Backend-Development: Implement of the main logic of
-                          the system and integration with Front-End
-                        </ListItem>
-                        <ListItem>
-                          Testing: Each and every inch of your product will be
-                          tested by Pros.
-                        </ListItem>
-                        <ListItem>
-                          Deployment and Maintenance: No headache for you, we
-                          will deploy and maintain
+                          Deployment and Maintenance: No headache for you, we will deploy and
+                          maintain
                         </ListItem>
                       </ul>
                     </div>
                   </OfferPopup>
                   <OfferPopup title="Consultancy" shortCurlySVG={true}>
                     <div>
-                      <span className="text-lg lg:text-[18px] text-orange dark:text-black">
-                        From idea refinement to <br className="xsp:hidden" />{" "}
-                        launch
-                      </span>
+                      <h1 className="text-lg lg:text-[18px] text-orange dark:text-black">
+                        From idea refinement to <br className="xsp:hidden sm:hidden" /> launch
+                      </h1>
                       <p className="mt-0 text-sm lg:text-[14px] leading-snug">
-                        Set of different processes and strategies to achieve all
-                        your wishes. This is a long term bond between you and
-                        us. We go through many discussions with you to come up
-                        with a solution or set of services for your particular
-                        needs. You may want to automate your organization or
-                        have a revolutionary idea, we will work on it together.
-                        Having a multi-skilled team with diverse experience and
-                        strong business acumen, We can deal with all things
-                        design, technology keeping in mind your audience and
-                        business.
+                        Set of different processes and strategies to achieve all your wishes. This
+                        is a long term bond between you and us. We go through many discussions with
+                        you to come up with a solution or set of services for your particular needs.
+                        You may want to automate your organization or have a revolutionary idea, we
+                        will work on it together. Having a multi-skilled team with diverse
+                        experience and strong business acumen, We can deal with all things design,
+                        technology keeping in mind your audience and business.
                       </p>
                       <span className="text-lg lg:text-[18px] text-orange dark:text-black">
                         Process:
                       </span>
                       <ul className="text-sm lg:text-[14px] relative ml-5 list-outside list-disc w-full sm:w-auto">
                         <ListItem>Initial Discussion</ListItem>
-                        <ListItem>
-                          Detailed Analysis of Your Requirements
-                        </ListItem>
+                        <ListItem>Detailed Analysis of Your Requirements</ListItem>
                         <ListItem>Idea Refinement</ListItem>
                         <ListItem>Documentation</ListItem>
                         <ListItem>Product Development</ListItem>
