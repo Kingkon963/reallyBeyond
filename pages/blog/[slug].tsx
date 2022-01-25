@@ -209,6 +209,7 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
       publishedDate,
       contentSource,
     },
+    revalidate: 10,
   };
 };
 
